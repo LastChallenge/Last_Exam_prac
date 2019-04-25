@@ -704,3 +704,913 @@ ps -l
 vi wait_exam.c
 tmux
 exit
+ls
+cd work
+ls
+mkdir 2019_0411
+cd 2019_0411
+ls
+git
+sudo apt install git
+git
+clear
+git
+clear
+git
+git help -a
+git
+clear
+git
+clear
+git
+clear
+git init 
+ls
+cd 
+ls
+cd work
+ls
+git init LSP_GIT
+ls
+git commit
+git config --global user.email LastChllenged@gmail.com
+git config --global user.name LastChallenge
+git config --global user.email LastChallenged@gmail.com
+ls
+cd LSP_GIT
+ls
+vi hello_world.c
+ls
+vi hello_world.txt
+ls
+git add hello_world.c
+git commit
+git commit -m "first commit"
+ls
+git add hello_world.c
+git commit -m "first commit"
+vi hello_world.c
+git commit -m "first commit"
+git add hello_world.c
+git commit -m "first commit"
+ls
+git add hello_world.c
+ls
+cat hello_world.c 
+git add hello_world.c 
+git commit -m "first commit"
+git config --global user.email LastChallenged@gmail.com
+git config --global user.name LastChallenge
+git add hello_world.c
+git commit -m "first commit"
+git commit
+cd
+ls
+cd work
+ls
+rm LSP_GIT
+rmdir LSP_GIT
+rmdir -rf LSP_GIT
+ls
+git init test
+ls
+cd test
+ls
+git commit
+ls
+cd ../
+ls
+cd LSP_GIT/
+ls
+mv ../test/
+mv hello_world.c ../test/
+cd ../test/
+ls
+git add hello_world.c
+git commit -m "first commit"
+git remote add origin https://github.com/LastChallenge/Linux_System_programming.git
+git push
+git push origin master
+ls
+git pull origin master
+ls
+vi hello_world.c
+cd ..
+git init branch
+ls
+cd branch
+vi branch_test.c
+ls
+git checkout -b second
+git checkout -b master
+git add branch_test.c
+git commit -m "sample"
+cat branch_test.c
+git checkout -b second
+git branch
+ls
+cat branch_test.c
+ls
+git branch
+git second
+git branch
+ls
+vi branch_test.c
+git add branch_test.c
+git commit -m "branch_commit"
+git branch 
+cat branch_test.c
+git checkout master
+git branch
+ls
+vi branch_test.c
+git branch
+gir merge second
+git merge second
+vi branch_test.c
+git branch
+cat branch_test.c
+ls
+git branch
+git checkout second
+git branch
+ls
+git checkout master
+ls
+cat branch_test.c
+git branch
+git branch 
+vi branch_test.c
+git add branch_test.c
+git commit -m "master branch"
+git checkout second
+git branch
+vi branch_test.c
+ls
+git branch
+git add branch_test.c
+git commit -m "edit branch"
+git checkout master
+git branch
+git merge second
+git status
+vi branch_test.c
+ls
+git add branch_test.c
+git commit -m "conflict merge"
+ls
+git push
+ls
+cd ..
+ls
+cd branch
+git commit
+git status
+cd ..
+ls
+cd..
+cd ..\
+cd ..
+ls
+s1720963
+cd s1720963
+ls
+git add *
+git init
+git add *
+git commit -m "backup"
+git push
+git push https://github.com/LastChallenge/Linux_System_programming
+git status
+git commit -m "backup"
+git push -a https://github.com/LastChallenge/Linux_System_programming
+git push -u https://github.com/LastChallenge/Linux_System_programming
+git push -u
+git add *
+git status
+git commit -m "backup"
+ls
+git init
+git add -all
+git add --all
+git commit -m "all"
+git push
+git remote add https://github.com/LastChallenge/Linux_System_programming
+git remote add https://github.com/LastChallenge/Linux_System_programming.git
+git remote add origin https://github.com/LastChallenge/Linux_System_programming
+git push -u origin master
+git remote add https://github.com/LastChallenge/Linux_System_programming.git
+git remote add origin https://github.com/LastChallenge/Linux_System_programming
+git push -u origin master
+git remote add origin https://github.com/LastChallenge/Linux_System_programming.git
+git push -u origin master
+git add --all
+git commit -m "all"
+ls
+cd work
+ls
+git add --all
+git commit -m "all"
+git commit -m "aaa"
+rmdir LSP_GIT
+ls
+rm branch/ -rf
+rm LSP_GIT/ -rf
+rm test/ -rf
+git init
+ls
+git add --all
+git commit -m "all"
+git remote add origin "all"
+git push
+git remote add origin https://github.com/LastChallenge/Linux_System_programming.git
+git remote add origin https://github.com/LastChallenge/all.git
+git remote add yeonjoo https://github.com/LastChallenge/Linux_System_programming.git
+git push -u yeonjoo master
+git remote add yeonjoo https://github.com/LastChallenge/all.git
+git remote add changjun https://github.com/LastChallenge/all.git
+git push -u changjun master 
+ls
+git branch
+exit
+ls
+cd work
+ls
+w
+who
+who -a
+clear
+w
+w -lf
+w -s
+git config --global --list
+git config --list
+git branch
+git remote
+git status
+git remote
+git remote -v
+git
+ls
+cd 2019_0411
+ls
+cd ..
+cd
+ls
+cd work
+ls
+cd ..
+ls
+cd..
+cd ..
+ls
+cd pel
+ls
+cd ..
+cd hurryon
+ls
+cd work
+ls
+cd 0321
+ls
+cd ..
+cls
+ls
+cd ..
+ls
+cd pel
+ls
+cd ..
+ls
+cd s1720963
+ls
+cd prac
+ls
+cd ..
+rm prac
+rmdir prac
+ls
+cd example.desktop
+vi example.desktop
+ls
+vi example.desktop
+vi examples.desktop
+rm example.desktop
+ls
+ce tmp
+ls
+cd tmp
+ls
+cd ..
+ls
+cd work
+ls
+git remote show origin
+git remote
+git remote show changjun
+git remote show origin
+cd
+ls
+clear
+git status
+ls
+cd work
+ls
+git remote
+git branch
+cd
+ls
+cd tmp
+git init
+cd ..
+ls
+cd tmp
+git init
+git remote add -f origin https://github.com/LastChallenge/all
+ls
+git remote
+git pull --all
+ls
+git pull origin master
+ls
+cd 2019_0321
+ls
+cd ..
+cd
+ls
+rm tmo
+rm tmp
+cd tmp
+ls
+git remote
+git remote -v
+history
+git remote add -f origin 
+git remote add -f origin https://github.com/LastChallenge/Linux_System_programming
+git remote add -f LastChallenge https://github.com/LastChallenge/Linux_System_programming 
+git retmore
+git retmote
+git remote
+git remote -v
+ls
+git pull master LastChallenge
+history
+git pull LastChallnege master
+git init
+ls
+git remote
+git pull LastChallenge master
+ls
+vi hello_world.c
+cd ..
+ls
+cd work
+ls
+cd 2019_0411
+ls
+cd ..
+ls
+history
+git branch
+git remote 
+ls
+cd work
+git remote
+ls
+cd
+ls
+cd tmp
+ls
+cd ..
+git remote
+ls
+cd tmp
+git remote
+git remote rename LastChallenge
+git -help remote
+git remote rm LastChallenge
+ls
+git remote
+git remote add TestRemote https://github.com/LastChallenge/Linux_System_programming.git
+git add --all
+git commit
+git status
+ls
+git remote
+git add --all
+git status
+git commit -m "TestCommit"
+git add --all
+git commit -m "Test"
+clear
+ls
+git remote
+git branch
+git init
+git add --all
+git commit -m "TestCommit"
+git remote
+git remote -v
+git remote rm TestRemote
+git remote
+git remote add TestRemote https://github.com/LastChallenge/Linux_System_programming
+ls
+git remote -v
+git add -all
+git add --all
+git commit -m "TestCommit"
+git config --list
+ls
+git init
+ls
+cd
+ks
+ls
+cd tmp
+ls
+git status
+git init
+git status
+ls
+cd 
+git test
+ls
+cd tmp
+git remote -v
+git init
+clear
+git remote
+git rm remote TestRemote
+git remote rm TestRemote
+ls
+git remote
+git remote add TestRemote https://github.com/LastChallenge/Linux_System_programming.git
+git remote
+git status
+git add --all
+git status
+git init
+git remote -b
+git remote -v
+git remote rm origin
+git add --all
+git status
+git remote
+git init
+ls
+cd..
+cd ..
+ls
+cd work
+ls
+git remote -v
+cd ..
+cd tmp
+git remote rm TestRemote
+cd ..
+exit
+vs
+
+ls
+vi vfork.c
+exit
+ls
+eixt
+exit
+vi vfork.c
+exit
+eixt
+exit
+vi vfork.c
+exit
+LS
+ls
+cd work
+ls
+mkdir 2017_0418
+cd 2017_0418
+clear
+ls
+vi Shelling_out.c
+ls
+vi Shelling_out.c
+ls
+vi Race_con.c
+gcc -o Race_con Race_con.c
+vi Race_con.c\
+gcc -o Race_con Race_con.c
+./Race_con
+vi Race_con.c\
+
+
+ls
+
+
+vi Race_con.c
+vi vfork.c
+
+./vfork
+ls
+rm vfrok
+gcc -o vfork vfork.c
+./vfork
+tmux
+gcc -o vfork vfork.c
+./vfork
+vi vfork.c
+tmux
+ls
+vi Double_fork.c
+gcc -o Double_fork Double_fork.c
+vi Double_fork.c
+vi Double_fork.c\
+gcc -o Double_fork Double_fork.c
+./Double_fork
+vi Double_fork.c\
+vi Double_fork.c
+gcc -o Double_fork Double_fork.c
+./Double_fork
+vi Double_fork.c
+vi Double_fork.c\
+gcc -o Double_fork Double_fork.c
+./Double_fork
+vi Double_fork.c
+gcc -o Double_fork Double_fork.c
+vi Double_fork.c
+gcc -o Double_fork Double_fork.c
+./Double_fork
+vi Double_fork.c
+gcc -o Double_fork Double_fork.c
+./Double_fork
+vi Double_fork.c
+./Double_fork
+gcc -o Double_fork Double_fork.c
+./Double_fork
+vi Double_fork.c
+./Double_fork
+vi Double_fork.c
+
+./Double_fork
+vi Double_fork.c
+gcc -o Double_fork Double_fork.c
+./Double_fork
+vi Double_fork.c
+ls
+vi Pipes.c
+gcc -o Pipe Pipes.c
+./Pipe
+vi Pipes.c
+ps | less
+ls
+mkdir mid_git_repo
+ls
+cd mid_git_repo
+cd
+cd mid_git_repo
+ls
+clear
+git init midTest
+ls
+git commit
+ls
+git config
+git origin master
+git branch
+git remote
+git config user.email
+git config user.name
+git --version
+git config --list
+git remote
+git rm origin
+git remote rm origin
+git remote
+clear
+ls
+w
+ls
+cd midTest
+tmux
+cd 
+cd work
+ls
+cd ..
+ls
+cd mid_git_repo/midTest
+ls
+cd 2019_0321/
+ls
+cd ..
+cd 
+ls
+cd work
+ls
+cd ..
+cd mid_git_repo
+cd midTest/
+ls
+cd ..
+ls
+cd mid_git_repo/
+ls
+git statusz
+git status
+ls
+git init
+git status
+git config user.email
+git remote
+ls
+git add midTest
+git commit -m "midTestCommit"
+git commit -m https://github.com/LastChallenge/Mid_Test_repo.git
+git remote
+git remote add origin https://github.com/LastChallenge/Mid_Test_repo.git
+git status
+ls
+git add midTest
+git commit -m "midTestCommit"
+git add midTest
+git status
+git push origin master
+ls
+git config --list
+ls
+cd ..
+ls
+mkdir testRepo
+cd testRepo/
+pull origin master
+git pull origin master
+git remote
+git clone https://github.com/LastChallenge/Mid_Test_repo
+git remote
+ls
+cd Mid_Test_repo/
+ls
+cd midT
+cd midTest/
+ls
+cd 2017_0418/
+ls
+cd
+git remote
+exit
+exit
+ls
+cd 2019_0404/second_class
+ls
+cd ..
+cd first_class
+ls
+cat enviro_example.c
+cat segment_example.c
+clear
+ls
+cat argv_example.c
+cat argv_example2.c
+clear
+ls
+cd ..
+ls
+cd 2019_0411
+ls
+cd ..
+exit
+cp -r /work/2019_0321 .
+cp -r /work/2019_0321 /mid_git_repo/midTest
+cp -r work/2019_0321 .
+cp -r ./work/2019_0321
+cp -r /work/2019_0321 .
+cd 
+cp -r ./work/2019_0321 ./mid_git_repo/midTest
+;s
+cp -r ./work/2019_0404 ./mid_git_repo/midTest
+cp -r ./work/2019_0411 ./mid_git_repo/midTest
+cp -r ./work/2017_0418 ./mid_git_repo/midTest
+ls
+cd work
+git config user.email
+ls
+cd 2019_0404
+ls
+cd second_class
+ls
+vi log
+cat exec_exam.c
+./exec
+clear
+ls
+cat wait_exam.c
+vi wait_exam.c
+ls
+exit
+cd ./wokr/2019_0411
+cd /wokr/2019_0411
+cd wokr/2019_0411
+cd 
+cd wokr/2019_0411
+cd work/2019_0411
+ls
+cd ..
+cd 
+cd
+cd ..
+ls
+cat s1421243
+cd s1421243
+ls
+cd work
+ls
+cd 0321
+ls
+cd ..
+ls
+cd ..
+ls
+s 1521195
+cd s1521195
+ls
+cd work
+ls
+cd lsp
+ls
+cd ..
+ls
+cd 1521170
+cd s1521170
+ls
+cd work
+ls
+cd 0411
+ls
+cd ..
+cd
+w
+who
+who -u
+ls
+cd testRepo
+ls
+tree -d Mid_Test_repo/
+tree -d Mid_Test_repo
+git remote
+ls
+cd Mid_Test_repo/
+ls
+git remote
+cd ..
+cd
+ls
+rmdir testRepo
+rmdir -rf testRepo
+rmdir -f testRepo
+rmdir -Rf testRepo
+rmdir -rf testRepo
+rm -rf testRepo
+ls
+exit
+ls
+cd mid_git_repo/midTest/
+ls
+cd ..
+ls
+cd ..
+cd work
+ls
+cd mid_git_repo
+ls
+cd mid_Test
+cd midTest/
+ls
+cd ..
+ls
+cd ..
+ls
+rm mid_git_repo/.
+rm mid_git_repo
+rmdir mid_git_repo
+rm -rf mid_git_repo/
+ls
+cd ..
+ls
+cd mid_git_repo
+cd midTest/
+ls
+cp -r work/2019_0321 .
+cp -r /work/2019_0321 .
+cp -r ./work/2019_0321 .
+tmux
+who
+w
+exit
+lsx
+ks
+ls
+who
+w
+clear
+ls
+cd work
+ls
+cd 2019_0321
+ls
+cd ..
+cd 2019_0404
+ls
+cd first_class
+ls
+vi argv_example.c
+vi argv_example2.c
+./argv_example2 a a a
+./argv_example2
+cd ..
+cd second_class
+ls
+cd first_class
+cd ..
+cd first_class
+ls
+./enviro
+exit
+ls
+vi str.c
+exit
+ls
+mkdir prac
+cd prac/
+vi test.c
+gcc -o test test.c
+./test
+vi test.c
+vi str.c
+tmux
+ls
+cd prac
+ls
+tmux
+cd
+ls
+cd work/2019_0404
+;s
+ls
+cd first_clas
+cd first_class
+ls
+vi fork2_exam.c
+./fork2_exam
+vi segment_example.c
+ls
+cd
+cd work
+ls
+git --list
+git -list
+git config
+git --list
+git list
+ls
+git user.email
+cd ..
+git --list
+git user.name
+git config --lit
+git config --list
+ps
+ps -al
+kill -9 9803
+cd prac
+ls
+vi double_fork.c
+gcc -o double_fork double_fork.c 
+./double_fork 
+vi double_fork.c
+./double_fork 
+vi test.c
+gcc -o test test.c
+vi test.c
+gcc -o test test.c
+vi test.c
+gcc -o test test.c
+vi test.c
+gcc -o test -g test.c str.c
+vi test.c
+gcc -o test -g test.c str.c
+vi test.c
+gcc -o test -g test.c str.c
+ls
+vi head.h
+ls
+vi test.c
+gcc -o test -g test.c str.c head.h
+./test
+ls
+cd 
+cd work
+ls
+cd 2019_0404
+ls
+cd first_class
+ls
+vi fork_examplc.
+vi fork_example.c

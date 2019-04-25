@@ -8,18 +8,30 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\<int\>
+~Msle0~/)
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-:4
 :q!
 :q
-:1
+:10
+:wqq
 :w
+:vs
+:Wq
+::wq
+:23
+:exit
+:11
+:24
+:WQ
+:W
+:11\
+:4
+:1
 :18
 :3
 :19
@@ -27,9 +39,7 @@ $
 :8
 :16
 :13
-:10
 :2
-:W
 :9
 :o hilight
 :o
@@ -37,12 +47,10 @@ $
 :vs hilight
 :178
 :14
-:11
 :highlight comment term=bold cterm=bold ctermfg=4
 :highlight
 :highlight comment term =reverse cterm=reverse gui=reverse
 :Q
-:Wq
 :vs test1.c
 :vs calc1.c
 :vs calc.h
@@ -56,6 +64,8 @@ $
 :wq\
 
 # Search String History (newest to oldest):
+? )
+? ();
 ? @$
 ? \<int\>
 ? {
@@ -72,61 +82,145 @@ $
 # Registers:
 "0	CHAR	0
 	#include <stdio.h>
-	#include <unistd.h>
 	#include <stdlib.h>
 	
-	int main(void) {
-		pid_t pid;
-		int i;
+	int magic = 42;
+	char crap[1024];
 	
-		for(i = 0; i<5; i++) {
-			if((pid = fork()) < 0) {
-				printf("fork_error \n");
-			} else if(pid == 0) {
-				printf("bye from child %d: %d \n", i, getpid());
-				exit(0);
-			}
-			/* parent does nothing */
-		}
-		sleep(100); /* time window to observe zombie */
-		//100 sec
-		printf("bye from parent \n");
-		exit(0);
+	void func(int arg){
+		printf("stack segment near \t%p\n", &arg);
 	}
+	
+	int main(int argc, char **argv){
+		char *ptr;
+		ptr = malloc(100);
+		func(42);
+		printf("heap segment near \t%p\n", ptr);
+		printf("stack segment near \t%p\n", &ptr); //aaddress of the variable p located in the main() frame
+		printf("bss segment near \t%p\n", crap);
+		//printf("text segment near \t%p\n", &magic);
+		printf("initialized data segment near \t%p\n", &magic);
+	
+		free(ptr);
+		exit(1);
+	}
+	
 ""1	LINE	0
-	<<<<<<< HEAD
+	
 "2	LINE	0
-	=======
+		}
 "3	LINE	0
-		printf("edit branch \n ");
+			}
 "4	LINE	0
-	
+				}
 "5	LINE	0
-	>>>>>>> second
+					n++;
 "6	LINE	0
-			sleep(60);
+		u
+				for(int i =0; i<99; i++) {
 "7	LINE	0
-			err_sys("fork error");
+			if(pid == 0) {
 "8	LINE	0
-	#include "helpers.h"
+			
 "9	LINE	0
-	
+			pid = fork();
 "-	CHAR	0
-	n
+	(
 
 # File marks:
-'0  4  1  ~/work/branch/branch_test.c
-'1  5  0  ~/work/branch/branch_test.c
-'2  1  0  ~/work/test/hello_world.c
-'3  7  0  ~/work/LSP_GIT/hello_world.c
-'4  2  0  ~/work/LSP_GIT/hello_world.txt
-'5  1  0  ~/work/2019_0404/second_class/echoall.c
-'6  26  3  ~/work/2019_0404/second_class/exec_exam.c
-'7  2  18  ~/work/2019_0404/second_class/exec_exam.c
-'8  30  0  ~/work/2019_0404/second_class/exec_exam.c
-'9  1  0  ~/work/2019_0404/second_class/log
+'0  19  2  ~/LastChallenge/mid-term/201720963-sum.c
+'1  21  1  ~/LastChallenge/mid-term/201720963-sender.c
+'2  13  6  ~/LastChallenge/mid-term/201720963-receiver.c
+'3  27  1  ~/LastChallenge/mid-term/201720963-sender.c
+'4  25  22  ~/LastChallenge/mid-term/201720963-sender.c
+'5  30  25  ~/LastChallenge/mid-term/201720963-sender.c
+'6  9  9  ~/LastChallenge/mid-term/201720963-receiver.c
+'7  12  43  ~/LastChallenge/mid-term/201720963-receiver.c
+'8  16  0  ~/LastChallenge/mid-term/201720963-receiver.c
+'9  17  0  ~/LastChallenge/mid-term/201720963-receiver.c
 
 # Jumplist (newest first):
+-'  19  2  ~/LastChallenge/mid-term/201720963-sum.c
+-'  1  0  ~/LastChallenge/mid-term/201720963-sum.c
+-'  21  1  ~/LastChallenge/mid-term/201720963-sender.c
+-'  27  1  ~/LastChallenge/mid-term/201720963-sender.c
+-'  13  6  ~/LastChallenge/mid-term/201720963-receiver.c
+-'  9  9  ~/LastChallenge/mid-term/201720963-receiver.c
+-'  25  22  ~/LastChallenge/mid-term/201720963-sender.c
+-'  30  25  ~/LastChallenge/mid-term/201720963-sender.c
+-'  12  44  ~/LastChallenge/mid-term/201720963-receiver.c
+-'  16  0  ~/LastChallenge/mid-term/201720963-receiver.c
+-'  17  0  ~/LastChallenge/mid-term/201720963-receiver.c
+-'  32  0  ~/LastChallenge/mid-term/201720963-sender.c
+-'  1  0  ~/LastChallenge/mid-term/201720963-receiver.c
+-'  35  1  ~/LastChallenge/mid-term/201720963-sender.c
+-'  1  0  ~/LastChallenge/mid-term/201720963-sender.c
+-'  13  5  ~/LastChallenge/mid-term/201720963-fork.c
+-'  12  1  ~/LastChallenge/mid-term/201720963-fork.c
+-'  14  5  ~/LastChallenge/mid-term/201720963-fork.c
+-'  21  0  ~/LastChallenge/mid-term/201720963-fork.c
+-'  1  0  ~/LastChallenge/mid-term/201720963-fork.c
+-'  4  0  ~/LastChallenge/mid-term/exam1.c
+-'  1  0  ~/LastChallenge/mid-term/exam1.c
+-'  1  9  ~/test_push/hello.c
+-'  1  0  ~/work/2019_0404/first_class/fork_example.c
+-'  1  0  ~/work/2019_0404/first_class/fork_examplc.
+-'  1  21  ~/prac/str.c
+-'  10  10  ~/prac/str.c
+-'  10  18  ~/prac/test.c
+-'  4  36  ~/prac/test.c
+-'  5  0  ~/prac/test.c
+-'  2  15  ~/prac/test.c
+-'  1  0  ~/prac/test.c
+-'  13  0  ~/prac/str.c
+-'  31  0  ~/prac/test.c
+-'  30  27  ~/prac/test.c
+-'  34  0  ~/prac/test.c
+-'  9  1  ~/work/2019_0404/first_class/argv_example2.c
+-'  1  0  ~/work/2019_0404/first_class/argv_example2.c
+-'  5  6  ~/work/2019_0404/first_class/argv_example.c
+-'  1  0  ~/work/2019_0404/first_class/argv_example.c
+-'  1  0  ~/work/2019_0404/second_class/wait_exam.c
+-'  1  0  ~/work/2019_0404/second_class/log
+-'  1  0  ~/work/2019_0404/first_class/segment_example.c
+-'  1  0  ~/work/2019_0404/first_class/enviro_example.c
+-'  7  19  ~/work/2019_0404/first_class/getpid_demo.c
+-'  1  0  ~/work/2019_0404/first_class/getpid_demo.c
+-'  1  0  ~/work/2019_0404/first_class/getpid_demo
+-'  24  20  ~/work/2017_0418/Pipes.c
+-'  11  10  ~/work/2017_0418/Pipes.c
+-'  1  0  ~/work/2017_0418/Pipes.c
+-'  13  2  ~/work/2017_0418/Double_fork.c
+-'  23  7  ~/work/2017_0418/Double_fork.c
+-'  24  1  ~/work/2017_0418/Double_fork.c
+-'  17  11  ~/work/2017_0418/Double_fork.c
+-'  26  37  ~/work/2017_0418/Double_fork.c
+-'  20  32  ~/work/2017_0418/Double_fork.c
+-'  25  9  ~/work/2017_0418/Double_fork.c
+-'  18  21  ~/work/2017_0418/Double_fork.c
+-'  28  1  ~/work/2017_0418/Double_fork.c
+-'  27  2  ~/work/2017_0418/Double_fork.c
+-'  29  9  ~/work/2017_0418/Double_fork.c
+-'  16  21  ~/work/2017_0418/Double_fork.c
+-'  1  0  ~/work/2017_0418/Double_fork.c
+-'  21  36  ~/work/2017_0418/vfork.c
+-'  24  0  ~/work/2017_0418/vfork.c
+-'  1  0  ~/work/2017_0418/vfork.c
+-'  10  17  ~/work/2017_0418/Race_con.c
+-'  9  34  ~/work/2017_0418/Race_con.c
+-'  1  0  ~/work/2017_0418/Race_con.cvi
+-'  23  4  ~/work/2017_0418/Race_con.c
+-'  6  9  ~/work/2017_0418/Race_con.c
+-'  22  20  ~/work/2017_0418/Race_con.c
+-'  1  0  ~/work/2017_0418/Race_con.c
+-'  19  13  ~/work/2017_0418/Shelling_out.c
+-'  26  18  ~/work/2017_0418/Shelling_out.c
+-'  28  9  ~/work/2017_0418/Shelling_out.c
+-'  34  0  ~/work/2017_0418/Shelling_out.c
+-'  1  0  ~/work/2017_0418/Shelling_out.c
+-'  1  0  ~/tmp/hello_world.c
+-'  1  0  ~/examples.desktop
+-'  1  0  ~/example.desktop
 -'  4  1  ~/work/branch/branch_test.c
 -'  5  0  ~/work/branch/branch_test.c
 -'  1  0  ~/work/branch/branch_test.c
@@ -140,92 +234,397 @@ $
 -'  2  18  ~/work/2019_0404/second_class/exec_exam.c
 -'  30  0  ~/work/2019_0404/second_class/exec_exam.c
 -'  3  0  ~/work/2019_0404/second_class/exec_exam.c
--'  1  0  ~/work/2019_0404/second_class/log
 -'  22  8  ~/work/2019_0404/second_class/flushing.c
 -'  18  6  ~/work/2019_0404/second_class/flushing.c
 -'  24  1  ~/work/2019_0404/second_class/flushing.c
 -'  23  53  ~/work/2019_0404/second_class/flushing.c
 -'  26  0  ~/work/2019_0404/second_class/flushing.c
--'  1  0  ~/work/2019_0404/second_class/flushing.c
--'  1  0  ~/work/2019_0404/second_class/zombie_exam.c
--'  1  32  ~/.tmux.conf
--'  1  0  ~/work/2019_0404/zombie_exam.c
--'  18  8  ~/work/2019_0404/zombie_exam.c
--'  4  0  ~/work/2019_0404/zombie_exam.c
--'  22  0  ~/work/2019_0404/zombie_exam.c
--'  16  3  ~/work/2019_0404/wait_exam.c
--'  13  1  ~/work/2019_0404/wait_exam2.c
--'  1  0  ~/work/2019_0404/wait_exam2.c
--'  35  0  ~/work/2019_0404/wait_exam.c
--'  14  19  ~/work/2019_0404/wait_exam.c
--'  25  30  ~/work/2019_0404/wait_exam.c
--'  8  9  ~/work/2019_0404/wait_exam.c
--'  24  31  ~/work/2019_0404/wait_exam.c
--'  7  10  ~/work/2019_0404/wait_exam.c
--'  9  0  ~/work/2019_0404/wait_exam.c
--'  32  3  ~/work/2019_0404/wait_exam.c
--'  27  23  ~/work/2019_0404/wait_exam.c
--'  36  4  ~/work/2019_0404/wait_exam.c
--'  1  0  ~/work/2019_0404/wait_exam.c
--'  15  33  ~/work/2019_0404/fork2_exam.c
--'  8  36  ~/work/2019_0404/fork2_exam.c
--'  1  0  ~/work/2019_0404/fork2_exam.c
--'  5  21  ~/work/2019_0404/fork_example.c
--'  20  37  ~/work/2019_0404/fork_example.c
--'  12  24  ~/work/2019_0404/fork_example.c
--'  10  41  ~/work/2019_0404/fork_example.c
--'  11  0  ~/work/2019_0404/fork_example.c
--'  3  18  ~/work/2019_0404/fork_example.c
--'  6  2  ~/work/2019_0404/fork_example.c
--'  7  0  ~/work/2019_0404/fork_example.c
--'  1  0  ~/work/2019_0404/fork_example.c
--'  11  0  ~/work/2019_0404/argv_example.c
--'  1  36  ~/.vimrc
--'  7  79  ~/work
--'  1  0  /home/.vimrc
--'  18  2  ~/work/2019_0404/segment_example.c
--'  17  1  ~/work/2019_0404/segment_example.c
--'  13  16  ~/work/2019_0404/segment_example.c
--'  11  0  ~/work/2019_0404/segment_example.c
--'  24  0  ~/work/2019_0404/segment_example.c
--'  1  0  ~/work/2019_0404/segment_example.c
--'  25  1  ~/work/2019_0404/segment_example.c
--'  10  0  ~/work/2019_0404/argv_example.c
--'  5  6  ~/work/2019_0404/argv_example.c
--'  6  0  ~/work/2019_0404/argv_example.c
--'  1  0  ~/work/2019_0404/enviro_example.c
--'  14  0  ~/work/2019_0404/enviro_example.c
--'  2  0  ~/work/2019_0404/enviro_example.c
--'  8  0  ~/work/2019_0404/argv_example.c
--'  11  0  ~/work/2019_0404/argv_example2.c
--'  1  0  ~/work/2019_0404/argv_example2.c
--'  1  0  ~/work/2019_0404/argv_example.c
--'  9  0  ~/work/getpid_demo.c
--'  1  0  ~/work/getpid_demo.c
--'  1  0  /getpid.c
--'  8  0  /getpid.c
--'  24  0  ~/work/2019_0321/calc1.c
--'  1  0  ~/work/2019_0321/calc1.c
--'  1  0  ~/examples.desktop
--'  65  0  ~/examples.desktop
--'  2  0  ~/work/2019_0321/func.c
--'  3  0  ~/work/2019_0321/func.c
--'  19  27  ~/work/2019_0321/calc1.c
--'  1  0  ~/work/2019_0321/calc.c
--'  5  37  ~/work/2019_0321/calc.h
--'  11  0  ~/work/2019_0321/calc1.c
--'  21  2  ~/work/2019_0321/calc1.c
--'  2  17  ~/work/2019_0321/calc1.c
--'  40  0  ~/work/2019_0321/func.c
--'  3  0  ~/work/2019_0321/calc1.c
--'  3  0  ~/work/2019_0321/test1.c
--'  4  0  ~/work/2019_0321/test1.c
--'  23  9  ~/work/2019_0321/func.c
--'  4  0  ~/work/2019_0321/calc1.c
--'  6  0  ~/work/2019_0321/calc.h
--'  1  0  ~/work/2019_0321/calc.h
 
 # History of marks within files (newest to oldest):
+
+> ~/LastChallenge/mid-term/201720963-sum.c
+	"	19	2
+	.	10	0
+	+	11	25
+	+	27	0
+	+	11	25
+	+	26	0
+	+	25	0
+	+	5	5
+	+	24	0
+	+	20	0
+	+	22	31
+	+	23	9
+	+	16	39
+	+	16	7
+	+	16	82
+	+	16	24
+	+	15	0
+	+	16	47
+	+	5	9
+	+	15	13
+	+	16	78
+	+	19	0
+	+	8	11
+	+	11	0
+	+	10	0
+	+	10	15
+	+	10	2
+	+	10	5
+	+	10	6
+	+	10	5
+	+	15	18
+	+	19	0
+	+	10	11
+	+	10	0
+	+	10	1
+	+	10	0
+
+> ~/LastChallenge/mid-term/201720963-sender.c
+	"	21	1
+	.	28	0
+	+	22	21
+	+	35	2
+	+	5	0
+	+	22	21
+	+	34	0
+	+	22	8
+	+	33	0
+	+	10	14
+	+	28	0
+	+	22	18
+	+	31	2
+	+	32	0
+	+	29	14
+	+	30	31
+	+	30	46
+	+	27	0
+	+	23	14
+	+	28	0
+	+	26	29
+	+	28	0
+
+> ~/LastChallenge/mid-term/201720963-receiver.c
+	"	13	6
+	^	13	7
+	.	13	6
+	+	17	0
+	+	12	22
+	+	16	0
+	+	14	15
+	+	12	37
+	+	4	19
+	+	12	0
+	+	12	59
+	+	16	0
+	+	15	30
+	+	16	0
+	+	17	0
+	+	7	48
+	+	9	9
+	+	14	3
+	+	13	6
+
+> ~/mid_test/Mid_Test_repo/midTest/2017_0418/Pipes.c
+	"	23	0
+
+> ~/LastChallenge/mid-term/201720963-fork.c
+	"	13	5
+	^	13	6
+	.	13	5
+	+	23	0
+	+	8	37
+	+	22	0
+	+	20	1
+	+	8	34
+	+	12	37
+	+	8	0
+	+	17	0
+	+	7	36
+	+	12	5
+	+	13	5
+	+	12	5
+	+	13	5
+
+> ~/LastChallenge/mid-term/exam1.c
+	"	4	0
+	^	5	0
+	.	6	0
+	+	6	0
+
+> ~/test_push/hello.c
+	"	1	9
+	^	1	10
+	.	1	9
+	+	1	9
+
+> ~/work/2019_0404/first_class/fork_example.c
+	"	1	0
+
+> ~/work/2017_0418/Pipes.c
+	"	18	1
+	^	24	21
+	.	24	20
+	+	20	25
+	+	17	10
+	+	21	2
+	+	30	0
+	+	13	1
+	+	13	0
+	+	21	33
+	+	24	20
+
+> ~/work/2017_0418/Double_fork.c
+	"	13	2
+	.	13	0
+	+	28	0
+	+	22	3
+	+	27	15
+	+	18	3
+	+	15	5
+	+	9	16
+	+	18	3
+	+	22	3
+	+	25	9
+	+	27	15
+	+	28	2
+	+	30	0
+	+	6	11
+	+	8	3
+	+	8	3
+	+	26	43
+	+	27	2
+	+	8	39
+	+	19	22
+	+	27	6
+	+	27	10
+	+	28	2
+	+	29	9
+	+	27	0
+	+	13	41
+	+	8	0
+	+	25	19
+	+	16	12
+	+	18	20
+	+	25	10
+	+	13	41
+	+	14	0
+	+	14	3
+	+	25	9
+	+	25	0
+	+	24	2
+	+	19	42
+	+	20	32
+	+	27	0
+	+	26	37
+	+	14	0
+	+	14	9
+	+	24	0
+	+	14	0
+	+	23	7
+	+	13	0
+
+> ~/prac/double_fork.c
+	"	20	0
+	^	25	1
+	.	25	0
+	+	9	25
+	+	26	0
+	+	25	0
+
+> ~/work/2017_0418/vfork.c
+	"	19	10
+	^	24	0
+	.	22	20
+	+	25	0
+	+	8	31
+	+	23	1
+	+	25	0
+	+	19	2
+	+	22	20
+
+> ~/work/2017_0418/race_con2.c
+	"	2	19
+	^	2	20
+	.	2	19
+	+	2	19
+
+> ~/work/2017_0418/Race_con.c
+	"	8	20
+	^	7	7
+	.	7	6
+	+	16	11
+	+	27	0
+	+	20	22
+	+	26	0
+	+	25	19
+	+	23	0
+	+	3	18
+	+	6	9
+	+	21	4
+	+	23	4
+	+	7	6
+
+> ~/work/2017_0418/Shelling_out.c
+	"	13	0
+	^	13	1
+	.	13	0
+	+	1	65
+	+	1	18
+	+	1	30
+	+	1	37
+	+	1	65
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	9
+	+	1	19
+	+	1	20
+	+	1	26
+	+	1	26
+	+	1	20
+	+	1	9
+	+	1	27
+	+	1	0
+	+	1	20
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	2
+	+	1	12
+	+	1	12
+	+	1	37
+	+	1	9
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	19
+	+	1	30
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	0
+	+	1	25
+	+	1	20
+	+	1	3
+	+	1	19
+	+	1	18
+	+	1	0
+	+	1	14
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	18
+	+	13	0
+
+> ~/work/2019_0404/second_class/wait_exam.c
+	"	35	0
+
+> ~/work/2019_0404/second_class/flushing.c
+	"	12	46
+	^	16	37
+	.	16	36
+	+	27	0
+	+	24	0
+	+	11	41
+	+	16	36
+
+> ~/work/2019_0404/second_class/zombi_exam.c
+	"	1	0
+
+> ~/work/2019_0404/second_class/zombie_exam.c
+	"	13	13
+
+> ~/work/2019_0404/first_class/fork2_exam.c
+	"	15	5
+
+> ~/work/2019_0404/first_class/fork_examplc.
+	"	1	0
+
+> ~/prac/str.c
+	"	1	21
+	^	1	22
+	.	1	21
+	+	13	0
+	+	10	8
+	+	1	21
+
+> ~/prac/test.c
+	"	2	0
+	^	2	0
+	.	1	17
+	+	11	36
+	+	17	1
+	+	17	0
+	+	17	1
+	+	17	1
+	+	17	0
+	+	1	15
+	+	3	0
+	+	1	36
+	+	1	0
+	+	1	0
+	+	1	17
+	+	1	17
+
+> ~/prac/head.h
+	"	4	0
+	^	4	0
+	.	3	37
+	+	3	37
+
+> ~/work/2019_0404/first_class/argv_example2.c
+	"	9	1
+
+> ~/work/2019_0404/first_class/argv_example.c
+	"	5	6
+
+> ~/work/2019_0404/second_class/log
+	"	1	0
+
+> ~/work/2019_0404/first_class/segment_example.c
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/mid_git_repo/midTest/2019_0404/segment_exmaple.c
+	"	4	7
+	^	4	8
+	.	4	8
+	+	5	0
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	18
+	+	4	8
+
+> ~/work/2019_0404/first_class/enviro_example.c
+	"	1	0
+
+> ~/work/2019_0404/first_class/getpid_demo.c
+	"	7	19
+
+> ~/work/2019_0404/first_class/getpid_demo
+	"	1	0
+
+> ~/work/2017_0418/Race_con.cvi
+	"	1	0
+
+> ~/tmp/hello_world.c
+	"	1	0
+
+> ~/examples.desktop
+	"	1	0
+	^	62	15
+
+> ~/example.desktop
+	"	1	0
 
 > ~/work/branch/branch_test.c
 	"	4	1
@@ -267,21 +666,6 @@ $
 	.	3	0
 	+	30	0
 	+	3	0
-
-> ~/work/2019_0404/second_class/log
-	"	1	0
-
-> ~/work/2019_0404/second_class/flushing.c
-	"	22	8
-	^	16	37
-	.	16	36
-	+	27	0
-	+	24	0
-	+	11	41
-	+	16	36
-
-> ~/work/2019_0404/second_class/zombie_exam.c
-	"	1	0
 
 > ~/.tmux.conf
 	"	1	32
@@ -470,10 +854,6 @@ $
 	+	3	0
 	+	2	0
 	+	21	0
-
-> ~/examples.desktop
-	"	1	0
-	^	62	15
 
 > ~/work/2019_0321/func.c
 	"	2	0
