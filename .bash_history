@@ -1,91 +1,3 @@
-ls
-gcc
-ifconfig
-iwconfig
-lsusb
-clear
-sudo user
-sudo -su
-sudo -u
-sudo -s
-w
-password vbn7520147
-passwd vbn7520147
-passwd s1720963
-mas
-man
-2
-man
-1
-man
-ls
-man
-clear
-dmaodnwq']
-
-;
-ls
-vi test.c
-ls
-rm test.c
-ls
-cd examples.desktop
-vi examples.desktop
-w | grep ^s | wc
-w | grep ^s 
-clear
-w | grep ^s | wc
-sudo who
-w
-who
-ssh s1720963@localhost
-ls
-ls -a
-mkdir tmp
-mkdir work
-ls
-psd
-pwd
-cd work
-mkdir 2019_0321
-ls
-cd 2019_0321
-pwd
-ls
-cd ..
-ls
-cd ..
-ls
-cd 2019_0321
-cd work
-cd 2019_0321
-vi test.c
-gcc -o test test.c
-./test
-vi test.c
-cd ..
-passwd s1720963
-ls
-cd work
-ls
-cd 2019_0321
-ls
-vi testc.
-ls
-rm ls
-ls
-rm ;
-vi test.c
-gcc -o test test.c
-vi test.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
 vi test1.c
 gcc -o test1 test1.c
 vi test1.c
@@ -1614,3 +1526,475 @@ cd first_class
 ls
 vi fork_examplc.
 vi fork_example.c
+ls
+cd mid_git_repo
+prac
+cd prac
+ls
+git config --list
+git remote
+git init mid_git
+cd mid_git/
+ls
+git remote
+git remote add https://github.com/LastChallenge/Mid_Test_repo
+git remote add https://github.com/LastChallenge/Mid_Test_repo.git
+git remote add origin https://github.com/LastChallenge/Mid_Test_repo.git
+git remote
+git clone https://github.com/LastChallenge/Mid_Test_repo.git
+ls
+cd Mid_Test_repo/
+ls
+cd midTest/
+ls
+ls
+cd ..
+ls
+cd ..
+cd
+ls
+cd
+git init test_push
+ls
+git test_push/
+cd test_push/
+vi hello.c
+git remote
+git remote add origin https://github.com/LastChallenge/Mid_Test_repo.git
+ls
+git add hello.c
+git commit -m "push"
+git push
+git push origin master
+ls
+cd ..
+ls
+clear
+git config --list
+git init mid_test
+cd mid_test
+ls
+git remote
+git remote add https://github.com/LastChallenge/Mid_Test_repo.git
+git remote add origin https://github.com/LastChallenge/Mid_Test_repo.git
+ls
+git clone https://github.com/LastChallenge/Mid_Test_repo.git
+ls
+mkdir mid_exam_repo
+cd mid_exam_repo/
+tmux
+cd ..
+pwd
+ls
+cd Mid_Test_repo/
+ls
+cd midTest/
+ls
+cd 2019_04
+cd 2019_0404/
+ls
+cd first
+cd first_class/
+ls
+cat fork_example.c
+cd ..
+ls
+cd ..
+ls
+cd 2017_0418
+ls
+cat Pipes.c
+vi Pipes.c
+cat Pipes.c
+ls
+cat Race_con.c
+cat Pipes.c
+ls
+cat vfork.c
+cd ..
+ls
+cd 2019_0404
+ls
+cd second_class/
+ls
+cat zombie_exam.c
+cd ..
+ls
+cd first_class/
+ls
+cd ..
+cd second_class/
+ls
+cd ..
+ls
+cd 2017_0418/
+ls
+cat Double_fork.c
+cd..
+cd ..
+ls
+rmdir mid_exam_repo/
+cd ..
+;s
+ls
+mkdir LastChallenge
+cd LastChallenge/
+mkdir mid-term
+cd mid-term/
+vi exam1.c
+ls
+vi 201720963-fork.c
+gcc -o fork 201720963-fork.c 
+vi 201720963-fork.c
+
+vi 201720963-fork.c
+gcc -o fork 201720963-fork.c 
+ls
+./fork
+vi 201720963-sender.c
+ls
+vi 201720963-receiver.c
+vi 201720963-sender.c
+vi 201720963-receiver.c
+vi 201720963-sender.c
+vi 201720963-receiver.c
+vi 201720963-sender.c
+vi 201720963-receiver.c
+vi 201720963-sender.c
+vi 201720963-receiver.c
+vi 201720963-sender.c
+vi 201720963-receiver.c
+vi 201720963-sender.c
+gcc -o send_test 201720963-sender.c 201720963-receiver.c 
+vi 201720963-sender.c
+vi 201720963-receiver.c
+vi 201720963-sender.c
+ls
+vi 201720963-sum.c
+ls
+cd ..
+ls
+git remote
+git remote add https://github.com/LastChallenge/mid_Test https://github.com/LastChallenge/mid_test.git.git
+git remote add origin https://github.com/LastChallenge/mid_Test https://github.com/LastChallenge/mid_test.git.git
+git remote add origin https://github.com/LastChallenge/mid_test.git
+ls
+git remote
+git add --all
+git commit -m "mid-test"
+git push origin master
+exit
+exit
+ls
+mkdir 02_05_2019
+cd 02_05_2019/
+ls
+man sigemprtset
+man sigemptyset
+man fopen
+man FILE
+vi signal-check.c
+gcc -o sig_check signal-check.c
+./sig_check 
+man SIGSYS
+
+man sigsys
+ls
+vi signal-check.c
+man rm
+man mv
+w
+clear
+vi signal-check.c 
+vi signal-remove.c
+ls
+vi signal-remove.c
+cp signal-check.c signal-remove.c 
+vi signal-remove.c
+man sigfillset
+vi signal-remove.c
+gcc -o sig-remove signal-remove.c 
+./sig-remove 
+vi signal-remove.c
+ls
+vi igset_t
+ls
+rm igset_t
+ls
+rm igset_t q
+exit
+cd 02_05_2019/
+vi signal-check.c 
+man signal
+vi sleep.c
+gcc -o sleep sleep.c
+./sleep
+
+vi sleep.c
+vi signal.c
+gcc -o signal signal.c
+vi signal.c
+gcc -o signal signal.c
+vi signal.c
+gcc -o signal signal.c
+vi signal.c
+gcc -o signal signal.c
+./signal
+vi signal.c
+ls
+vi signal.c
+ls -a
+rm .signal.c.swp
+vi signal
+vi signal.c
+./signal
+man sigaction
+ls
+vi sigaction1.c
+
+./sigaction1 
+man sigaction
+vi sigaction1.c
+man sigemptyset
+ls
+vi signal-block.c
+gcc -o sig-block signal-block.c 
+vi signal-block.c
+gcc -o sig-block signal-block.c 
+./sig-block
+ps
+kill -9 sig-block
+kill -9 4342
+ps
+man kill
+man 2 kill
+./sig-block
+vi signal-send2.c
+vi signal-send.c
+ps
+ls
+gcc -o signal-send signal-send.c
+vi signal-send.c
+gcc -o signal-send signal-send.c
+./signal-send
+./signal-send 9
+ps
+gcc -o signal-send2 signal-send2.c
+vi signal-send2.c
+gcc -o signal-send2 signal-send2.c
+vi signal-send2.c
+gcc -o signal-send2 signal-send2.c
+./signal-send2
+ps
+./signal-send2 9 sig-block
+ps
+vi signal-send2.c
+ls
+vi signal-send2.c
+man sigaction
+vi signal-alarm.c
+gcc -o signal-alarm signal-alarm.c 
+vi signal-alarm.c
+gcc -o signal-alarm signal-alarm.c 
+
+gcc -o signal-alarm signal-alarm.c 
+./signal-alarm 
+vi signal-alarm.c
+ls
+vi signal-alarm.c
+exit
+gcc -o signal-send signal-send.c
+ps
+eixt
+exit
+ls
+kill -l
+kill -l -a
+ls
+tmux
+exit
+ps
+ps -a
+exit
+cd ..
+ls
+cd 02_05_2019/
+ls
+vi signal-remove.c
+vi signal-check.c 
+vi signal-alarm.c
+ps
+cd ..
+09_05_2019/
+ps
+02_05_2019/
+ls
+cd 02_05_2019/
+ls
+./signal-send2
+cd ..
+cd 09_05_2019/
+ps
+ps -a
+cd ..
+02_05_2019/
+cd 02_05_2019/
+ls
+./signal-send2 1 16897
+./signal-send2 1 16782
+./signal-send2 1 16751
+ps -a
+./signal-send2 10 17065
+./signal-send2 12 17065
+exit
+ls
+git init
+;s
+ls
+git remote
+git remote -a
+git -a remote
+git remote -v
+men sigpending
+man sigpending
+ls
+mkdir 09_05_2019
+cd 09_05_2019/
+ls
+cd 02_05
+cd ..
+cd 02_05_2019/
+ls
+./signal_send2
+vi signal-send2.c
+./signal-send2
+vi signal-send2.c
+man sigpending
+ls
+cd ..
+cd 09_05_2019/
+vi signal-suspend1.c
+vi signal-suspend2.c
+tmux
+cd 02_05_2019/
+ls
+./signal-send2 10 17512
+ps -a
+./signal-send2 10 17601
+exit
+ls
+tmux
+ls
+./echo-server
+vi server1.c 
+man listen
+cp client1.c calc-client1.c
+vi calc-client1.c 
+cp server1.c calc-server1.c
+ls
+vi calc-server1.c
+man recv
+vi calc-server1.c
+cd ..
+ls
+s 1521197
+cd s1521197
+ls
+cd 0516
+ls
+cp client.c //home/s1720963/16_05_2019/
+cp server.c //home/s1720963/16_05_2019/
+ls
+cd ..
+s1720963
+cd s1720963
+ls
+cd 16_05_2019/
+ls
+mkdir calc
+mv client.c calc
+ls
+mv calc server.c
+mv server.c calc
+cd calc
+ls
+vi client.c
+vi server.c
+exit
+ls
+vi server1.c 
+vi client1.c
+ls
+vi client1.h
+vi client1.c
+ls
+gcc -o echo-server server1.c
+vi server1.c 
+gcc -o echo-server server1.c
+ls
+gcc -o echo-client client1.c
+vi client1.c
+vi client1.h
+gcc -o echo-client client1.c
+vi client1.c
+gcc -o echo-client client1.c
+./echo-client
+vi client1.c
+vi calc-client1.c
+man send
+vi calc-client1.c
+vi calc-se
+rm calc-se
+vi calc-server1.c 
+vi clac-client1.c
+ls
+vi calc-client1.c
+gcc -o calc-client1 calc-client1.c 
+vi calc-client1.c
+man fgets
+vi calc-client1.c
+gcc -o calc-client1 calc-client1.c 
+vi calc-client1.c
+gcc -o calc-client1 calc-client1.c 
+vi calc-client1.c
+cd ..
+cd 
+cd ..
+ls
+cd s1521197
+;s
+ls
+cd 0516
+;s
+ls
+vi client.c
+cd ..
+ls
+cd home
+ls
+cd s1720963
+;s
+ls
+cd  
+cd ..
+cd s1720963
+ls
+cd tmp
+cd 
+cd
+cd ..
+cd s1720963
+exit
+ls
+git status
+git remote
+git remote -a
+git -a remote
+git --man-path remote
+ls
+mkdir 16_05_2019
+cd 16_05_2019/\
+cd 16_05_2019/
+ls
+vi server1.c
+tmux

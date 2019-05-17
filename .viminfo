@@ -8,38 +8,40 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/)
+~Msle0~/));
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
+:w
 :q!
+:WQ
+:ㅈㅂ
+:28
+:3
+:Wq
+:2
 :q
 :10
 :wqq
-:w
 :vs
-:Wq
 ::wq
 :23
 :exit
 :11
 :24
-:WQ
 :W
 :11\
 :4
 :1
 :18
-:3
 :19
 :15
 :8
 :16
 :13
-:2
 :9
 :o hilight
 :o
@@ -64,6 +66,9 @@ $
 :wq\
 
 # Search String History (newest to oldest):
+?//
+? ));
+? \<i\>
 ? )
 ? ();
 ? @$
@@ -80,66 +85,110 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	#include <stdio.h>
-	#include <stdlib.h>
-	
-	int magic = 42;
-	char crap[1024];
-	
-	void func(int arg){
-		printf("stack segment near \t%p\n", &arg);
-	}
-	
-	int main(int argc, char **argv){
-		char *ptr;
-		ptr = malloc(100);
-		func(42);
-		printf("heap segment near \t%p\n", ptr);
-		printf("stack segment near \t%p\n", &ptr); //aaddress of the variable p located in the main() frame
-		printf("bss segment near \t%p\n", crap);
-		//printf("text segment near \t%p\n", &magic);
-		printf("initialized data segment near \t%p\n", &magic);
-	
-		free(ptr);
-		exit(1);
-	}
-	
-""1	LINE	0
-	
+"0	LINE	0
+					if(send(s2, str, n, 0) < 0) { //client에게 받은 문자열을 그대로 돌려줌
+"1	LINE	0
+		if(bind(s, 
 "2	LINE	0
-		}
+	
 "3	LINE	0
-			}
+		
+		printf("Connected \n");
 "4	LINE	0
-				}
+		}
 "5	LINE	0
-					n++;
+			printf("받음 \n");
 "6	LINE	0
-		u
-				for(int i =0; i<99; i++) {
+		if(0 == signo) {
 "7	LINE	0
-			if(pid == 0) {
+		}
 "8	LINE	0
-			
+			printf("받음 \n");
 "9	LINE	0
-			pid = fork();
-"-	CHAR	0
-	(
+		if(0 == signo) {
+""-	CHAR	0
+	,
 
 # File marks:
-'0  19  2  ~/LastChallenge/mid-term/201720963-sum.c
-'1  21  1  ~/LastChallenge/mid-term/201720963-sender.c
-'2  13  6  ~/LastChallenge/mid-term/201720963-receiver.c
-'3  27  1  ~/LastChallenge/mid-term/201720963-sender.c
-'4  25  22  ~/LastChallenge/mid-term/201720963-sender.c
-'5  30  25  ~/LastChallenge/mid-term/201720963-sender.c
-'6  9  9  ~/LastChallenge/mid-term/201720963-receiver.c
-'7  12  43  ~/LastChallenge/mid-term/201720963-receiver.c
-'8  16  0  ~/LastChallenge/mid-term/201720963-receiver.c
-'9  17  0  ~/LastChallenge/mid-term/201720963-receiver.c
+'0  10  30  ~/16_05_2019/calc/server.c
+'1  52  5  ~/16_05_2019/calc/client.c
+'2  65  30  ~/16_05_2019/calc-server1.c
+'3  62  0  ~/16_05_2019/calc-server1.c
+'4  34  19  ~/16_05_2019/calc-server1.c
+'5  63  0  ~/16_05_2019/calc-server1.c
+'6  1  0  ~/16_05_2019/calc-client1.c
+'7  34  80  ~/16_05_2019/server1.c
+'8  28  45  ~/16_05_2019/client1.c
+'9  6  22  ~/16_05_2019/client1.h
 
 # Jumplist (newest first):
+-'  10  30  ~/16_05_2019/calc/server.c
+-'  1  0  ~/16_05_2019/calc/server.c
+-'  52  5  ~/16_05_2019/calc/client.c
+-'  38  1  ~/16_05_2019/calc/client.c
+-'  1  0  ~/16_05_2019/calc/client.c
+-'  65  30  ~/16_05_2019/calc-server1.c
+-'  64  17  ~/16_05_2019/calc-server1.c
+-'  62  0  ~/16_05_2019/calc-server1.c
+-'  34  19  ~/16_05_2019/calc-server1.c
+-'  17  24  ~/16_05_2019/calc-server1.c
+-'  38  7  ~/16_05_2019/calc-server1.c
+-'  32  1  ~/16_05_2019/calc-server1.c
+-'  15  17  ~/16_05_2019/calc-server1.c
+-'  63  0  ~/16_05_2019/calc-server1.c
+-'  1  0  ~/16_05_2019/calc-server1.c
+-'  1  0  ~/16_05_2019/calc-client1.c
+-'  34  80  ~/16_05_2019/server1.c
+-'  66  0  ~/16_05_2019/server1.c
+-'  28  45  ~/16_05_2019/client1.c
+-'  1  19  ~/16_05_2019/client1.c
+-'  6  22  ~/16_05_2019/client1.h
+-'  10  0  ~/16_05_2019/client1.h
+-'  46  0  ~/16_05_2019/client1.c
+-'  49  0  ~/16_05_2019/server1.c
+-'  24  27  ~/16_05_2019/server1.c
+-'  1  0  ~/16_05_2019/client1.h
+-'  1  0  ~/16_05_2019/server1.c
+-'  14  19  ~/use_gdb/gdb-test.c
+-'  7  30  ~/use_gdb/gdb-test.c
+-'  3  18  ~/use_gdb/gdb-test.c
+-'  13  1  ~/use_gdb/gdb-test.c
+-'  11  5  ~/use_gdb/gdb-test.c
+-'  5  7  ~/use_gdb/gdb-test.c
+-'  15  16  ~/use_gdb/gdb-test.c
+-'  1  0  ~/use_gdb/gdb-test
+-'  18  0  ~/use_gdb/gdb-test.c
+-'  1  0  ~/use_gdb/gdb-test.c
+-'  2  18  ~/use_gdb/overflow_error.c
+-'  7  0  ~/use_gdb/overflow_error.c
+-'  1  0  ~/use_gdb/overflow_error.c
+-'  7  20  ~/09_05_2019/signal-suspend2.c
+-'  8  0  ~/09_05_2019/signal-suspend2.c
+-'  5  5  ~/09_05_2019/signal-suspend2.c
+-'  6  0  ~/09_05_2019/signal-suspend2.c
+-'  16  0  ~/09_05_2019/signal-suspend2.c
+-'  10  0  ~/02_05_2019/signal-alarm.c
+-'  15  10  ~/02_05_2019/signal-alarm.c
+-'  26  0  ~/02_05_2019/signal-check.c
+-'  1  0  ~/02_05_2019/signal-check.c
+-'  27  0  ~/02_05_2019/signal-remove.c
+-'  2  0  ~/02_05_2019/signal-remove.c
+-'  1  0  ~/09_05_2019/signal-suspend2.c
+-'  16  0  ~/09_05_2019/signal-suspend1.c
+-'  1  0  ~/09_05_2019/signal-suspend1.c
+-'  3  18  ~/02_05_2019/signal-send2.c
+-'  50  0  ~/02_05_2019/[Command Line]
+-'  3  18  ~/02_05_2019/signal.c
+-'  5  14  ~/02_05_2019/signal.c
+-'  9  21  ~/02_05_2019/signal.c
+-'  20  0  ~/02_05_2019/signal.c
+-'  9  9  ~/02_05_2019/sleep.c
+-'  1  0  ~/02_05_2019/signal.c
+-'  1  0  ~/02_05_2019/sleep.c
+-'  1  0  ~/02_05_2019/signal-remove.c
+-'  4  3  ~/02_05_2019/signal-check.c
+-'  10  24  ~/02_05_2019/signal-check.c
+-'  28  0  ~/02_05_2019/signal-check.c
 -'  19  2  ~/LastChallenge/mid-term/201720963-sum.c
 -'  1  0  ~/LastChallenge/mid-term/201720963-sum.c
 -'  21  1  ~/LastChallenge/mid-term/201720963-sender.c
@@ -162,85 +211,416 @@ $
 -'  1  0  ~/LastChallenge/mid-term/201720963-fork.c
 -'  4  0  ~/LastChallenge/mid-term/exam1.c
 -'  1  0  ~/LastChallenge/mid-term/exam1.c
--'  1  9  ~/test_push/hello.c
--'  1  0  ~/work/2019_0404/first_class/fork_example.c
--'  1  0  ~/work/2019_0404/first_class/fork_examplc.
--'  1  21  ~/prac/str.c
--'  10  10  ~/prac/str.c
--'  10  18  ~/prac/test.c
--'  4  36  ~/prac/test.c
--'  5  0  ~/prac/test.c
--'  2  15  ~/prac/test.c
--'  1  0  ~/prac/test.c
--'  13  0  ~/prac/str.c
--'  31  0  ~/prac/test.c
--'  30  27  ~/prac/test.c
--'  34  0  ~/prac/test.c
--'  9  1  ~/work/2019_0404/first_class/argv_example2.c
--'  1  0  ~/work/2019_0404/first_class/argv_example2.c
--'  5  6  ~/work/2019_0404/first_class/argv_example.c
--'  1  0  ~/work/2019_0404/first_class/argv_example.c
--'  1  0  ~/work/2019_0404/second_class/wait_exam.c
--'  1  0  ~/work/2019_0404/second_class/log
--'  1  0  ~/work/2019_0404/first_class/segment_example.c
--'  1  0  ~/work/2019_0404/first_class/enviro_example.c
--'  7  19  ~/work/2019_0404/first_class/getpid_demo.c
--'  1  0  ~/work/2019_0404/first_class/getpid_demo.c
--'  1  0  ~/work/2019_0404/first_class/getpid_demo
--'  24  20  ~/work/2017_0418/Pipes.c
--'  11  10  ~/work/2017_0418/Pipes.c
--'  1  0  ~/work/2017_0418/Pipes.c
--'  13  2  ~/work/2017_0418/Double_fork.c
--'  23  7  ~/work/2017_0418/Double_fork.c
--'  24  1  ~/work/2017_0418/Double_fork.c
--'  17  11  ~/work/2017_0418/Double_fork.c
--'  26  37  ~/work/2017_0418/Double_fork.c
--'  20  32  ~/work/2017_0418/Double_fork.c
--'  25  9  ~/work/2017_0418/Double_fork.c
--'  18  21  ~/work/2017_0418/Double_fork.c
--'  28  1  ~/work/2017_0418/Double_fork.c
--'  27  2  ~/work/2017_0418/Double_fork.c
--'  29  9  ~/work/2017_0418/Double_fork.c
--'  16  21  ~/work/2017_0418/Double_fork.c
--'  1  0  ~/work/2017_0418/Double_fork.c
--'  21  36  ~/work/2017_0418/vfork.c
--'  24  0  ~/work/2017_0418/vfork.c
--'  1  0  ~/work/2017_0418/vfork.c
--'  10  17  ~/work/2017_0418/Race_con.c
--'  9  34  ~/work/2017_0418/Race_con.c
--'  1  0  ~/work/2017_0418/Race_con.cvi
--'  23  4  ~/work/2017_0418/Race_con.c
--'  6  9  ~/work/2017_0418/Race_con.c
--'  22  20  ~/work/2017_0418/Race_con.c
--'  1  0  ~/work/2017_0418/Race_con.c
--'  19  13  ~/work/2017_0418/Shelling_out.c
--'  26  18  ~/work/2017_0418/Shelling_out.c
--'  28  9  ~/work/2017_0418/Shelling_out.c
--'  34  0  ~/work/2017_0418/Shelling_out.c
--'  1  0  ~/work/2017_0418/Shelling_out.c
--'  1  0  ~/tmp/hello_world.c
--'  1  0  ~/examples.desktop
--'  1  0  ~/example.desktop
--'  4  1  ~/work/branch/branch_test.c
--'  5  0  ~/work/branch/branch_test.c
--'  1  0  ~/work/branch/branch_test.c
--'  1  0  ~/work/test/hello_world.c
--'  7  0  ~/work/LSP_GIT/hello_world.c
--'  2  0  ~/work/LSP_GIT/hello_world.txt
--'  1  0  ~/work/LSP_GIT/hello_world.txt
--'  1  0  ~/work/LSP_GIT/hello_world.c
--'  1  0  ~/work/2019_0404/second_class/echoall.c
--'  26  3  ~/work/2019_0404/second_class/exec_exam.c
--'  2  18  ~/work/2019_0404/second_class/exec_exam.c
--'  30  0  ~/work/2019_0404/second_class/exec_exam.c
--'  3  0  ~/work/2019_0404/second_class/exec_exam.c
--'  22  8  ~/work/2019_0404/second_class/flushing.c
--'  18  6  ~/work/2019_0404/second_class/flushing.c
--'  24  1  ~/work/2019_0404/second_class/flushing.c
--'  23  53  ~/work/2019_0404/second_class/flushing.c
--'  26  0  ~/work/2019_0404/second_class/flushing.c
+-'  1  0  ~/use_gdb/gdb-test
+-'  2  18  ~/use_gdb/overflow_error.c
+-'  7  0  ~/use_gdb/overflow_error.c
+-'  1  0  ~/use_gdb/overflow_error.c
+-'  7  20  ~/09_05_2019/signal-suspend2.c
+-'  8  0  ~/09_05_2019/signal-suspend2.c
+-'  5  5  ~/09_05_2019/signal-suspend2.c
+-'  6  0  ~/09_05_2019/signal-suspend2.c
+-'  16  0  ~/09_05_2019/signal-suspend2.c
+-'  10  0  ~/02_05_2019/signal-alarm.c
 
 # History of marks within files (newest to oldest):
+
+> ~/16_05_2019/calc/server.c
+	"	10	30
+	^	10	31
+	.	10	30
+	+	10	24
+	+	8	0
+	+	8	2
+	+	8	1
+	+	8	0
+	+	8	0
+	+	10	0
+	+	8	0
+	+	10	30
+
+> ~/16_05_2019/calc/client.c
+	"	52	5
+
+> ~/16_05_2019/calc-server1.c
+	"	65	30
+	^	65	31
+	.	65	31
+	+	16	17
+	+	17	13
+	+	20	14
+	+	20	14
+	+	20	13
+	+	20	13
+	+	21	5
+	+	46	3
+	+	51	3
+	+	51	7
+	+	51	3
+	+	46	2
+	+	51	3
+	+	52	0
+	+	15	2
+	+	34	16
+	+	32	59
+	+	32	59
+	+	33	0
+	+	32	1
+	+	15	0
+	+	34	2
+	+	38	12
+	+	20	0
+	+	17	24
+	+	38	0
+	+	34	1
+	+	37	2
+	+	39	0
+	+	20	0
+	+	58	38
+	+	20	6
+	+	58	44
+	+	62	0
+	+	64	13
+	+	64	46
+	+	64	53
+	+	64	115
+	+	64	35
+	+	58	22
+	+	48	31
+	+	15	2
+	+	29	2
+	+	32	58
+	+	34	42
+	+	15	1
+	+	32	57
+	+	29	1
+	+	34	44
+	+	46	19
+	+	48	46
+	+	64	134
+	+	58	16
+	+	64	10
+	+	64	10
+	+	58	0
+	+	66	4
+	+	58	16
+	+	65	31
+
+> /home/s1521197/0516/client.c
+	"	37	0
+
+> ~/16_05_2019/calc-client1.c
+	"	15	0
+	^	15	0
+	.	9	3
+	+	14	2
+	+	16	5
+	+	34	2
+	+	53	25
+	+	53	4
+	+	54	0
+	+	54	75
+	+	54	0
+	+	54	16
+	+	16	1
+	+	54	33
+	+	54	13
+	+	34	1
+	+	53	2
+	+	54	0
+	+	34	36
+	+	36	42
+	+	9	4
+	+	16	0
+	+	16	0
+	+	16	0
+	+	16	0
+	+	16	0
+	+	16	0
+	+	15	0
+	+	34	68
+	+	35	2
+	+	36	26
+	+	40	34
+	+	45	25
+	+	46	18
+	+	41	16
+	+	45	38
+	+	45	25
+	+	42	2
+	+	45	22
+	+	42	20
+	+	45	22
+	+	45	22
+	+	46	28
+	+	47	0
+	+	46	38
+	+	44	0
+	+	46	54
+	+	54	0
+	+	34	30
+	+	36	17
+	+	14	1
+	+	34	42
+	+	41	16
+	+	42	0
+	+	44	0
+	+	9	3
+
+> ~/16_05_2019/clac-client1.c
+	"	1	0
+
+> ~/16_05_2019/calc-se
+	"	1	0
+
+> ~/16_05_2019/client1.c
+	"	25	0
+	^	28	46
+	.	28	45
+	+	1	20
+	+	46	0
+	+	28	45
+
+> ~/16_05_2019/server1.c
+	"	34	80
+	^	34	83
+	.	34	83
+	+	14	12
+	+	71	0
+	+	18	62
+	+	70	0
+	+	26	24
+	+	49	1
+	+	69	41
+	+	61	84
+	+	53	73
+	+	47	0
+	+	46	0
+	+	48	4
+	+	50	4
+	+	52	4
+	+	53	5
+	+	54	5
+	+	55	6
+	+	56	6
+	+	58	5
+	+	60	5
+	+	61	6
+	+	62	7
+	+	63	7
+	+	64	6
+	+	65	5
+	+	66	17
+	+	67	0
+	+	57	11
+	+	34	83
+
+> ~/16_05_2019/client1.h
+	"	6	22
+	^	6	23
+	.	6	22
+	+	9	0
+	+	6	22
+
+> ~/use_gdb/gdb-test.c
+	"	14	19
+	^	14	20
+	.	14	19
+	+	18	0
+	+	15	15
+	+	5	0
+	+	11	6
+	+	5	4
+	+	10	23
+	+	11	8
+	+	5	4
+	+	11	27
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	2
+	+	11	0
+	+	5	7
+	+	10	25
+	+	11	6
+	+	7	38
+	+	3	18
+	+	7	30
+	+	14	19
+	+	7	30
+	+	14	19
+
+> ~/use_gdb/gdb-test
+	"	1	0
+
+> ~/use_gdb/overflow_error.c
+	"	2	18
+	^	2	19
+	.	2	18
+	+	5	21
+	+	3	29
+	+	8	0
+	+	3	30
+	+	7	0
+	+	2	18
+
+> ~/09_05_2019/signal-suspend2.c
+	"	7	20
+	^	7	21
+	.	7	20
+	+	5	32
+	+	21	0
+	+	21	0
+	+	8	30
+	+	8	0
+	+	8	3
+	+	8	10
+	+	8	21
+	+	8	0
+	+	20	9
+	+	21	0
+	+	18	20
+	+	8	0
+	+	8	0
+	+	7	20
+
+> ~/02_05_2019/signal-alarm.c
+	"	10	0
+	^	15	13
+	.	15	12
+	+	18	1
+	+	7	10
+	+	12	24
+	+	12	0
+	+	15	12
+
+> ~/02_05_2019/signal-check.c
+	"	26	0
+	^	4	4
+	.	4	4
+	+	18	2
+	+	28	0
+	+	11	0
+	+	9	3
+	+	4	4
+
+> ~/02_05_2019/signal-remove.c
+	"	27	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	9	0
+	+	2	0
+
+> ~/09_05_2019/signal-suspend1.c
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/02_05_2019/signal-send2.c
+	"	3	18
+	^	3	19
+	.	3	18
+	+	10	37
+	+	13	0
+	+	5	24
+	+	3	18
+
+> ~/02_05_2019/signal.c
+	"	8	13
+	^	8	14
+	.	8	13
+	+	21	0
+	+	5	26
+	+	11	0
+	+	20	0
+	+	9	22
+	+	5	14
+	+	3	18
+	+	8	13
+
+> ~/02_05_2019/signal-send.c
+	"	5	22
+	^	5	23
+	.	5	22
+	+	10	30
+	+	13	0
+	+	5	22
+
+> ~/02_05_2019/signal-block.c
+	"	21	12
+	^	21	13
+	.	21	12
+	+	11	14
+	+	11	31
+	+	30	0
+	+	21	12
+
+> ~/02_05_2019/sigaction1.c
+	"	14	74
+	^	24	1
+	.	24	0
+	+	24	0
+
+> ~/02_05_2019/signal
+	"	1	0
+
+> ~/02_05_2019/sleep.c
+	"	9	9
+	^	9	10
+	.	9	9
+	+	11	0
+	+	6	0
+	+	9	9
+
+> ~/02_05_2019/igset_t
+	"	1	0
 
 > ~/LastChallenge/mid-term/201720963-sum.c
 	"	19	2
