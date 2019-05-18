@@ -1,207 +1,3 @@
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-;s
-ls
-cd work
-cd
-cd work
-ls
-cd 2019_0321
-ls
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-./test1
-as
-cd work
-cd 2019_0321
-ls
-gcc -o test1 test1.c
-./test1
-ls
-vi a.out
-ls
-rm a.out
-ls
-vi calc.h
-vi test.c
-vi test1.c
-cp test1.c calc.h
-vi calc.h
-ls
-rm calc.h
-vi clac1.c
-cp test1.c calc.c
-ls
-vi calc1.c
-vi test1.c
-ls
-rm calc1.c
-vi calc.c
-cp test1.c calc.c
-vi calc.c
-ls
-vi calc.c
-rm calc.c
-ls
-rm calc1.c
-ls
-calc.h
-vi calc.h
-exit
-passwd
-eixt
-exit
-ls
-cd work
-cd 2019_0321
-ls
-ls -al
-ls
-vi cal.h
-vi calc.h
-cp test1.c calc.h
-vi calc.h
-vi test1.c
-clar
-clear
-vi test.c
-ks
-ls
-vi test.c
-ls
-vi test.c
-ls
-rm tt.c
-vi test.c
-vi cal.h
-vi test.c
-ls -al
-exit
-eixt
-ls
-history
-#
-passwd s1720963
-ls
-vi test1.c
-rm test1.c
-ls
-cd tmp
-ls
-cd .
-cd ..
-cd work
-ls
-cd 2019_0321
-ls
-vi \
-ls
-vi cacl1.c
-vi test1.c
-ls
-vi calc.h
-vi test1.c
-vi cal.h
-rm cal.h
-ls
-vi cacl1.c
-ls
-rm cacl1.c
-ls
-calc1.c
-vi calc1.c
-ls
-vi clac1.c
-rm clac1.c
-ls
-cp test1.c calc1.c
-vi calc1.c
-vi calc.h
-vi func.c
-ls
-vi calc.h
-vi calc1.c
-vi test1.c
-vi calc.h
-vi test1.c
-vi calc.h
-vi calc1.c
-ls
-vi func.c
-gcc -o calc1 calc1.c
-ls
-vi calc1.c
-calc.h
-vi calc.h
-vi func.c
-gcc -o calc1 calc1.c
-ls
-vi func.c
-vi calc.h
-vi calc1.c
-gcc -o calc1 calc1.c
-history
-gcc -o test1 test1.c
-ls
-gcc -o test1 test1.c
-vi test1.c
-gcc -o test1 test1.c
-./test1
-ls
-gcc -o calc1 calc1.c
-vi calc1.c
-vi func.c
-vi calc1.c
-vi calc.h
-vi calc1.c
-vi func.c
-ls
-rename func.c fuc.c
-ls
-vi calc.h
-vi func.c
-ls
-vi calc.c
-ls
-rm calc.c
-ls
 vi calc1.c
 vi func.c
 gcc -o calc1 calc1.c
@@ -1998,3 +1794,207 @@ cd 16_05_2019/
 ls
 vi server1.c
 tmux
+exit
+ls
+git status
+git remote
+history
+git remote -v
+git add remote lExamPrac https://github.com/LastChallenge/Last_Exam_prac.git
+git remote
+git add remote https://github.com/LastChallenge/Last_Exam_prac.git
+git remote add lExamPrac https://github.com/LastChallenge/Last_Exam_prac.git
+git remote
+ls
+git status
+git config --list
+git remote lExamPrac
+git init 
+ls
+git remote
+git add --all
+git commit -m "Last_Exam_Prac"
+git push lExamPrac master
+ls
+cd mid_test
+ls
+cd 
+ls
+tmux
+exit
+exit
+cd ..
+ls
+cd tmp
+ls
+cd ..
+ls
+cd home
+ls
+cd s1720963
+ls
+cd 16_05_2019
+ls
+cd calc
+ls
+vi client.c
+cd ..
+ls
+cd echo-socket/
+ls
+vi client1.c
+vi server1.c
+cd ..
+ls
+cd fail_code
+ls
+cd calc-client1.c
+vi calc-client1.c
+cd ..
+ls
+cd calc
+ls
+vi server.c
+vi client.c
+exit
+tmux
+./client
+vi server.c
+vi client.c
+exit
+ls
+vi client.c
+vi server.c
+exit
+vi client.c
+vi server.c
+vi client.c
+./server
+vi server.c
+ls
+cd ..
+ls
+mkdir calc2
+cd calc2
+ls
+vi server.c
+vi header.h
+ls
+vi server.c
+man bind
+vi server.c
+man listen
+vi server.c
+man accept
+vi server.c
+man sockaddr_un
+
+vi server.c
+man recv
+vi server.c
+ls
+vi client.c
+vi server.c
+vi client.c
+vi server.c
+ls
+vi client.c
+vi server.c
+vi client.c
+man connect
+vi client.c
+man feof
+vi client.c
+exit
+ls
+cd 16_05_2019/calc
+ls
+tmux
+ls
+vi server.c
+vi client.c
+cd ..
+cd calc
+los
+ls
+vi client.c
+exit
+vi server.c
+vi client.c
+exit
+cd ..
+ls
+cd calc
+ls
+vi server.c
+cd ..
+cd calc2/server.c
+cd calc2
+vi server.c 
+gcc -o server server.c 
+vi server.c 
+gcc -o server server.c 
+vi server.c 
+gcc -o server server.c 
+./server
+exit
+vi client.c 
+man recv
+vi client.c 
+vi server.c
+gcc -o server server.c
+ls
+vi client.c
+vi server.c
+vi client.c
+gcc -o client client.c 
+./client 
+cd ..
+ls
+cd calc
+ls
+vi server.c
+cd ..
+cd calc2
+./client 
+vi client.c
+man fgets
+vi client.c
+man fgets
+vi client.c
+vi server.c
+
+vi server
+gcc -o client client.c
+./client 
+vi client.c
+gcc -o client client.c
+./client 
+exit
+cd ..
+ls
+cd calc
+ls
+vi client.c
+cd ..
+ls
+cd ./calc2
+ls
+vi client.c 
+gcc -o client client.c 
+./server 
+vi client.c 
+vi server.c
+gcc -o server server.c
+./server 
+exit
+ls
+git status
+ls
+cd 16_05_2019
+ls
+cd calc2
+ls
+vi client.c
+tmux
+exit

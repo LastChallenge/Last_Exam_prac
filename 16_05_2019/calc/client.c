@@ -8,7 +8,7 @@
 #include <sys/un.h>
 #include <unistd.h>
 
-#define SOCK_PATH "echo_socket"
+#define SOCK_PATH "calc_socket"
 typedef struct meesage { 
 	int type;
 	char operation;
@@ -21,7 +21,7 @@ int main(void) {
 	char str[100];
 	message m;
 
-	if( (s = socket(AF_UNIX, SOCK_STREAM, 0) ) == -1 ) {
+	if((s = socket(AF_UNIX, SOCK_STREAM, 0)) == -1 ) {
 		printf("socket");
 		exit(1);
 	}
@@ -50,7 +50,7 @@ int main(void) {
 			}
 
 			if( (t=recv(s,&m, 100, 0)) > 0 ) {
-				printf("echo> %d", m.value[0]);
+				printf("clac> %d", m.value[0]);
 			}
 			else {
 				if (t < 0) printf("recv");

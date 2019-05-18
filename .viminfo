@@ -15,13 +15,20 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-:w
-:q!
 :WQ
 :ㅈㅂ
+:w
+:Wq
+:45
+:4
+:56
+:37
+:35
+:25
+:27
+:q!
 :28
 :3
-:Wq
 :2
 :q
 :10
@@ -34,7 +41,6 @@ $
 :24
 :W
 :11\
-:4
 :1
 :18
 :19
@@ -85,48 +91,113 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-					if(send(s2, str, n, 0) < 0) { //client에게 받은 문자열을 그대로 돌려줌
-"1	LINE	0
-		if(bind(s, 
+"0	CHAR	0
+	typedef struct information {
+		int operand;  // 앞 피연산자
+		int operand2; // 뒤 피연산자
+		char operator; // 연산자
+	}info;
+	
+	
+""1	LINE	0
+		char S_operand[BUF_SIZE] // 피연산자를 저장할 배열
 "2	LINE	0
 	
 "3	LINE	0
+	q
+"4	LINE	0
+	
+"5	LINE	0
+					if(str[
+"6	LINE	0
+		if(bind(s, 
+"7	LINE	0
+	
+"8	LINE	0
 		
 		printf("Connected \n");
-"4	LINE	0
-		}
-"5	LINE	0
-			printf("받음 \n");
-"6	LINE	0
-		if(0 == signo) {
-"7	LINE	0
-		}
-"8	LINE	0
-			printf("받음 \n");
 "9	LINE	0
-		if(0 == signo) {
-""-	CHAR	0
-	,
+		}
+"-	CHAR	0
+	p
 
 # File marks:
-'0  10  30  ~/16_05_2019/calc/server.c
-'1  52  5  ~/16_05_2019/calc/client.c
-'2  65  30  ~/16_05_2019/calc-server1.c
-'3  62  0  ~/16_05_2019/calc-server1.c
-'4  34  19  ~/16_05_2019/calc-server1.c
-'5  63  0  ~/16_05_2019/calc-server1.c
-'6  1  0  ~/16_05_2019/calc-client1.c
-'7  34  80  ~/16_05_2019/server1.c
-'8  28  45  ~/16_05_2019/client1.c
-'9  6  22  ~/16_05_2019/client1.h
+'0  36  39  ~/16_05_2019/calc2/client.c
+'1  50  9  ~/16_05_2019/calc2/server.c
+'2  52  1  ~/16_05_2019/calc2/client.c
+'3  10  1  ~/16_05_2019/calc2/client.c
+'4  8  15  ~/16_05_2019/calc2/server.c
+'5  1  18  ~/16_05_2019/calc2/client.c
+'6  66  0  ~/16_05_2019/calc/server.c
+'7  62  9  ~/16_05_2019/calc/client.c
+'8  53  9  ~/16_05_2019/calc2/client.c
+'9  49  2  ~/16_05_2019/calc2/server.c
 
 # Jumplist (newest first):
--'  10  30  ~/16_05_2019/calc/server.c
+-'  36  39  ~/16_05_2019/calc2/client.c
+-'  52  1  ~/16_05_2019/calc2/client.c
+-'  50  9  ~/16_05_2019/calc2/server.c
+-'  8  15  ~/16_05_2019/calc2/server.c
+-'  10  1  ~/16_05_2019/calc2/client.c
+-'  1  18  ~/16_05_2019/calc2/client.c
+-'  20  15  ~/16_05_2019/calc2/server.c
+-'  3  21  ~/16_05_2019/calc2/client.c
+-'  4  13  ~/16_05_2019/calc2/client.c
+-'  37  0  ~/16_05_2019/calc2/client.c
+-'  62  0  ~/16_05_2019/calc2/client.c
+-'  66  0  ~/16_05_2019/calc/server.c
+-'  32  0  ~/16_05_2019/calc/server.c
+-'  59  9  ~/16_05_2019/calc2/client.c
+-'  62  9  ~/16_05_2019/calc/client.c
+-'  54  3  ~/16_05_2019/calc/client.c
+-'  53  9  ~/16_05_2019/calc2/client.c
+-'  45  19  ~/16_05_2019/calc2/client.c
+-'  49  2  ~/16_05_2019/calc2/server.c
+-'  61  46  ~/16_05_2019/calc2/server.c
+-'  46  7  ~/16_05_2019/calc2/client.c
+-'  14  1  ~/16_05_2019/calc2/client.c
+-'  6  0  ~/16_05_2019/calc2/client.c
+-'  7  10  ~/16_05_2019/calc2/server.c
+-'  53  18  ~/16_05_2019/calc/client.c
+-'  42  13  ~/16_05_2019/calc/client.c
+-'  35  0  ~/16_05_2019/calc2/client.c
+-'  59  22  ~/16_05_2019/calc2/server.c
+-'  18  0  ~/16_05_2019/calc2/server.c
+-'  1  1  ~/16_05_2019/calc/client.c
+-'  85  0  ~/16_05_2019/calc/server.c
+-'  78  3  ~/16_05_2019/calc/server.c
+-'  68  30  ~/16_05_2019/calc/server.c
+-'  7  22  ~/16_05_2019/calc/client.c
+-'  52  7  ~/16_05_2019/calc/client.c
+-'  69  26  ~/16_05_2019/calc/server.c
+-'  56  28  ~/16_05_2019/calc/client.c
+-'  74  41  ~/16_05_2019/calc/server.c
+-'  66  0  ~/16_05_2019/calc/client.c
+-'  10  29  ~/16_05_2019/calc/server.c
+-'  11  22  ~/16_05_2019/calc/client.c
+-'  50  31  ~/16_05_2019/calc/server.c
+-'  28  0  ~/16_05_2019/echo-socket/server1.c
+-'  55  3  ~/16_05_2019/echo-socket/server1.c
+-'  31  28  ~/16_05_2019/calc/client.c
+-'  83  0  ~/16_05_2019/calc/server.c
+-'  1  0  ~/16_05_2019/calc/server1.c
+-'  25  15  ~/16_05_2019/calc/client.c
+-'  6  21  ~/16_05_2019/calc/client.c
+-'  33  24  ~/16_05_2019/calc/client.c
+-'  1  0  ~/16_05_2019/calc/cliemt.c
+-'  80  0  ~/16_05_2019/calc/server.c
+-'  46  0  ~/16_05_2019/calc/client.c
+-'  58  0  ~/16_05_2019/calc/client.c
+-'  51  0  ~/16_05_2019/calc/client.c
+-'  1  0  ~/16_05_2019/fail_code/calc-client1.c
+-'  1  0  ~/16_05_2019/echo-socket/server1.c
+-'  1  0  ~/16_05_2019/echo-socket/client1.c
+-'  1  0  ~/16_05_2019/calc-client1.c
+-'  15  0  ~/16_05_2019/calc-client1.c
+-'  1  0  ~/16_05_2019/calc-client.c
+-'  1  0  ~/16_05_2019/echo_socket
 -'  1  0  ~/16_05_2019/calc/server.c
--'  52  5  ~/16_05_2019/calc/client.c
 -'  38  1  ~/16_05_2019/calc/client.c
--'  1  0  ~/16_05_2019/calc/client.c
 -'  65  30  ~/16_05_2019/calc-server1.c
 -'  64  17  ~/16_05_2019/calc-server1.c
 -'  62  0  ~/16_05_2019/calc-server1.c
@@ -137,7 +208,6 @@ $
 -'  15  17  ~/16_05_2019/calc-server1.c
 -'  63  0  ~/16_05_2019/calc-server1.c
 -'  1  0  ~/16_05_2019/calc-server1.c
--'  1  0  ~/16_05_2019/calc-client1.c
 -'  34  80  ~/16_05_2019/server1.c
 -'  66  0  ~/16_05_2019/server1.c
 -'  28  45  ~/16_05_2019/client1.c
@@ -159,75 +229,224 @@ $
 -'  1  0  ~/use_gdb/gdb-test
 -'  18  0  ~/use_gdb/gdb-test.c
 -'  1  0  ~/use_gdb/gdb-test.c
--'  2  18  ~/use_gdb/overflow_error.c
--'  7  0  ~/use_gdb/overflow_error.c
--'  1  0  ~/use_gdb/overflow_error.c
--'  7  20  ~/09_05_2019/signal-suspend2.c
--'  8  0  ~/09_05_2019/signal-suspend2.c
--'  5  5  ~/09_05_2019/signal-suspend2.c
--'  6  0  ~/09_05_2019/signal-suspend2.c
--'  16  0  ~/09_05_2019/signal-suspend2.c
--'  10  0  ~/02_05_2019/signal-alarm.c
--'  15  10  ~/02_05_2019/signal-alarm.c
--'  26  0  ~/02_05_2019/signal-check.c
--'  1  0  ~/02_05_2019/signal-check.c
--'  27  0  ~/02_05_2019/signal-remove.c
--'  2  0  ~/02_05_2019/signal-remove.c
--'  1  0  ~/09_05_2019/signal-suspend2.c
--'  16  0  ~/09_05_2019/signal-suspend1.c
--'  1  0  ~/09_05_2019/signal-suspend1.c
--'  3  18  ~/02_05_2019/signal-send2.c
--'  50  0  ~/02_05_2019/[Command Line]
--'  3  18  ~/02_05_2019/signal.c
--'  5  14  ~/02_05_2019/signal.c
--'  9  21  ~/02_05_2019/signal.c
--'  20  0  ~/02_05_2019/signal.c
--'  9  9  ~/02_05_2019/sleep.c
--'  1  0  ~/02_05_2019/signal.c
--'  1  0  ~/02_05_2019/sleep.c
--'  1  0  ~/02_05_2019/signal-remove.c
--'  4  3  ~/02_05_2019/signal-check.c
--'  10  24  ~/02_05_2019/signal-check.c
--'  28  0  ~/02_05_2019/signal-check.c
--'  19  2  ~/LastChallenge/mid-term/201720963-sum.c
--'  1  0  ~/LastChallenge/mid-term/201720963-sum.c
--'  21  1  ~/LastChallenge/mid-term/201720963-sender.c
--'  27  1  ~/LastChallenge/mid-term/201720963-sender.c
--'  13  6  ~/LastChallenge/mid-term/201720963-receiver.c
--'  9  9  ~/LastChallenge/mid-term/201720963-receiver.c
--'  25  22  ~/LastChallenge/mid-term/201720963-sender.c
--'  30  25  ~/LastChallenge/mid-term/201720963-sender.c
--'  12  44  ~/LastChallenge/mid-term/201720963-receiver.c
--'  16  0  ~/LastChallenge/mid-term/201720963-receiver.c
--'  17  0  ~/LastChallenge/mid-term/201720963-receiver.c
--'  32  0  ~/LastChallenge/mid-term/201720963-sender.c
--'  1  0  ~/LastChallenge/mid-term/201720963-receiver.c
--'  35  1  ~/LastChallenge/mid-term/201720963-sender.c
--'  1  0  ~/LastChallenge/mid-term/201720963-sender.c
--'  13  5  ~/LastChallenge/mid-term/201720963-fork.c
--'  12  1  ~/LastChallenge/mid-term/201720963-fork.c
--'  14  5  ~/LastChallenge/mid-term/201720963-fork.c
--'  21  0  ~/LastChallenge/mid-term/201720963-fork.c
--'  1  0  ~/LastChallenge/mid-term/201720963-fork.c
--'  4  0  ~/LastChallenge/mid-term/exam1.c
--'  1  0  ~/LastChallenge/mid-term/exam1.c
--'  1  0  ~/use_gdb/gdb-test
--'  2  18  ~/use_gdb/overflow_error.c
--'  7  0  ~/use_gdb/overflow_error.c
--'  1  0  ~/use_gdb/overflow_error.c
--'  7  20  ~/09_05_2019/signal-suspend2.c
--'  8  0  ~/09_05_2019/signal-suspend2.c
--'  5  5  ~/09_05_2019/signal-suspend2.c
--'  6  0  ~/09_05_2019/signal-suspend2.c
--'  16  0  ~/09_05_2019/signal-suspend2.c
--'  10  0  ~/02_05_2019/signal-alarm.c
+-'  50  9  ~/16_05_2019/calc2/server.c
 
 # History of marks within files (newest to oldest):
 
+> ~/16_05_2019/calc2/client.c
+	"	36	39
+	^	36	40
+	.	36	40
+	+	61	0
+	+	13	21
+	+	60	0
+	+	34	32
+	+	15	27
+	+	29	41
+	+	29	49
+	+	34	32
+	+	29	10
+	+	34	32
+	+	57	10
+	+	36	31
+	+	11	5
+	+	9	38
+	+	9	41
+	+	9	29
+	+	9	29
+	+	36	38
+	+	17	14
+	+	36	49
+	+	57	10
+	+	36	10
+	+	36	63
+	+	36	63
+	+	36	60
+	+	56	0
+	+	45	22
+	+	36	62
+	+	9	27
+	+	36	106
+	+	9	13
+	+	7	30
+	+	9	27
+	+	8	27
+	+	9	27
+	+	9	28
+	+	9	5
+	+	7	21
+	+	8	21
+	+	9	25
+	+	36	110
+	+	17	5
+	+	36	93
+	+	36	111
+	+	36	82
+	+	36	108
+	+	45	22
+	+	36	108
+	+	41	39
+	+	45	22
+	+	55	3
+	+	45	37
+	+	46	24
+	+	11	0
+	+	41	24
+	+	46	34
+	+	47	3
+	+	55	3
+	+	55	3
+	+	56	2
+	+	57	9
+	+	60	0
+	+	48	9
+	+	51	3
+	+	50	6
+	+	49	6
+	+	54	0
+	+	57	10
+	+	59	9
+	+	36	108
+	+	10	11
+	+	3	16
+	+	3	0
+	+	3	0
+	+	3	0
+	+	3	20
+	+	17	18
+	+	36	39
+	+	40	0
+	+	37	0
+	+	9	0
+	+	7	2
+	+	8	2
+	+	9	61
+	+	37	4
+	+	37	0
+	+	4	56
+	+	37	4
+	+	37	5
+	+	36	7
+	+	37	0
+	+	37	0
+	+	8	1
+	+	7	1
+	+	37	23
+	+	40	0
+	+	9	0
+	+	36	34
+	+	39	11
+	+	36	40
+
+> ~/16_05_2019/calc2/server.c
+	"	50	9
+	^	20	16
+	.	21	0
+	+	98	0
+	+	97	0
+	+	14	9
+	+	14	12
+	+	14	0
+	+	14	0
+	+	96	1
+	+	97	0
+	+	96	0
+	+	14	13
+	+	95	0
+	+	58	33
+	+	57	6
+	+	62	4
+	+	94	3
+	+	12	5
+	+	63	3
+	+	63	3
+	+	14	20
+	+	63	54
+	+	93	0
+	+	65	56
+	+	92	0
+	+	73	1
+	+	92	0
+	+	74	0
+	+	14	3
+	+	66	1
+	+	14	45
+	+	63	14
+	+	14	0
+	+	14	4
+	+	14	0
+	+	14	0
+	+	76	0
+	+	92	0
+	+	76	47
+	+	76	47
+	+	63	25
+	+	14	17
+	+	92	0
+	+	78	11
+	+	76	11
+	+	90	2
+	+	84	11
+	+	90	2
+	+	87	2
+	+	90	2
+	+	90	2
+	+	91	14
+	+	76	15
+	+	79	9
+	+	81	0
+	+	79	25
+	+	79	16
+	+	83	0
+	+	76	14
+	+	12	0
+	+	18	7
+	+	58	17
+	+	12	0
+	+	12	0
+	+	14	0
+	+	13	0
+	+	10	6
+	+	10	6
+	+	10	6
+	+	11	0
+	+	13	53
+	+	63	61
+	+	76	0
+	+	75	53
+	+	77	15
+	+	79	29
+	+	81	12
+	+	82	31
+	+	83	0
+	+	82	20
+	+	86	3
+	+	86	0
+	+	86	0
+	+	86	0
+	+	89	0
+	+	84	11
+	+	85	31
+	+	86	0
+	+	85	20
+	+	87	11
+	+	88	31
+	+	89	0
+	+	88	20
+	+	44	11
+	+	63	46
+	+	44	13
+	+	6	30
+	+	7	30
+	+	9	11
+	+	63	4
+	+	65	26
+	+	21	0
+
 > ~/16_05_2019/calc/server.c
-	"	10	30
-	^	10	31
-	.	10	30
+	"	66	0
+	^	74	31
+	.	74	7
 	+	10	24
 	+	8	0
 	+	8	2
@@ -236,10 +455,104 @@ $
 	+	8	0
 	+	10	0
 	+	8	0
-	+	10	30
+	+	10	29
+	+	74	7
 
 > ~/16_05_2019/calc/client.c
-	"	52	5
+	"	62	9
+	^	1	2
+	.	1	0
+	+	53	16
+	+	11	22
+	+	24	40
+	+	11	23
+	+	1	0
+
+> ~/16_05_2019/calc2/header.h
+	"	8	0
+	^	8	0
+	.	7	19
+	+	5	25
+	+	5	23
+	+	7	19
+
+> ~/16_05_2019/echo-socket/server1.c
+	"	28	0
+	.	57	0
+	+	57	0
+
+> ~/16_05_2019/calc/server1.c
+	"	1	0
+
+> ~/16_05_2019/calc/cliemt.c
+	"	1	0
+
+> ~/16_05_2019/fail_code/calc-client1.c
+	"	1	0
+
+> ~/16_05_2019/echo-socket/client1.c
+	"	1	0
+
+> ~/16_05_2019/calc-client1.c
+	"	1	0
+	^	15	0
+	.	9	3
+	+	14	2
+	+	16	5
+	+	34	2
+	+	53	25
+	+	53	4
+	+	54	0
+	+	54	75
+	+	54	0
+	+	54	16
+	+	16	1
+	+	54	33
+	+	54	13
+	+	34	1
+	+	53	2
+	+	54	0
+	+	34	36
+	+	36	42
+	+	9	4
+	+	16	0
+	+	16	0
+	+	16	0
+	+	16	0
+	+	16	0
+	+	16	0
+	+	15	0
+	+	34	68
+	+	35	2
+	+	36	26
+	+	40	34
+	+	45	25
+	+	46	18
+	+	41	16
+	+	45	38
+	+	45	25
+	+	42	2
+	+	45	22
+	+	42	20
+	+	45	22
+	+	45	22
+	+	46	28
+	+	47	0
+	+	46	38
+	+	44	0
+	+	46	54
+	+	54	0
+	+	34	30
+	+	36	17
+	+	14	1
+	+	34	42
+	+	41	16
+	+	42	0
+	+	44	0
+	+	9	3
+
+> ~/16_05_2019/calc-client.c
+	"	1	0
 
 > ~/16_05_2019/calc-server1.c
 	"	65	30
@@ -307,64 +620,6 @@ $
 
 > /home/s1521197/0516/client.c
 	"	37	0
-
-> ~/16_05_2019/calc-client1.c
-	"	15	0
-	^	15	0
-	.	9	3
-	+	14	2
-	+	16	5
-	+	34	2
-	+	53	25
-	+	53	4
-	+	54	0
-	+	54	75
-	+	54	0
-	+	54	16
-	+	16	1
-	+	54	33
-	+	54	13
-	+	34	1
-	+	53	2
-	+	54	0
-	+	34	36
-	+	36	42
-	+	9	4
-	+	16	0
-	+	16	0
-	+	16	0
-	+	16	0
-	+	16	0
-	+	16	0
-	+	15	0
-	+	34	68
-	+	35	2
-	+	36	26
-	+	40	34
-	+	45	25
-	+	46	18
-	+	41	16
-	+	45	38
-	+	45	25
-	+	42	2
-	+	45	22
-	+	42	20
-	+	45	22
-	+	45	22
-	+	46	28
-	+	47	0
-	+	46	38
-	+	44	0
-	+	46	54
-	+	54	0
-	+	34	30
-	+	36	17
-	+	14	1
-	+	34	42
-	+	41	16
-	+	42	0
-	+	44	0
-	+	9	3
 
 > ~/16_05_2019/clac-client1.c
 	"	1	0
@@ -1422,116 +1677,3 @@ $
 
 > ~/work/2019_0321/cacl1.c
 	"	1	0
-
-> ~/work/2019_0321/cal.h
-	"	2	0
-	^	1	0
-	.	1	0
-	+	1	0
-
-> ~/test1.c
-	"	1	0
-
-> ~/work/2019_0321/test.c
-	"	4	0
-	^	3	13
-	.	3	0
-	+	3	1
-	+	3	7
-	+	3	1
-	+	3	0
-	+	3	1
-	+	3	1
-	+	3	0
-	+	3	0
-	+	3	12
-	+	3	8
-	+	3	22
-	+	3	1
-	+	3	17
-	+	3	2
-	+	3	1
-	+	3	0
-	+	3	2
-	+	3	9
-	+	3	0
-	+	3	16
-	+	3	0
-	+	3	17
-	+	3	17
-	+	3	19
-	+	3	22
-	+	3	2
-	+	3	6
-	+	3	4
-	+	3	7
-	+	3	8
-	+	3	9
-	+	3	5
-	+	3	9
-	+	3	6
-	+	3	3
-	+	3	19
-	+	3	5
-	+	3	0
-	+	3	0
-	+	3	1
-	+	3	0
-	+	3	0
-	+	3	0
-	+	6	0
-	+	7	0
-	+	7	0
-	+	7	0
-	+	7	0
-	+	8	0
-	+	3	0
-	+	9	12
-	+	3	7
-	+	2	18
-	+	3	11
-	+	3	20
-	+	3	21
-	+	3	0
-	+	3	19
-	+	3	1
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	0
-	+	10	0
-	+	10	0
-	+	10	19
-	+	11	0
-	+	3	3
-	+	3	18
-	+	3	1
-	+	3	6
-	+	3	1
-	+	3	27
-	+	3	0
-	+	4	0
-	+	1	0
-	+	3	16
-	+	3	0
-
-> ~/work/2019_0321/tt.c
-	"	8	1
-	^	12	7
-	.	13	0
-	+	2	0
-	+	10	1
-	+	13	0
-
-> ~/work/2019_0321/a.out
-	"	1	0
-
-> ~/work/2019_0321/testc.
-	"	1	0
-
-> ~/test.c
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0

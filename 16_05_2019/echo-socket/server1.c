@@ -54,7 +54,6 @@ int main() {
 			if(n <= 0) {
 				if(n < 0) perror("recv");
 				done = 1;
-				if(str[
 			}
 
 			if(!done){

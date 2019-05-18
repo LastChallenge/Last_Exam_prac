@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 
-#define SOCK_PATH "/tmp/s152001"
+#define SOCK_PATH "calc_socket"
 
 typedef struct message {
 	int type;
@@ -71,7 +71,7 @@ int main(void) {
 					m.value[0] = m.value[0] * m.value[1];
 				else
 					m.value[0] = m.value[0] / m.value[1];
-				if( send(s2, &m, sizeof(m), 0) < 0 ) {
+				if(send(s2, &m, sizeof(m), 0) < 0 ) {
 					printf("send");
 					done = 1;
 				}
