@@ -1,275 +1,3 @@
-vi calc1.c
-vi func.c
-gcc -o calc1 calc1.c
-w
-w -g
-w -o
-ls
-exit
-passwd
-ls
-exit
-ls
-vi examples.desktop
-cd work
-ls
-cd 2019_0321
-ls
-vi calc1.c
-gcc -o calc1 calc1.c
-exit
-ls
-exit
-
-ls
-cd ..
-clear
-pstree
-pstree 
-exit
-ps
-ps  -a
-ls
-clear
-ps =a
-clear
-ps -a
-ps -e
-g
-ps -ef
-top
-pstree
-tmux
-pstree | pstree.txt
-ls
-cd /proc
-ls
-cd ..
-ls
-cd..
-ls
-cd tmp
-ls
-cd ..
-ls
-vi getpid.c
-ls
-cd tmp
-ls
-cd ..
-ls
-mkdir getpid_demo
-cd ..
-ls
-exit
-ls
-vi getpid_demo.c
-gcc -Wall -o getpid_demo getpid_demo.c
-./getpid_demo
-ls
-cd 2019_0404
-ls
-vi argv_example.c
-ls
-gcc -Wall -o argv_example argv_example.c
-./argv_example
-vi argv_example.c
-gcc -Wall -o argv_example argv_example.c
-./argv_example
-vi argv_example.c
-vi argv_example2.c
-gcc -Wall -o argv_example2 argv_example2.c
-./argv_example2
-;s
-ls
-cd ..
-ls
-mv getpid_demo.c ./2019_0404
-ls
-mv getpid_demo ./2019_0404
-ls
-cd 2019_0404
-ls
-vi argv_example2.c
-vi argv_example.c
-./argv_example a b
-pstree
-find pstree
-clear
-ls
-vi enviro_example.c
-gcc -Wall -o enviro enviro_example.c
-./enviro
-:wq
-ls
-enviro_example.c
-vi enviro_example.c
-./enviro
-cd ..
-cd work/2017_0404
-ls
-cd work/
-ks
-ls
-cd 2019_0404
-ls
-vi argv_example.c
-ls
-vi segment_example.c
-gcc -Wall -o seg_example segment_example.c
-./seg_example
-vi segment_example.c
-size segments
-vi segment_example.c
-./seg_example
-vi segment_example.c
-./seg_example
-history
-clear history
-ls
-history
-clear
-ls
-vi segment_example.c
-cd .vimrc
-cd ./vimrc
-.vimrc
-vi ~/.vimrc
-size enviro
-size seg_example
-exit
-cd work
-ls
-mkdir 2019_0404
-vi getpid_demo.c
-gcc -Wall -o getpid_demo getpid_demo.c
-./getpid_demo
-tmux
-exit
-ls
-cd work
-ls
-cd ..
-mkdir prac
-cd prac
-ls
-cd ,,
-cd ..
-cd ~/.vimrc
-cd ..
-vi .vimrc
-ls
-cd s1720963
-ls
-sudo
-whoami
-vi .vimrc
-ls
-vi work
-cd work
-ls
-cd 2019_0404
-ls
-vi argv_example.c
-ls
-vi argv_example.c
-cd ..
-vi .vimrc
-ls
-cd work
-ls
-cd 2019_0404
-ls
-vi argv_example.c
-cd 
-vi .vimrc
-cd ./work/2019_0404
-ls
-vi argv_example.c
-exit
-ls
-exit
-ps
-ps
-ls
-gcc -o wait_exam wait_exam.c
-./wait_exam 
-ps -ef 
-ps -ef | grep s1720963
-kill -9 1352
-ps -ef | grep s1720963
-kill -10 1494
-ls
-vi wait_exam.c
-
-ls
-vi wait_exam.c
-vi zombie_exam.c
-gcc -o zombie_exam zombie_exam.c
-
-gcc -o zombie_exam zombie_exam.c
-./zombie_exam
-ps
-ps -ef |greb s1720963
-ps -ef |grep s1720963
-ps
-ps -ef |grep s1720963
-vi zombie_exam.c
-ls
-./zombie_exam
-ls
-vi zombie_exam.c
-cd second_class
-ls
-vi ~/.tmux.conf
-tmux source-file ~/.tmux.conf
-ls
-zombie.exam.c
-vi zombie_exam.c
-ls
-cd ..
-ls
-rm zombie_exam.c
-ls
-cd second_class
-ls
-vi flushing.c
-gcc -o flushing flushing.c
-./flushing
-vi flushing.c
-gcc -o flushing flushing.c
-./flushing
-ls
-vi flushing.c
-./flushing
-vi flushing.c
-gcc -o flushing flushing.c
-./flushing
-vi flushing.c
-gcc -o flushing flushing.c
-./flushing
-cat log
-./flushing > log
-cat lof
-cat log
-clear
-./flushing
-./flushing > log
-cat log
-vi flushing.c
-./flushing
-./flushing > log
-cat log
-vi flushing.c\
-vi flushing.c
-ls
-vi log
-vi exec_exam.c
-gcc -o exec exec_exam.c
-vi exec_exam.c
-gcc -o exec exec_exam.c
-./exec
-vi exec_exam.c
 vi echoall.c
 ls
 cd
@@ -1998,3 +1726,275 @@ ls
 vi client.c
 tmux
 exit
+ls
+git status
+git remote
+git -v remote
+git -a remote
+git remote -v
+git add --all
+git commit "Second-revision"
+git commit -m "Second-revision"
+git push lExamPrac master
+ls
+exit
+cd ..
+ls
+cd ..
+ls
+09_05_2019
+cd 09_05_2019/
+ls
+cd ..
+git remote
+git remote -v
+git remote add prev https://github.com/LastChallenge/Mid_Test_repo.git
+ls
+cd mid_test
+ls
+Mid_Test_repo/
+ls
+Mid_Test_repo/
+cd ..
+ls
+mkdir Prev_code
+git remote
+git remote remove prev
+ls
+git remote
+cd Prev_code/
+ls
+git remote add https://github.com/LastChallenge/Mid_Test_repo.git
+git remote add prev https://github.com/LastChallenge/Mid_Test_repo.git
+ls
+git pull prev master
+ls
+git pull prev master
+ls
+git clone https://github.com/LastChallenge/Mid_Test_repo.git
+ls
+cd Mid_Test_repo/
+ls
+midTest/
+ls
+cd midTest/
+ls
+cd ..
+cd
+ls
+cd midTest/
+ls
+rmdir Prev_code
+rmdir -rf Prev_code
+rmdir -r Prev_code
+rmdir -f Prev_code
+man rmdir
+rmdir --ignore Prev_code
+ls
+cd ..
+ls
+rmdir --ignore Prev_code
+ls
+exit
+ls
+cd 16_05_2019
+ls
+vu calc2
+cd calc2
+ls
+tmux
+exit
+./client 
+ls
+exit
+cd ..
+cd calc2
+./server 
+cd
+ls
+exit
+cd..
+cd 
+cd Final_exam_Prac/
+./server 
+exit
+./wait_exam 
+vi wait_exam.c
+gcc -o wait_exam wait_exam.c
+./wait_exam 
+vi wait_exam.c
+gcc -o wait_exam wait_exam.c
+./wait_exam 
+exit
+tmux
+ls
+./server
+cd ..
+ls
+cd
+ls
+cd Final
+cd Final_exam_Prac/
+ls
+vi client.c
+vi server.c 
+cd..
+cd ..
+ls
+cd 16_05_2019/calc2
+ls
+vi client.c
+./client 
+ls
+cp client.c ../../Final_exam_Prac/client.c_
+cp client.c ../../Final_exam_Prac/client.c
+cp server.c ../../Final_exam_Prac/server.c
+cp header.h ../../Final_exam_Prac/header.h
+cd
+cd Final_exam_Prac/
+ls
+vi client.c
+ls
+ls -a
+vi client.c
+vi server.c
+gcc -o server server.c
+gcc -o client client.c
+./client 
+ls
+vi client.c_
+rm client.c_
+ls
+vi server.c
+vi client.c
+vi server.c
+ps
+ls
+vi server.c
+gcc -o server server.c
+./server
+vi server.c
+vi client.c
+vi server.c
+gcc -o server server.c
+./server
+vi server.c
+./server
+vi server.c
+exit
+./client 
+cd 
+cd Final_exam_Prac/
+./client 
+exit
+ls
+cd 16_05_2019
+ls
+cd calc
+ls
+cd ..
+ls
+tmux
+ls
+mkdir --ignore Prev_code/
+mkdir --ignore Prev_code
+mkdir -ignore Prev_code
+mkdir -i Prev_code
+mkdir --i Prev_code
+rm -rm Prev_code/
+rm -rm Prev_code
+rm -rf Prev_code
+ls
+mkdir Final_exam_Prac
+cd Final_exam_Prac/
+ls
+cd 
+cd 16_05_2019/
+ls
+cd calc
+ls
+cp client.c  ./Final_exam_Prac
+ls
+rm Final_exam_Prac 
+ls
+cp client.c ../../Final_exam_Prac/client.c
+ls
+cp server.c ../../Final_exam_Prac/client.c
+ls
+cd ..
+cd
+cd 16_05_2019/calc
+ls
+cp client.c ../../Final_exam_Prac/client.c
+cp server.c ../../Final_exam_Prac/server.c
+ls
+tmux
+ls
+cd midTest/
+LS
+ls
+cat 2017_0418/
+cd 2017_0418/
+ls
+cd ..
+cd 2019_0404
+ls
+cd first_class/
+ls
+vi fork_examplc.c
+vi fork_example.c
+cd
+ls
+cd Final_exam_Prac/
+ls
+vi server.c
+vi client.c
+cd..
+cd ..
+ls
+cd midTest/2019_0404
+ls
+cd first_class/
+ls
+vi fork_example.c 
+./fork_exam 
+vi fork2_exam
+vi fork2_exam.c
+./fork2_exam 
+os
+ps
+cd ..
+ls
+cd second_class/
+LS
+ls
+cat wait_exam.c
+./wait_exam
+tmux
+cd ..
+ls
+exit
+./server
+./server 
+vi server.c
+./server
+vi server.c
+exit
+ls
+cd Final_exam_Prac/
+ls
+vi server.c
+cd ..
+ls
+git remote
+git remote -v
+git add Final_exam_Prac
+git -m commit 
+git -m commit "Final_exam_Prac"
+git commit -m "Final_exam_Prac"
+git push lExamPrac master
+ls
+cd Final_exam_Prac/
+ls
+vi server.c
+tmux

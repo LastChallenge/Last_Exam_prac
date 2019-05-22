@@ -11,7 +11,7 @@ int main(void){
 		printf("fork error \n");
 	}
 	else if(pid == 0) {
-		printf("hi from child \n");
+		printf("hi from child PID:%d\n", getppid());
 
 		sleep(100 * 1000);
 

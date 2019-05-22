@@ -1,0 +1,6 @@
+sigemptyset(signal *set); //모든 시그널을 제거함
+sigaddset(signal *set, signal); //시그널 추가
+
+void (*old_fun)(int);
+old_fun = signal(signal, sigint_handler);
+void sigint_handler(int signo) //시그널 제어 함수 

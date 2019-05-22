@@ -53,6 +53,17 @@ int main() {
 
 		printf("connected. \n");
 
+		if((pid = fork()) < 0) {
+			printf("fork-error");
+			exit(1);
+		} else if(pid == 0) { //자식 
+			printf("자식 프로세스 확인 PPID:%d \n", getppid());
+			n = recv(s2, &i, sizeof(i), 0);
+			i.result =  calculate(i.operator, i.operand, i.operand2);
+		} else {
+			continue;
+		}
+
 		done = 0;
 
 		do {
@@ -61,24 +72,11 @@ int main() {
 				if(n < 0) printf("recv-error");
 				done = 1;
 			}
-			if((pid = fork()) < 0) {
-				printf("fork-error");
-				exit(1);
-			} else { // 자식 프로세스
-				printf("자식 프로세스 확인 PID:%d \n", getppid());
-				n = recv(s2, &i, sizeof(i), 0);
-				i.result = calculate(i.operator, i.operand, i.operand2);
-			}/* else { // 부모 프로세스 
-				printf("부모 프로세스 PID:%d \n", getpid());
-			}*/
-
-			//i.result = calculate(i.operator, i.operand, i.operand2);
 
 			if(send(s2, &i, sizeof(i), 0) < 0) {
 				printf("send-error");
 				done = 1;
 			}
-
 		}
 		while(!done);
 

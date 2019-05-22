@@ -16,6 +16,8 @@ $
 # Command Line History (newest to oldest):
 :wq
 :WQ
+:q!
+:Q!
 :ㅈㅂ
 :w
 :Wq
@@ -26,7 +28,6 @@ $
 :35
 :25
 :27
-:q!
 :28
 :3
 :2
@@ -100,41 +101,71 @@ $
 	
 	
 ""1	LINE	0
-		char S_operand[BUF_SIZE] // 피연산자를 저장할 배열
+			}
 "2	LINE	0
 	
 "3	LINE	0
-	q
+	
 "4	LINE	0
-	
+				//i.result = calculate(i.operator, i.operand, i.operand2);
 "5	LINE	0
-					if(str[
+				}
 "6	LINE	0
-		if(bind(s, 
+					printf("부모 프로세스 PID:%d \n", getpid());
 "7	LINE	0
-	
+				} else { // 부모 프로세스 
 "8	LINE	0
-		
-		printf("Connected \n");
+					i.result = calculate(i.operator, i.operand, i.operand2);
 "9	LINE	0
-		}
+					n = recv(s2, &i, sizeof(i), 0);
 "-	CHAR	0
 	p
 
 # File marks:
-'0  36  39  ~/16_05_2019/calc2/client.c
-'1  50  9  ~/16_05_2019/calc2/server.c
-'2  52  1  ~/16_05_2019/calc2/client.c
-'3  10  1  ~/16_05_2019/calc2/client.c
-'4  8  15  ~/16_05_2019/calc2/server.c
-'5  1  18  ~/16_05_2019/calc2/client.c
-'6  66  0  ~/16_05_2019/calc/server.c
-'7  62  9  ~/16_05_2019/calc/client.c
-'8  53  9  ~/16_05_2019/calc2/client.c
-'9  49  2  ~/16_05_2019/calc2/server.c
+'0  87  15  ~/Final_exam_Prac/server.c
+'1  54  0  ~/Final_exam_Prac/server.c
+'2  110  0  ~/Final_exam_Prac/server.c
+'3  5  40  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+'4  6  56  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+'5  3  0  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+'6  1  32  ~/Final_exam_Prac/sigint_handler/kill.c
+'7  65  2  ~/Final_exam_Prac/server.c
+'8  76  21  ~/Final_exam_Prac/server.c
+'9  76  7  ~/Final_exam_Prac/server.c
 
 # Jumplist (newest first):
+-'  87  15  ~/Final_exam_Prac/server.c
+-'  54  0  ~/Final_exam_Prac/server.c
+-'  110  0  ~/Final_exam_Prac/server.c
+-'  65  2  ~/Final_exam_Prac/server.c
+-'  5  40  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+-'  6  56  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+-'  3  0  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+-'  1  0  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+-'  1  32  ~/Final_exam_Prac/sigint_handler/kill.c
+-'  76  21  ~/Final_exam_Prac/server.c
+-'  84  1  ~/Final_exam_Prac/server.c
+-'  67  1  ~/Final_exam_Prac/server.c
+-'  83  11  ~/Final_exam_Prac/server.c
+-'  1  18  ~/Final_exam_Prac/server.c
+-'  11  0  ~/Final_exam_Prac/client.c
+-'  4  0  ~/Final_exam_Prac/client.c
+-'  43  2  ~/Final_exam_Prac/client.c
+-'  73  9  ~/Final_exam_Prac/server.c
+-'  24  29  ~/midTest/2019_0404/second_class/wait_exam.c
+-'  14  38  ~/midTest/2019_0404/second_class/wait_exam.c
+-'  1  0  ~/midTest/2019_0404/second_class/wait_exam.c
+-'  79  4  ~/Final_exam_Prac/server.c
+-'  17  12  ~/Final_exam_Prac/client.c
+-'  1  0  ~/Final_exam_Prac/client.c_
+-'  89  0  ~/Final_exam_Prac/server.c
+-'  50  3  ~/Final_exam_Prac/client.c
+-'  62  0  ~/16_05_2019/calc2/client.c
 -'  36  39  ~/16_05_2019/calc2/client.c
+-'  32  0  ~/Final_exam_Prac/client.c
+-'  1  0  ~/Final_exam_Prac/client.c
+-'  1  1  ~/midTest/2019_0404/first_class/fork_example.c
+-'  1  0  ~/midTest/2019_0404/first_class/fork_examplc.c
 -'  52  1  ~/16_05_2019/calc2/client.c
 -'  50  9  ~/16_05_2019/calc2/server.c
 -'  8  15  ~/16_05_2019/calc2/server.c
@@ -144,7 +175,6 @@ $
 -'  3  21  ~/16_05_2019/calc2/client.c
 -'  4  13  ~/16_05_2019/calc2/client.c
 -'  37  0  ~/16_05_2019/calc2/client.c
--'  62  0  ~/16_05_2019/calc2/client.c
 -'  66  0  ~/16_05_2019/calc/server.c
 -'  32  0  ~/16_05_2019/calc/server.c
 -'  59  9  ~/16_05_2019/calc2/client.c
@@ -202,39 +232,111 @@ $
 -'  64  17  ~/16_05_2019/calc-server1.c
 -'  62  0  ~/16_05_2019/calc-server1.c
 -'  34  19  ~/16_05_2019/calc-server1.c
--'  17  24  ~/16_05_2019/calc-server1.c
--'  38  7  ~/16_05_2019/calc-server1.c
--'  32  1  ~/16_05_2019/calc-server1.c
--'  15  17  ~/16_05_2019/calc-server1.c
--'  63  0  ~/16_05_2019/calc-server1.c
--'  1  0  ~/16_05_2019/calc-server1.c
--'  34  80  ~/16_05_2019/server1.c
--'  66  0  ~/16_05_2019/server1.c
--'  28  45  ~/16_05_2019/client1.c
--'  1  19  ~/16_05_2019/client1.c
--'  6  22  ~/16_05_2019/client1.h
--'  10  0  ~/16_05_2019/client1.h
--'  46  0  ~/16_05_2019/client1.c
--'  49  0  ~/16_05_2019/server1.c
--'  24  27  ~/16_05_2019/server1.c
--'  1  0  ~/16_05_2019/client1.h
--'  1  0  ~/16_05_2019/server1.c
--'  14  19  ~/use_gdb/gdb-test.c
--'  7  30  ~/use_gdb/gdb-test.c
--'  3  18  ~/use_gdb/gdb-test.c
--'  13  1  ~/use_gdb/gdb-test.c
--'  11  5  ~/use_gdb/gdb-test.c
--'  5  7  ~/use_gdb/gdb-test.c
--'  15  16  ~/use_gdb/gdb-test.c
--'  1  0  ~/use_gdb/gdb-test
--'  18  0  ~/use_gdb/gdb-test.c
--'  1  0  ~/use_gdb/gdb-test.c
--'  50  9  ~/16_05_2019/calc2/server.c
 
 # History of marks within files (newest to oldest):
 
+> ~/Final_exam_Prac/server.c
+	"	87	15
+	^	110	0
+	.	80	0
+	+	79	5
+	+	79	4
+	+	76	11
+	+	22	10
+	+	76	27
+	+	76	0
+	+	76	0
+	+	70	4
+	+	76	11
+	+	76	0
+	+	76	54
+	+	76	34
+	+	76	47
+	+	76	54
+	+	76	61
+	+	76	113
+	+	76	4
+	+	76	53
+	+	76	35
+	+	76	0
+	+	76	59
+	+	76	54
+	+	76	0
+	+	76	5
+	+	76	5
+	+	76	9
+	+	67	11
+	+	83	12
+	+	83	11
+	+	67	10
+	+	67	0
+	+	76	21
+	+	76	20
+	+	76	4
+	+	76	4
+	+	66	0
+	+	58	11
+	+	65	0
+	+	64	11
+	+	59	32
+	+	66	0
+	+	66	0
+	+	62	67
+	+	76	0
+	+	76	0
+	+	76	0
+	+	75	0
+	+	63	0
+	+	62	60
+	+	62	60
+	+	62	60
+	+	63	0
+	+	63	0
+	+	70	4
+	+	80	0
+
+> ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+	"	5	40
+	^	5	41
+	.	5	40
+	+	2	50
+	+	6	56
+	+	5	40
+
+> ~/Final_exam_Prac/sigint_handler/kill.c
+	"	1	32
+	^	1	35
+	.	1	32
+	+	15	0
+	+	1	32
+
+> ~/midTest/2017_0418/vfork.c
+	"	23	0
+
+> ~/midTest/2019_0404/second_class/wait_exam.c
+	"	24	2
+	^	14	39
+	.	14	38
+	+	14	0
+	+	14	38
+
+> ~/Final_exam_Prac/client.c
+	"	11	0
+
+> ~/midTest/2019_0404/first_class/fork2_exam.c
+	"	26	0
+
+> ~/midTest/2019_0404/first_class/fork2_exam
+	"	1	0
+
+> ~/midTest/2019_0404/first_class/fork_example.c
+	"	1	0
+
+> ~/Final_exam_Prac/client.c_
+	"	1	0
+
 > ~/16_05_2019/calc2/client.c
-	"	36	39
+	"	62	0
 	^	36	40
 	.	36	40
 	+	61	0
@@ -337,6 +439,9 @@ $
 	+	36	34
 	+	39	11
 	+	36	40
+
+> ~/midTest/2019_0404/first_class/fork_examplc.c
+	"	1	0
 
 > ~/16_05_2019/calc2/server.c
 	"	50	9
@@ -1448,232 +1553,3 @@ $
 	+	19	55
 	+	19	0
 	+	18	3
-
-> ~/work/2019_0404/enviro_example.c
-	"	1	0
-	^	1	0
-	.	1	0
-	+	14	0
-	+	1	0
-
-> ~/work/2019_0404/argv_example2.c
-	"	11	0
-	^	11	1
-	.	11	1
-	+	11	1
-
-> ~/work/getpid_demo.c
-	"	9	0
-	^	9	0
-	.	8	1
-	+	5	31
-	+	8	1
-
-> /getpid.c
-	"	1	0
-	^	8	0
-	.	9	0
-	+	8	0
-	+	7	19
-	+	9	0
-
-> ~/work/2019_0321/calc1.c
-	"	24	0
-	^	21	3
-	.	21	0
-	+	3	0
-	+	25	0
-	+	25	0
-	+	5	0
-	+	3	0
-	+	3	0
-	+	2	0
-	+	21	0
-
-> ~/work/2019_0321/func.c
-	"	2	0
-	^	2	0
-	.	1	18
-	+	3	0
-	+	3	0
-	+	4	0
-	+	4	0
-	+	23	10
-	+	1	18
-
-> ~/work/2019_0321/calc.c
-	"	1	0
-	^	2	19
-	.	10	0
-	+	9	36
-	+	9	36
-	+	9	36
-	+	10	0
-
-> ~/work/2019_0321/calc.h
-	"	5	37
-	^	5	40
-	.	5	40
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	3
-	+	1	0
-	+	1	57
-	+	1	57
-	+	1	0
-	+	1	0
-	+	1	65
-	+	1	57
-	+	1	63
-	+	1	57
-	+	1	0
-	+	1	28
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	57
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	5	0
-	+	5	0
-	+	6	0
-	+	6	0
-	+	3	0
-	+	6	0
-	+	5	40
-
-> ~/work/2019_0321/test1.c
-	"	3	0
-	^	37	4
-	.	3	0
-	+	32	98
-	+	32	140
-	+	32	73
-	+	32	54
-	+	32	100
-	+	32	144
-	+	32	75
-	+	32	38
-	+	32	83
-	+	32	127
-	+	32	58
-	+	32	38
-	+	32	83
-	+	32	127
-	+	32	58
-	+	2	18
-	+	32	38
-	+	32	83
-	+	32	127
-	+	32	58
-	+	14	13
-	+	25	9
-	+	32	34
-	+	32	34
-	+	32	34
-	+	47	2
-	+	46	9
-	+	33	10
-	+	35	11
-	+	39	19
-	+	35	7
-	+	38	9
-	+	44	30
-	+	40	8
-	+	43	7
-	+	44	10
-	+	43	8
-	+	46	8
-	+	44	10
-	+	47	2
-	+	47	2
-	+	47	1
-	+	53	0
-	+	52	11
-	+	58	23
-	+	65	0
-	+	44	11
-	+	45	20
-	+	45	35
-	+	42	35
-	+	39	35
-	+	36	35
-	+	11	7
-	+	12	7
-	+	14	7
-	+	20	10
-	+	23	10
-	+	27	11
-	+	50	27
-	+	4	28
-	+	4	31
-	+	4	3
-	+	4	55
-	+	54	24
-	+	58	23
-	+	62	23
-	+	50	2
-	+	32	35
-	+	51	14
-	+	51	19
-	+	52	16
-	+	55	1
-	+	51	6
-	+	55	23
-	+	56	16
-	+	59	23
-	+	60	16
-	+	63	23
-	+	64	16
-	+	51	4
-	+	55	3
-	+	59	3
-	+	63	3
-	+	51	13
-	+	62	6
-	+	4	55
-	+	36	20
-	+	37	0
-	+	40	0
-	+	43	0
-	+	46	0
-	+	48	23
-	+	4	0
-	+	4	7
-	+	48	14
-	+	65	7
-	+	3	17
-	+	12	10
-	+	4	0
-	+	3	0
-
-> ~/work/2019_0321/clac1.c
-	"	1	0
-
-> ~/work/2019_0321/cacl1.c
-	"	1	0
