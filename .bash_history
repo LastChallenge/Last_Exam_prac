@@ -1,103 +1,3 @@
-vi echoall.c
-ls
-cd
-ls
-tmp
-cd tmp
-ls
-cd
-cd work
-cd 2019_0404
-ls
-cd second_class
-ls
-cd
-cd ..
-ls
-cd hurryon
-ls
-cd tmp
-ls
-cd ..
-ls
-cd s1720963
-ls
-cd ..
-ls
-cd tmp
-ls
-cp echoall.c echoall ./home/s1720963/work
-cp echoall.c echoall ./home/s1720963
-exit
-ls
-mkdir first_class
-ls
-mv argv_exam.c ./first_class
-mv argv_examplec ./first_class
-mv argv_example.c ./first_class
-mv argv_example ./first_class
-ls
-mv argv_example2.c argv_example2 ./first_class
-ls
-mv enviro_example.c enviro first_class
-ls
-mv segment_example.c seg_exam first_class
-mv segment_example.c seg_example first_class
-ls
-mv fork_example.c fork_exam ./first_class
-ls
-mv getpid_demo.c getpid_demo ./first_class
-ls
-mv fork2_exam.c fork2_exam ./first_class
-ls
-mkdir second_class
-mv wait_exam.c wait_exam zombi_exam.c zomvie_exam ./second_class
-mv wait_exam.c wait_exam zombie_exam.c zombie_exam ./second_class
-ls
-cd second_class
-ls
-cd
-vi ~/.tmux.conf
-ls
-cd prac
-ls
-vi example.c
-ls
-cd
-vi ~/.tmux.conf
-ls
-cd work
-ls
-cd 2019_0404
-ls
-cd second_class
-ls
-cd
-ps
-exit
-ls
-cd ./work/2019_0404
-ls
-vi fork_example.c
-gcc -Wall -o fork_exam fork_example.c
-vi fork_example.c
-gcc -Wall -o fork_exam fork_example.c
-./fork_exam
-vi fork_example.c
-ls
-clear
-
-vi fork_example.c
-./fork_exam
-vi fork_example.c
-gcc -Wall -o fork_exam fork_example.c
-./fork_exam
-vi fork_example.c
-ps
-./fork_exam
-ps
-vi fork_example.c
-ls
 vi fork2_exam.c
 gcc -Wall -o fork2_exam fork2_exam.c
 ./fork2_exam
@@ -1998,3 +1898,103 @@ cd Final_exam_Prac/
 ls
 vi server.c
 tmux
+ls
+git add --all
+git commit -m
+git commit 
+git commit -m "23_05_2019"
+git push lExamPrac master
+./client 
+exit
+./client 
+vi client.c
+vi server.c
+exit
+ls
+cd Final_exam_Prac/
+ls
+tmux
+ps -a
+exit
+cd ..
+ls
+cd 16_05_2019/
+ls
+cd calc2
+ls
+./server 
+cd
+cd Final_exam_Prac/
+./c
+./client 
+vi client.c
+vi server.c
+cd
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd bin
+ls
+cd ..
+ls
+cd lib64/
+ls
+cd ..
+cd home
+cd s1720963
+ls
+exit
+ls
+mkdir 30-05-2019
+cd 30-05-2019/
+ls
+vi pthread1.c
+vi header.h
+vi pthread1.c
+gcc pthread1.c -lpthread -o pthread
+ls
+./pthread
+tmux
+docker images
+docker ps
+docker ps -a
+
+docker ps
+docker ps -a
+docker images
+docker pull MySQL Server Enterprise Edition
+docker pull mysql
+docker images
+docker rmi mysql
+docker images
+clear
+docker images
+docker run -it ubuntu  /bin/bash
+docker run -it ubuntu:16.04  /bin/bash
+ls
+docker ps
+docker run -it ubuntu:16.04  /bin/bash
+ps
+docker ps
+ps
+docker ps
+clear
+docker ps
+docker run -it ubuntu:16.04  /bin/bash
+docker ps
+clear
+docker images
+docker run -it ubuntu:16.04  /bin/bash
+docker ps
+docker run -it ubuntu:16.04  /bin/bash
+docker ps
+docker commit 483dd26b8ef7 lastchallenge/test:test_docker
+docker images
+clear
+docker images
+ls
+docker ps
+docker images

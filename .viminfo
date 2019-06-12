@@ -15,12 +15,12 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-:WQ
 :q!
-:Q!
-:ㅈㅂ
-:w
 :Wq
+:ㅈㅂ
+:WQ
+:Q!
+:w
 :45
 :4
 :56
@@ -101,73 +101,92 @@ $
 	
 	
 ""1	LINE	0
-			}
+				send(s2, &i, sizeof(i), 0);
 "2	LINE	0
-	
+			}
 "3	LINE	0
 	
 "4	LINE	0
-				//i.result = calculate(i.operator, i.operand, i.operand2);
+	
 "5	LINE	0
-				}
+				//i.result = calculate(i.operator, i.operand, i.operand2);
 "6	LINE	0
-					printf("부모 프로세스 PID:%d \n", getpid());
+				}
 "7	LINE	0
-				} else { // 부모 프로세스 
+					printf("부모 프로세스 PID:%d \n", getpid());
 "8	LINE	0
-					i.result = calculate(i.operator, i.operand, i.operand2);
+				} else { // 부모 프로세스 
 "9	LINE	0
-					n = recv(s2, &i, sizeof(i), 0);
+					i.result = calculate(i.operator, i.operand, i.operand2);
 "-	CHAR	0
 	p
 
 # File marks:
-'0  87  15  ~/Final_exam_Prac/server.c
-'1  54  0  ~/Final_exam_Prac/server.c
-'2  110  0  ~/Final_exam_Prac/server.c
-'3  5  40  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
-'4  6  56  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
-'5  3  0  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
-'6  1  32  ~/Final_exam_Prac/sigint_handler/kill.c
-'7  65  2  ~/Final_exam_Prac/server.c
-'8  76  21  ~/Final_exam_Prac/server.c
-'9  76  7  ~/Final_exam_Prac/server.c
+'0  111  0  ~/Final_exam_Prac/server.c
+'1  57  13  ~/Final_exam_Prac/server.c
+'2  69  0  ~/Final_exam_Prac/server.c
+'3  62  10  ~/Final_exam_Prac/server.c
+'4  37  9  ~/Final_exam_Prac/client.c
+'5  1  0  ~/Final_exam_Prac/server.ccd
+'6  64  7  ~/Final_exam_Prac/server.c
+'7  46  6  ~/Final_exam_Prac/client.c
+'8  50  6  ~/Final_exam_Prac/server.c
+'9  32  0  ~/16_05_2019/calc2/client.c
 
 # Jumplist (newest first):
--'  87  15  ~/Final_exam_Prac/server.c
--'  54  0  ~/Final_exam_Prac/server.c
--'  110  0  ~/Final_exam_Prac/server.c
--'  65  2  ~/Final_exam_Prac/server.c
+-'  111  0  ~/Final_exam_Prac/server.c
+-'  57  13  ~/Final_exam_Prac/server.c
+-'  69  0  ~/Final_exam_Prac/server.c
+-'  62  10  ~/Final_exam_Prac/server.c
+-'  64  7  ~/Final_exam_Prac/server.c
+-'  37  9  ~/Final_exam_Prac/client.c
+-'  46  6  ~/Final_exam_Prac/client.c
+-'  1  0  ~/Final_exam_Prac/server.ccd
+-'  50  6  ~/Final_exam_Prac/server.c
+-'  61  0  ~/Final_exam_Prac/client.c
+-'  82  3  ~/Final_exam_Prac/server.c
+-'  32  0  ~/16_05_2019/calc2/client.c
+-'  62  0  ~/16_05_2019/calc2/client.c
+-'  92  0  ~/16_05_2019/calc2/server.c
+-'  79  2  ~/16_05_2019/calc2/server.c
+-'  50  9  ~/16_05_2019/calc2/server.c
+-'  1  0  ~/30-05-2019/pthr_detach.c
+-'  24  0  ~/30-05-2019/pthread1.c
+-'  25  65  ~/30-05-2019/pthread1.c
+-'  38  0  ~/30-05-2019/pthread1.c
+-'  1  0  ~/30-05-2019/pthread1.c
+-'  5  0  ~/30-05-2019/header.h
+-'  1  0  ~/30-05-2019/header.h
+-'  11  0  ~/Final_exam_Prac/client.c
+-'  90  15  ~/Final_exam_Prac/server.c
+-'  113  0  ~/Final_exam_Prac/server.c
+-'  68  2  ~/Final_exam_Prac/server.c
 -'  5  40  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
 -'  6  56  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
 -'  3  0  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
 -'  1  0  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
 -'  1  32  ~/Final_exam_Prac/sigint_handler/kill.c
--'  76  21  ~/Final_exam_Prac/server.c
--'  84  1  ~/Final_exam_Prac/server.c
--'  67  1  ~/Final_exam_Prac/server.c
--'  83  11  ~/Final_exam_Prac/server.c
+-'  79  21  ~/Final_exam_Prac/server.c
+-'  87  1  ~/Final_exam_Prac/server.c
+-'  70  1  ~/Final_exam_Prac/server.c
+-'  86  11  ~/Final_exam_Prac/server.c
 -'  1  18  ~/Final_exam_Prac/server.c
--'  11  0  ~/Final_exam_Prac/client.c
 -'  4  0  ~/Final_exam_Prac/client.c
 -'  43  2  ~/Final_exam_Prac/client.c
--'  73  9  ~/Final_exam_Prac/server.c
+-'  76  9  ~/Final_exam_Prac/server.c
 -'  24  29  ~/midTest/2019_0404/second_class/wait_exam.c
 -'  14  38  ~/midTest/2019_0404/second_class/wait_exam.c
 -'  1  0  ~/midTest/2019_0404/second_class/wait_exam.c
--'  79  4  ~/Final_exam_Prac/server.c
 -'  17  12  ~/Final_exam_Prac/client.c
 -'  1  0  ~/Final_exam_Prac/client.c_
--'  89  0  ~/Final_exam_Prac/server.c
+-'  92  0  ~/Final_exam_Prac/server.c
 -'  50  3  ~/Final_exam_Prac/client.c
--'  62  0  ~/16_05_2019/calc2/client.c
 -'  36  39  ~/16_05_2019/calc2/client.c
 -'  32  0  ~/Final_exam_Prac/client.c
 -'  1  0  ~/Final_exam_Prac/client.c
 -'  1  1  ~/midTest/2019_0404/first_class/fork_example.c
 -'  1  0  ~/midTest/2019_0404/first_class/fork_examplc.c
 -'  52  1  ~/16_05_2019/calc2/client.c
--'  50  9  ~/16_05_2019/calc2/server.c
 -'  8  15  ~/16_05_2019/calc2/server.c
 -'  10  1  ~/16_05_2019/calc2/client.c
 -'  1  18  ~/16_05_2019/calc2/client.c
@@ -213,130 +232,86 @@ $
 -'  1  0  ~/16_05_2019/calc/server1.c
 -'  25  15  ~/16_05_2019/calc/client.c
 -'  6  21  ~/16_05_2019/calc/client.c
--'  33  24  ~/16_05_2019/calc/client.c
--'  1  0  ~/16_05_2019/calc/cliemt.c
--'  80  0  ~/16_05_2019/calc/server.c
--'  46  0  ~/16_05_2019/calc/client.c
--'  58  0  ~/16_05_2019/calc/client.c
--'  51  0  ~/16_05_2019/calc/client.c
--'  1  0  ~/16_05_2019/fail_code/calc-client1.c
--'  1  0  ~/16_05_2019/echo-socket/server1.c
--'  1  0  ~/16_05_2019/echo-socket/client1.c
--'  1  0  ~/16_05_2019/calc-client1.c
--'  15  0  ~/16_05_2019/calc-client1.c
--'  1  0  ~/16_05_2019/calc-client.c
--'  1  0  ~/16_05_2019/echo_socket
--'  1  0  ~/16_05_2019/calc/server.c
--'  38  1  ~/16_05_2019/calc/client.c
--'  65  30  ~/16_05_2019/calc-server1.c
--'  64  17  ~/16_05_2019/calc-server1.c
--'  62  0  ~/16_05_2019/calc-server1.c
--'  34  19  ~/16_05_2019/calc-server1.c
 
 # History of marks within files (newest to oldest):
 
 > ~/Final_exam_Prac/server.c
-	"	87	15
-	^	110	0
-	.	80	0
-	+	79	5
+	"	111	0
+	^	82	4
+	.	82	4
+	+	82	5
+	+	82	4
+	+	79	11
+	+	25	10
+	+	79	27
+	+	79	0
+	+	79	0
+	+	73	4
+	+	79	11
+	+	79	0
+	+	79	54
+	+	79	34
+	+	79	47
+	+	79	54
+	+	79	61
+	+	79	113
 	+	79	4
-	+	76	11
-	+	22	10
-	+	76	27
-	+	76	0
-	+	76	0
-	+	70	4
-	+	76	11
-	+	76	0
-	+	76	54
-	+	76	34
-	+	76	47
-	+	76	54
-	+	76	61
-	+	76	113
-	+	76	4
-	+	76	53
-	+	76	35
-	+	76	0
-	+	76	59
-	+	76	54
-	+	76	0
-	+	76	5
-	+	76	5
-	+	76	9
+	+	79	53
+	+	79	35
+	+	79	0
+	+	79	59
+	+	79	54
+	+	79	0
+	+	79	5
+	+	79	5
+	+	79	9
+	+	70	11
+	+	86	12
+	+	86	11
+	+	70	10
+	+	70	0
+	+	79	21
+	+	79	20
+	+	79	4
+	+	79	4
+	+	69	0
+	+	61	11
+	+	68	0
 	+	67	11
-	+	83	12
-	+	83	11
-	+	67	10
-	+	67	0
-	+	76	21
-	+	76	20
-	+	76	4
-	+	76	4
+	+	62	32
+	+	69	0
+	+	69	0
+	+	65	67
+	+	79	0
+	+	79	0
+	+	79	0
+	+	78	0
 	+	66	0
-	+	58	11
-	+	65	0
-	+	64	11
-	+	59	32
+	+	65	60
+	+	65	60
+	+	65	60
 	+	66	0
 	+	66	0
-	+	62	67
-	+	76	0
-	+	76	0
-	+	76	0
-	+	75	0
-	+	63	0
-	+	62	60
-	+	62	60
-	+	62	60
-	+	63	0
-	+	63	0
-	+	70	4
-	+	80	0
-
-> ~/Final_exam_Prac/sigint_handler/explain-signal.txt
-	"	5	40
-	^	5	41
-	.	5	40
-	+	2	50
-	+	6	56
-	+	5	40
-
-> ~/Final_exam_Prac/sigint_handler/kill.c
-	"	1	32
-	^	1	35
-	.	1	32
-	+	15	0
-	+	1	32
-
-> ~/midTest/2017_0418/vfork.c
-	"	23	0
-
-> ~/midTest/2019_0404/second_class/wait_exam.c
-	"	24	2
-	^	14	39
-	.	14	38
-	+	14	0
-	+	14	38
+	+	73	4
+	+	83	0
+	+	66	29
+	+	79	4
+	+	82	5
+	+	1	2
+	+	3	4
+	+	2	31
+	+	66	0
+	+	79	3
+	+	82	4
 
 > ~/Final_exam_Prac/client.c
-	"	11	0
+	"	37	9
 
-> ~/midTest/2019_0404/first_class/fork2_exam.c
-	"	26	0
-
-> ~/midTest/2019_0404/first_class/fork2_exam
-	"	1	0
-
-> ~/midTest/2019_0404/first_class/fork_example.c
-	"	1	0
-
-> ~/Final_exam_Prac/client.c_
+> ~/Final_exam_Prac/server.ccd
 	"	1	0
 
 > ~/16_05_2019/calc2/client.c
-	"	62	0
+	"	32	0
 	^	36	40
 	.	36	40
 	+	61	0
@@ -440,11 +415,8 @@ $
 	+	39	11
 	+	36	40
 
-> ~/midTest/2019_0404/first_class/fork_examplc.c
-	"	1	0
-
 > ~/16_05_2019/calc2/server.c
-	"	50	9
+	"	92	0
 	^	20	16
 	.	21	0
 	+	98	0
@@ -547,6 +519,66 @@ $
 	+	63	4
 	+	65	26
 	+	21	0
+
+> ~/30-05-2019/pthr_detach.c
+	"	1	0
+
+> ~/30-05-2019/pthread1.c
+	"	24	0
+	^	24	0
+	.	24	0
+	+	1	19
+	+	34	45
+	+	38	0
+	+	3	12
+	+	26	0
+	+	24	0
+
+> ~/30-05-2019/header.h
+	"	5	0
+	^	5	0
+	.	6	0
+	+	6	0
+
+> ~/Final_exam_Prac/sigint_handler/explain-signal.txt
+	"	5	40
+	^	5	41
+	.	5	40
+	+	2	50
+	+	6	56
+	+	5	40
+
+> ~/Final_exam_Prac/sigint_handler/kill.c
+	"	1	32
+	^	1	35
+	.	1	32
+	+	15	0
+	+	1	32
+
+> ~/midTest/2017_0418/vfork.c
+	"	23	0
+
+> ~/midTest/2019_0404/second_class/wait_exam.c
+	"	24	2
+	^	14	39
+	.	14	38
+	+	14	0
+	+	14	38
+
+> ~/midTest/2019_0404/first_class/fork2_exam.c
+	"	26	0
+
+> ~/midTest/2019_0404/first_class/fork2_exam
+	"	1	0
+
+> ~/midTest/2019_0404/first_class/fork_example.c
+	"	1	0
+
+> ~/Final_exam_Prac/client.c_
+	"	1	0
+
+> ~/midTest/2019_0404/first_class/fork_examplc.c
+	"	1	0
 
 > ~/16_05_2019/calc/server.c
 	"	66	0
@@ -1519,37 +1551,3 @@ $
 	+	10	0
 	+	11	0
 	+	11	0
-
-> ~/.vimrc
-	"	1	36
-	^	1	37
-	.	1	37
-	+	1	8
-	+	3	0
-	+	2	0
-	+	1	37
-
-> /home/.vimrc
-	"	1	0
-	^	1	36
-	.	1	35
-	+	1	35
-
-> /home/hilight
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/work/2019_0404/segment_example.c
-	"	18	2
-	^	18	3
-	.	18	3
-	+	1	1
-	+	1	18
-	+	24	0
-	+	13	16
-	+	17	0
-	+	16	99
-	+	19	55
-	+	19	0
-	+	18	3

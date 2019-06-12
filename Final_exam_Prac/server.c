@@ -1,3 +1,6 @@
+/*
+   vfork 사용 필요할거같음
+   */
 #include "header.h"
 
 #define SOCK_PATH "calc_socket"
