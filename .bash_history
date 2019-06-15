@@ -1,175 +1,3 @@
-vi fork2_exam.c
-gcc -Wall -o fork2_exam fork2_exam.c
-./fork2_exam
-vi fork2_exam.c
-vi wait_exam.c
-gcc -o wait_exam wait_exam.c
-vi wait_exam.c
-gcc -o wait_exam wait_exam.c
-men exit
-man exit
-vi wait_exam.c
-gcc -o wait_exam wait_exam.c
-vi wait_exam.c
-gcc -o wait_exam wait_exam.c
-vi wait_exam.c
-gcc -o wait_exam wait_exam.c
-vi wait_exam.c
-gcc -o wait_exam wait_exam.c
-./wait_exam
-vi wait_exam.c
-gcc -o wait_exam wait_exam.c
-./wait_exam
-ps
-vi wait_exam.c
-gcc -o wait_exam wait_exam.c
-vi wait_exam.c
-./wait_exam
-ps
-./wait_exam
-vs
-;s
-ls
-vi wait_exam.c
-clear
-ps -ef
-clear
-ps -a
-vi wait_exam.c
-ps -l
-vi wait_exam.c
-tmux
-exit
-ls
-cd work
-ls
-mkdir 2019_0411
-cd 2019_0411
-ls
-git
-sudo apt install git
-git
-clear
-git
-clear
-git
-git help -a
-git
-clear
-git
-clear
-git
-clear
-git init 
-ls
-cd 
-ls
-cd work
-ls
-git init LSP_GIT
-ls
-git commit
-git config --global user.email LastChllenged@gmail.com
-git config --global user.name LastChallenge
-git config --global user.email LastChallenged@gmail.com
-ls
-cd LSP_GIT
-ls
-vi hello_world.c
-ls
-vi hello_world.txt
-ls
-git add hello_world.c
-git commit
-git commit -m "first commit"
-ls
-git add hello_world.c
-git commit -m "first commit"
-vi hello_world.c
-git commit -m "first commit"
-git add hello_world.c
-git commit -m "first commit"
-ls
-git add hello_world.c
-ls
-cat hello_world.c 
-git add hello_world.c 
-git commit -m "first commit"
-git config --global user.email LastChallenged@gmail.com
-git config --global user.name LastChallenge
-git add hello_world.c
-git commit -m "first commit"
-git commit
-cd
-ls
-cd work
-ls
-rm LSP_GIT
-rmdir LSP_GIT
-rmdir -rf LSP_GIT
-ls
-git init test
-ls
-cd test
-ls
-git commit
-ls
-cd ../
-ls
-cd LSP_GIT/
-ls
-mv ../test/
-mv hello_world.c ../test/
-cd ../test/
-ls
-git add hello_world.c
-git commit -m "first commit"
-git remote add origin https://github.com/LastChallenge/Linux_System_programming.git
-git push
-git push origin master
-ls
-git pull origin master
-ls
-vi hello_world.c
-cd ..
-git init branch
-ls
-cd branch
-vi branch_test.c
-ls
-git checkout -b second
-git checkout -b master
-git add branch_test.c
-git commit -m "sample"
-cat branch_test.c
-git checkout -b second
-git branch
-ls
-cat branch_test.c
-ls
-git branch
-git second
-git branch
-ls
-vi branch_test.c
-git add branch_test.c
-git commit -m "branch_commit"
-git branch 
-cat branch_test.c
-git checkout master
-git branch
-ls
-vi branch_test.c
-git branch
-gir merge second
-git merge second
-vi branch_test.c
-git branch
-cat branch_test.c
-ls
-git branch
-git checkout second
-git branch
 ls
 git checkout master
 ls
@@ -1998,3 +1826,175 @@ docker images
 ls
 docker ps
 docker images
+ls
+./server 
+vi server.c
+cd ..
+ls
+git remote
+git -v remote
+git remote -v
+git init
+git commit -m "docker update"
+git add --all
+git push 
+git remote
+git push lExamPrac master
+git status
+
+git commit -m "docker update"
+git status
+git add --all
+git status
+ls
+cd LastChallenge/
+ls
+cd ..
+cd use_docker/
+ls
+cd ..
+exit
+ls
+cd Final_exam_Prac/
+ls
+vi client.c
+vi server.c
+tmux
+;s
+cd 13_06_2019/
+./msg_sender
+man msgrcv
+./msg_sender
+ipcs
+./msg_sender
+./msg_sender 
+ipcs
+./msg_sender 
+ls
+man msgctl
+ls
+man msgctl
+ipcs
+ls
+man msgrcv
+exit
+ipcs
+ipcs
+exit
+./shm-reader 
+exit
+./shm-reader 
+ipcs
+./shm-reader 
+ipcs
+ipcrm shm 1720963
+ipcrm 819219
+ipcrm shm 819219
+ipcs
+exit
+./shm-writer 
+ls
+./shm-writer 
+vi shm-writer.c
+vi shm-sender.c
+
+vi shm-reader.c
+vi shm-writer.c
+vi shm-sender.c
+vi shm-reader.c
+ls
+vi shm-reader.c
+./shm-writer 
+
+vi shm-reader.c
+ls
+vi shm-reader.c
+./shm-reader 
+vi shm-reader.c
+vi shm-header.h 
+vi shm-reader.c
+vi shm-writer.c
+gcc -o shm-writer shm-writer.c
+./shm-writer 
+vi shm-writer.c
+vi shm-reader.c
+./shm-reader 
+vi shm-reader.c
+./shm-reader 
+ls
+
+ipcrm shm 1081352
+ipcs
+man shmctl
+ls
+vi shm-fork.c
+;s
+ls
+exit
+ls
+cd 16_05_2019/
+ls
+cd ..
+cd 13_06_2019/
+ls
+mkdir shared-mm
+cd shared-mm/
+ls
+vi shm-header.h
+vi shm-writer.c
+vi shm-reader.c
+ls
+gcc -o shm-writer shm-writer.c 
+gcc -o shm-reader shm-reader.c 
+./shm-writer 
+tmux
+ls
+cd ..
+ls
+cd 13_06_2019/
+ls
+cd shared-mm/
+ls
+gcc -o shm-fork shm-fork.c
+./shm-fork
+ls
+vi shm-ctl.c
+gcc -o shm-ctl shm-ctl.c
+./shm-ctl 
+vi shm-ctl.c
+;s
+ls
+cd ..
+ls
+cd ..
+ls
+git remote
+git remote -v
+git init
+git init lExamPrac
+ls
+cd lExamPrac
+ls
+git remote -b
+git remote -v
+cd ..
+ls
+git commit -m "13-06-2019:
+git commit -m "13-06-2019"
+git add --all
+git push lExamPrac master
+git remote -v
+git status
+~ls
+ls
+git status
+ls
+git add 13_06_2019
+git push lExamPrac master
+git remote
+git init
+cd lExamPrac/
+ls
+cd ..
+ls
+exit
