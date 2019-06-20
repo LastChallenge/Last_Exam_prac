@@ -15,11 +15,15 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-:wq\
-:w
 :q!
 :WQ
+:s
+:wQ
 :Wq
+:28
+:cd
+:wq\
+:w
 :ㅈㅂ
 :Q!
 :45
@@ -29,7 +33,6 @@ $
 :35
 :25
 :27
-:28
 :3
 :2
 :q
@@ -92,154 +95,809 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
+""0	CHAR	0
+	#define SOCK_PATH "socket"
 	
-""1	LINE	0
-		q
+	typedef struct information {
+		int operand;
+		int operand2;
+		char operator;
+		int result;
+	}info;
+	
+	int main(){ 
+		int s, t, len, a;
+		struct sockaddr_un remote;
+		info i;
+		char str[BUFF_SIZE];
+	
+		if((s = socket(AF_UNIX, SOCK_STREAM, 0)) == -1) {
+			printf("socket-error");
+			exit(1);
+		}
+		printf("Trying to connect... \n");
+	
+		remote.sun_family = AF_UNIX;
+		strcpy(remote.sun_path, SOCK_PATH);
+		len = strlen(remote.sun_path) + sizeof(remote.sun_family);
+	
+		if(connect(s, (struct sockaddr *)&remote, len) == -1) {
+			printf("connect-error");
+			exit(1);
+		}
+	
+		printf("Client-Connected \n");
+	
+		while(printf("> "), fgets(str, BUFF_SIZE, stdin), !feof(stdin)) {
+			i.operand = atoi(&str[0]);
+			i.operator = str[1];
+			i.operand2 = atoi(&str[2]);
+	
+			if(send(s, &i, sizeof(i), 0) == -1) {
+				printf("send-error");
+				exit(1);
+			}
+			if((t = recv(s, &a, 100, 0)) > 0) {
+				printf("result> %d", t);
+			} else {
+				if( t < 0) {
+					printf("recv-error");
+					exit(1);
+				} else {
+					printf("server closed connection \n");
+					exit(1);
+"1	CHAR	0
+		do {
+					n = recv(s2, &i, sizeof(i), 0);
+						if(n <= 0) {
+							if(n < 0) printf("recv-error");
+							done = 1;
+						}
+						write(fds2[1], &i, sizeof(i));  //자식에게 구조체 전달
+						read(fds1[0], &a, sizeof(a)); // 자식에게 연산 결과 가져옴
+	
+					if(send(s2, &a, sizeof(a), 0) < 0) {
+						printf("send-error");
+						done = 1;
+					}
+				}
+				while(!done);
+				
+				close(s2);
+			}
+		}
+	
 "2	LINE	0
-		q
+			}
 "3	LINE	0
-		q
-	}
+				continue;
 "4	LINE	0
-		q
-		q
+			} else {
 "5	LINE	0
-		q
+				i.result =  calculate(i.operator, i.operand, i.operand2);
 "6	LINE	0
-		q
-"7	CHAR	0
-	
-			if(-1 == msgctl(msgid, IPC_STAT, &msgstat)) {
-				perror("msgctl() error");
-				exit(1);
-			}
-	
-"8	CHAR	0
-	
-			if(-1 == msgctl(msgid, IPC_STAT, &msgstat)) {
-				perror("msgctl() error");
-				exit(1);
-			}
-	
+				n = recv(s2, &i, sizeof(i), 0);
+"7	LINE	0
+				printf("자식 프로세스 확인 PPID:%d \n", getppid());
+"8	LINE	0
+			} else if(pid == 0) { //자식 
 "9	LINE	0
-				send(s2, &i, sizeof(i), 0);
+				exit(1);
 "-	CHAR	0
-	p
+	f
 
 # File marks:
-'0  27  0  ~/13_06_2019/shared-mm/shm-ctl.c
-'1  48  0  ~/13_06_2019/shared-mm/shm-ctl.c
-'2  39  0  ~/13_06_2019/shared-mm/shm-fork.c
-'3  18  11  ~/13_06_2019/shared-mm/shm-reader.c
-'4  11  0  ~/13_06_2019/shared-mm/shm-reader.c
-'5  10  1  ~/13_06_2019/shared-mm/shm-reader.c
-'6  19  28  ~/13_06_2019/shared-mm/shm-writer.c
-'7  12  1  ~/13_06_2019/shared-mm/shm-reader.c
-'8  7  22  ~/13_06_2019/shared-mm/shm-header.h
-'9  17  10  ~/13_06_2019/shared-mm/shm-reader.c
+'0  56  0  ~/LastChallenge/mid-term/socket/201720963-client.c
+'1  42  0  ~/LastChallenge/mid-term/socket/201720963-client.c
+'2  3  0  ~/Last_Exam_data/socket/client.c
+'3  80  0  ~/LastChallenge/mid-term/socket/201720963-server.c
+'4  3  0  ~/LastChallenge/mid-term/socket/201720963-client.c
+'5  92  0  ~/Last_Exam_data/socket/server.c
+'6  1  0  ~/Last_Exam_data/socket/server.c
+'7  9  11  ~/Last_Exam_data/socket/header.h
+'8  1  0  ~/LastChallenge/mid-term/socket/201720963-head.h
+'9  1  0  ~/LastChallenge/mid-term/socket/201720963-head.c
 
 # Jumplist (newest first):
--'  27  0  ~/13_06_2019/shared-mm/shm-ctl.c
--'  48  0  ~/13_06_2019/shared-mm/shm-ctl.c
--'  1  0  ~/13_06_2019/shared-mm/shm-ctl.c
--'  39  0  ~/13_06_2019/shared-mm/shm-fork.c
--'  1  0  ~/13_06_2019/shared-mm/shm-fork.c
--'  18  11  ~/13_06_2019/shared-mm/shm-reader.c
--'  11  0  ~/13_06_2019/shared-mm/shm-reader.c
--'  10  1  ~/13_06_2019/shared-mm/shm-reader.c
--'  12  1  ~/13_06_2019/shared-mm/shm-reader.c
--'  19  28  ~/13_06_2019/shared-mm/shm-writer.c
--'  25  0  ~/13_06_2019/shared-mm/shm-writer.c
--'  7  22  ~/13_06_2019/shared-mm/shm-header.h
--'  17  10  ~/13_06_2019/shared-mm/shm-reader.c
--'  15  1  ~/13_06_2019/shared-mm/shm-reader.c
--'  1  0  ~/13_06_2019/shared-mm/shm-sender.c
--'  23  0  ~/13_06_2019/shared-mm/shm-reader.c
--'  1  0  ~/13_06_2019/shared-mm/shm-reader.c
--'  1  0  ~/13_06_2019/shared-mm/shm-writer.c
--'  8  0  ~/13_06_2019/shared-mm/shm-header.h
--'  1  0  ~/13_06_2019/shared-mm/shm-header.h
--'  16  5  ~/13_06_2019/msg_sender.c
--'  47  2  ~/13_06_2019/msg_sender.c
--'  42  0  ~/13_06_2019/msg_receiver3.c
--'  43  0  ~/13_06_2019/msg_receiver3.c
--'  22  74  ~/13_06_2019/msg_receiver_q1.c
--'  1  0  ~/13_06_2019/msg_receiver_q1.c
--'  35  1  ~/13_06_2019/msg_sender.c
--'  24  10  ~/13_06_2019/msg_receiver.c
--'  22  62  ~/13_06_2019/msg_receiver.c
--'  1  0  ~/13_06_2019/msg_receiver
--'  34  8  ~/13_06_2019/msg_sender.c
--'  50  9  ~/13_06_2019/msg_sender.c
--'  38  70  ~/13_06_2019/msg_sender.c
--'  1  0  ~/13_06_2019/msg_receiver3.c
--'  31  0  ~/13_06_2019/msg_receiver2.c
--'  1  0  ~/13_06_2019/msg_receiver2.c
--'  29  0  ~/13_06_2019/msg_receiver.c
--'  40  21  ~/13_06_2019/msg_sender.c
--'  11  0  ~/13_06_2019/msg_sender.c
--'  9  6  ~/13_06_2019/msg_receiver.c
--'  1  0  ~/13_06_2019/msg_receiver.c
--'  22  11  ~/13_06_2019/msg_sender.c
--'  20  32  ~/13_06_2019/msg_sender.c
--'  1  0  ~/13_06_2019/msg_sender.c
--'  8  0  ~/13_06_2019/msg_header.h
--'  1  0  ~/13_06_2019/msg_header.h
--'  111  0  ~/Final_exam_Prac/server.c
--'  57  13  ~/Final_exam_Prac/server.c
--'  69  0  ~/Final_exam_Prac/server.c
--'  62  10  ~/Final_exam_Prac/server.c
--'  64  7  ~/Final_exam_Prac/server.c
--'  37  9  ~/Final_exam_Prac/client.c
--'  46  6  ~/Final_exam_Prac/client.c
--'  1  0  ~/Final_exam_Prac/server.ccd
--'  50  6  ~/Final_exam_Prac/server.c
--'  61  0  ~/Final_exam_Prac/client.c
--'  82  3  ~/Final_exam_Prac/server.c
--'  32  0  ~/16_05_2019/calc2/client.c
--'  62  0  ~/16_05_2019/calc2/client.c
--'  92  0  ~/16_05_2019/calc2/server.c
--'  79  2  ~/16_05_2019/calc2/server.c
--'  50  9  ~/16_05_2019/calc2/server.c
--'  1  0  ~/30-05-2019/pthr_detach.c
--'  24  0  ~/30-05-2019/pthread1.c
--'  25  65  ~/30-05-2019/pthread1.c
--'  38  0  ~/30-05-2019/pthread1.c
--'  1  0  ~/30-05-2019/pthread1.c
--'  5  0  ~/30-05-2019/header.h
--'  1  0  ~/30-05-2019/header.h
--'  11  0  ~/Final_exam_Prac/client.c
--'  90  15  ~/Final_exam_Prac/server.c
--'  113  0  ~/Final_exam_Prac/server.c
--'  68  2  ~/Final_exam_Prac/server.c
--'  5  40  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
--'  6  56  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
--'  3  0  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
--'  1  0  ~/Final_exam_Prac/sigint_handler/explain-signal.txt
--'  1  32  ~/Final_exam_Prac/sigint_handler/kill.c
--'  79  21  ~/Final_exam_Prac/server.c
--'  87  1  ~/Final_exam_Prac/server.c
--'  70  1  ~/Final_exam_Prac/server.c
--'  86  11  ~/Final_exam_Prac/server.c
--'  1  18  ~/Final_exam_Prac/server.c
--'  4  0  ~/Final_exam_Prac/client.c
--'  43  2  ~/Final_exam_Prac/client.c
--'  76  9  ~/Final_exam_Prac/server.c
--'  24  29  ~/midTest/2019_0404/second_class/wait_exam.c
--'  14  38  ~/midTest/2019_0404/second_class/wait_exam.c
--'  1  0  ~/midTest/2019_0404/second_class/wait_exam.c
--'  17  12  ~/Final_exam_Prac/client.c
--'  1  0  ~/Final_exam_Prac/client.c_
--'  92  0  ~/Final_exam_Prac/server.c
--'  50  3  ~/Final_exam_Prac/client.c
--'  36  39  ~/16_05_2019/calc2/client.c
--'  32  0  ~/Final_exam_Prac/client.c
--'  1  0  ~/Final_exam_Prac/client.c
--'  1  1  ~/midTest/2019_0404/first_class/fork_example.c
--'  1  0  ~/midTest/2019_0404/first_class/fork_examplc.c
+-'  56  0  ~/LastChallenge/mid-term/socket/201720963-client.c
+-'  42  0  ~/LastChallenge/mid-term/socket/201720963-client.c
+-'  3  0  ~/LastChallenge/mid-term/socket/201720963-client.c
+-'  3  0  ~/Last_Exam_data/socket/client.c
+-'  80  0  ~/LastChallenge/mid-term/socket/201720963-server.c
+-'  81  0  ~/LastChallenge/mid-term/socket/201720963-server.c
+-'  62  0  ~/LastChallenge/mid-term/socket/201720963-server.c
+-'  1  0  ~/LastChallenge/mid-term/socket/201720963-client.c
+-'  92  0  ~/Last_Exam_data/socket/server.c
+-'  72  2  ~/Last_Exam_data/socket/server.c
+-'  1  0  ~/Last_Exam_data/socket/server.c
+-'  9  11  ~/Last_Exam_data/socket/header.h
+-'  1  0  ~/LastChallenge/mid-term/socket/201720963-head.h
+-'  1  0  ~/LastChallenge/mid-term/socket/201720963-head.c
+-'  1  0  ~/LastChallenge/mid-term/socket/201720963-server.c
+-'  8  0  ~/Last_Exam_data/message/msg-head.h
+-'  9  21  ~/Last_Exam_data/message/msg-head.h
+-'  23  6  ~/Last_Exam_data/message/msg-receiver2.c
+-'  23  1  ~/Last_Exam_data/message/msg-receiver.c
+-'  22  55  ~/Last_Exam_data/message/msg-receiver.c
+-'  37  37  ~/Last_Exam_data/message/msg-sender.c
+-'  1  0  ~/Last_Exam_data/message/msg-sender.c
+-'  1  0  ~/LastChallenge/mid-term/201720963-sender.c
+-'  36  0  ~/Last_Exam_data/message/msg-sender.c
+-'  1  0  ~/Last_Exam_data/message/msg-sendder.c
+-'  1  0  ~/LastChallenge/mid-term/message/201720963-receiver2.c
+-'  1  0  ~/LastChallenge/mid-term/message/201720963-receiver1.c
+-'  1  0  ~/LastChallenge/mid-term/message/201720963-sender.c
+-'  18  21  ~/Last_Exam_data/message/msg-sender.c
+-'  63  14  ~/Final_exam_Prac/server.c
+-'  102  0  ~/Final_exam_Prac/server.c
+-'  41  26  ~/Final_exam_Prac/client.c
+-'  36  7  ~/Final_exam_Prac/client.c
+-'  46  0  ~/Final_exam_Prac/server.c
+-'  58  15  ~/Last_Exam_data/socket/server.c
+-'  26  30  ~/Last_Exam_data/socket/client.c
+-'  45  31  ~/Last_Exam_data/socket/client.c
+-'  54  2  ~/Last_Exam_data/socket/client.c
+-'  39  0  ~/Last_Exam_data/socket/client.c
+-'  25  5  ~/Last_Exam_data/socket/client.c
+-'  23  14  ~/Last_Exam_data/socket/server.c
+-'  70  19  ~/Last_Exam_data/socket/server.c
+-'  56  10  ~/Last_Exam_data/socket/server.c
+-'  64  18  ~/Last_Exam_data/socket/server.c
+-'  96  1  ~/Last_Exam_data/socket/server.c
+-'  67  32  ~/Last_Exam_data/socket/server.c
+-'  21  7  ~/pipe.c
+-'  26  32  ~/pipe.c
+-'  19  33  ~/pipe.c
+-'  23  6  ~/pipe.c
+-'  25  31  ~/pipe.c
+-'  24  0  ~/pipe.c
+-'  12  3  ~/pipe.c
+-'  7  39  ~/pipe.c
+-'  22  1  ~/pipe.c
+-'  30  0  ~/pipe.c
+-'  4  16  ~/pipe.c
+-'  1  0  ~/pipe.c
+-'  28  1  ~/pipe.c
+-'  1  0  ~/pipe_prac
+-'  2  0  ~/Last_Exam_data/socket/client.c
+-'  8  0  ~/Last_Exam_data/socket/header.h
+-'  59  14  ~/Last_Exam_data/socket/server.c
+-'  15  0  ~/Last_Exam_data/socket/server.c
+-'  45  1  ~/Final_exam_Prac/server.c
+-'  56  0  ~/Final_exam_Prac/server.c
+-'  56  1  ~/Final_exam_Prac/client.c
+-'  37  2  ~/Final_exam_Prac/client.c
+-'  38  2  ~/Final_exam_Prac/client.c
+-'  39  2  ~/Final_exam_Prac/client.c
+-'  45  9  ~/Final_exam_Prac/client.c
+-'  49  3  ~/Final_exam_Prac/client.c
+-'  1  15  ~/Final_exam_Prac/client.c
+-'  1  0  ~/Final_exam_Prac/client.h
+-'  1  0  ~/Final_exam_Prac/header.h
+-'  38  90  ~/Last_Exam_data/message/msg-sender.c
+-'  30  88  ~/Last_Exam_data/message/msg-sender.c
+-'  39  29  ~/Last_Exam_data/message/msg-sender.c
+-'  20  3  ~/Last_Exam_data/message/msg-receiver2.c
+-'  13  25  ~/Last_Exam_data/message/msg-receiver2.c
+-'  26  0  ~/Last_Exam_data/message/msg-receiver2.c
+-'  25  0  ~/Last_Exam_data/message/msg-receiver.c
+-'  1  0  ~/Last_Exam_data/message/msg-receiver2.c
+-'  42  2  ~/Last_Exam_data/message/msg-sender.c
+-'  47  0  ~/Last_Exam_data/message/msg-sender.c
+-'  32  0  ~/Last_Exam_data/message/msg-sender.c
+-'  1  0  ~/Last_Exam_data/message/msg-receiver.c
+-'  1  0  ~/Last_Exam_data/message/msg-head.h
+-'  26  2  ~/Last_Exam_data/message/msg-sender.h
+-'  1  4  ~/Last_Exam_data/message/msg-sender.h
+-'  19  0  ~/Last_Exam_data/message/msg-head.h
+-'  14  0  ~/Last_Exam_data/pthread/thread_prac/head.h
+-'  15  105  ~/Last_Exam_data/pthread/thread_prac/head.h
+-'  1  0  ~/Last_Exam_data/pthread/thread_prac/head.h
+-'  92  0  ~/Last_Exam_data/socket/server.c
+-'  72  2  ~/Last_Exam_data/socket/server.c
+-'  1  0  ~/Last_Exam_data/socket/server.c
+-'  9  11  ~/Last_Exam_data/socket/header.h
 
 # History of marks within files (newest to oldest):
+
+> ~/LastChallenge/mid-term/socket/201720963-client.c
+	"	56	0
+	^	56	1
+	.	56	0
+	+	3	0
+	+	57	0
+	+	57	0
+	+	3	0
+	+	56	0
+
+> ~/Last_Exam_data/socket/client.c
+	"	3	0
+	^	33	15
+	.	3	0
+	+	2	0
+	+	3	0
+	+	35	35
+	+	44	19
+	+	45	24
+	+	13	16
+	+	45	24
+	+	44	19
+	+	45	31
+	+	44	19
+	+	45	24
+	+	33	14
+	+	3	0
+
+> ~/LastChallenge/mid-term/socket/201720963-server.c
+	"	80	0
+	.	81	0
+	+	1	0
+	+	1	28
+	+	2	0
+	+	1	27
+	+	1	27
+	+	1	27
+	+	2	0
+	+	111	0
+	+	112	0
+	+	113	0
+	+	114	0
+	+	60	13
+	+	108	0
+	+	109	0
+	+	110	0
+	+	106	1
+	+	107	0
+	+	60	13
+	+	105	0
+	+	60	13
+	+	61	4
+	+	61	4
+	+	62	0
+	+	101	0
+	+	102	0
+	+	103	0
+	+	104	0
+	+	62	5
+	+	62	0
+	+	80	0
+	+	77	3
+	+	76	15
+	+	80	1
+	+	101	0
+	+	81	0
+
+> ~/Last_Exam_data/socket/server.c
+	"	92	0
+	.	92	0
+	+	69	21
+	+	65	12
+	+	26	32
+	+	5	20
+	+	29	1
+	+	29	0
+	+	60	39
+	+	69	12
+	+	65	0
+	+	65	0
+	+	72	2
+	+	69	10
+	+	68	0
+	+	66	58
+	+	26	17
+	+	60	22
+	+	63	53
+	+	66	45
+	+	66	58
+	+	67	32
+	+	67	32
+	+	63	44
+	+	63	16
+	+	65	58
+	+	65	58
+	+	66	56
+	+	67	54
+	+	64	37
+	+	67	32
+	+	67	32
+	+	68	0
+	+	69	0
+	+	64	74
+	+	67	68
+	+	69	10
+	+	70	71
+	+	70	71
+	+	70	71
+	+	72	2
+	+	70	71
+	+	72	2
+	+	72	2
+	+	72	2
+	+	72	15
+	+	70	90
+	+	72	15
+	+	70	5
+	+	72	5
+	+	72	8
+	+	72	9
+	+	72	10
+	+	72	10
+	+	72	9
+	+	72	8
+	+	72	8
+	+	72	9
+	+	72	9
+	+	72	8
+	+	72	7
+	+	72	7
+	+	72	7
+	+	72	2
+	+	72	13
+	+	72	2
+	+	72	2
+	+	70	3
+	+	72	19
+	+	72	18
+	+	72	20
+	+	72	18
+	+	67	18
+	+	70	17
+	+	64	19
+	+	70	19
+	+	66	3
+	+	23	14
+	+	72	2
+	+	72	35
+	+	70	30
+	+	64	29
+	+	72	35
+	+	72	66
+	+	72	73
+	+	70	0
+	+	72	92
+	+	72	17
+	+	72	2
+	+	72	29
+	+	72	16
+	+	72	7
+	+	72	29
+	+	58	15
+	+	72	2
+	+	72	0
+	+	72	0
+	+	89	4
+	+	91	0
+	+	90	0
+	+	89	3
+	+	92	0
+
+> ~/Last_Exam_data/socket/header.h
+	"	9	11
+	^	9	12
+	.	9	11
+	+	2	19
+	+	7	19
+	+	9	11
+
+> ~/LastChallenge/mid-term/socket/201720963-head.h
+	"	9	21
+	^	9	22
+	.	9	21
+	+	3	19
+	+	9	21
+
+> ~/LastChallenge/mid-term/socket/201720963-head.c
+	"	1	0
+
+> ~/Last_Exam_data/message/msg-head.h
+	"	8	0
+	^	9	22
+	.	9	21
+	+	18	0
+	+	9	21
+
+> ~/LastChallenge/mid-term/message/201720963-receiver2.c
+	"	7	19
+	^	9	22
+	.	9	21
+	+	32	0
+	+	1	0
+	+	10	0
+	+	4	19
+	+	9	21
+
+> ~/LastChallenge/mid-term/message/201720963-receiver1.c
+	"	9	21
+	^	9	22
+	.	9	21
+	+	1	0
+	+	31	0
+	+	1	19
+	+	9	21
+
+> ~/LastChallenge/mid-term/message/201720963-sender.c
+	"	9	21
+	^	9	22
+	.	9	21
+	+	1	9
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	1	27
+	+	27	12
+	+	28	0
+	+	25	57
+	+	26	0
+	+	27	11
+	+	28	1
+	+	27	9
+	+	28	2
+	+	52	0
+	+	46	7
+	+	50	0
+	+	46	3
+	+	46	5
+	+	38	0
+	+	49	9
+	+	48	0
+	+	47	10
+	+	1	18
+	+	7	20
+	+	9	21
+
+> ~/Last_Exam_data/message/msg-receiver2.c
+	"	23	6
+	^	13	26
+	.	13	25
+	+	13	57
+	+	26	0
+	+	13	25
+
+> ~/Last_Exam_data/message/msg-receiver.c
+	"	23	1
+	^	22	28
+	.	22	25
+	+	25	0
+	+	22	25
+
+> ~/Last_Exam_data/message/msg-sender.c
+	"	37	37
+	^	37	19
+	.	37	18
+	+	28	17
+	+	27	35
+	+	13	8
+	+	27	42
+	+	28	21
+	+	28	20
+	+	27	22
+	+	28	18
+	+	13	12
+	+	46	1
+	+	21	13
+	+	10	12
+	+	11	11
+	+	17	16
+	+	25	0
+	+	39	17
+	+	32	23
+	+	43	0
+	+	39	63
+	+	30	34
+	+	6	0
+	+	6	0
+	+	38	116
+	+	13	18
+	+	14	18
+	+	28	22
+	+	38	113
+	+	30	78
+	+	38	45
+	+	30	51
+	+	38	90
+	+	37	30
+	+	39	0
+	+	37	18
+
+> ~/LastChallenge/mid-term/201720963-sender.c
+	"	1	0
+	.	28	0
+	+	22	21
+	+	35	2
+	+	5	0
+	+	22	21
+	+	34	0
+	+	22	8
+	+	33	0
+	+	10	14
+	+	28	0
+	+	22	18
+	+	31	2
+	+	32	0
+	+	29	14
+	+	30	31
+	+	30	46
+	+	27	0
+	+	23	14
+	+	28	0
+	+	26	29
+	+	28	0
+
+> ~/LastChallenge/mid-term/message/201720963-header.c
+	"	9	21
+	^	9	22
+	.	9	21
+	+	1	9
+	+	9	21
+
+> ~/Last_Exam_data/message/msg-sendder.c
+	"	1	0
+
+> ~/Final_exam_Prac/server.c
+	"	63	14
+	^	102	0
+	.	62	3
+	+	65	5
+	+	65	4
+	+	62	11
+	+	25	10
+	+	62	27
+	+	62	0
+	+	62	0
+	+	58	10
+	+	62	11
+	+	62	0
+	+	62	54
+	+	62	34
+	+	62	47
+	+	62	54
+	+	62	61
+	+	62	113
+	+	62	4
+	+	62	53
+	+	62	35
+	+	62	0
+	+	62	59
+	+	62	54
+	+	62	0
+	+	62	5
+	+	62	5
+	+	62	9
+	+	58	11
+	+	69	12
+	+	69	11
+	+	58	10
+	+	58	0
+	+	62	21
+	+	62	20
+	+	62	4
+	+	62	4
+	+	58	0
+	+	58	11
+	+	58	0
+	+	58	11
+	+	58	32
+	+	58	0
+	+	58	0
+	+	58	67
+	+	62	0
+	+	62	0
+	+	62	0
+	+	61	0
+	+	58	0
+	+	58	60
+	+	58	60
+	+	58	60
+	+	58	0
+	+	58	0
+	+	58	10
+	+	66	0
+	+	58	29
+	+	62	4
+	+	65	5
+	+	1	2
+	+	3	4
+	+	2	31
+	+	58	0
+	+	62	3
+	+	65	4
+	+	58	0
+	+	58	3
+	+	50	0
+	+	48	26
+	+	48	22
+	+	49	0
+	+	48	61
+	+	48	2
+	+	48	1
+	+	47	1
+	+	48	0
+	+	58	0
+	+	59	0
+	+	62	3
+
+> ~/Final_exam_Prac/client.c
+	"	41	26
+	^	36	1
+	.	36	0
+	+	35	57
+	+	56	1
+	+	35	1
+	+	37	1
+	+	38	1
+	+	39	1
+	+	36	0
+
+> ~/pipe.c
+	"	21	7
+	^	26	33
+	.	21	0
+	+	1	19
+	+	1	18
+	+	1	21
+	+	1	18
+	+	19	35
+	+	24	9
+	+	14	9
+	+	24	27
+	+	19	19
+	+	31	0
+	+	24	10
+	+	19	11
+	+	14	9
+	+	28	2
+	+	30	0
+	+	7	8
+	+	4	11
+	+	12	13
+	+	20	24
+	+	24	24
+	+	7	38
+	+	7	31
+	+	7	43
+	+	7	34
+	+	7	47
+	+	21	30
+	+	7	32
+	+	7	45
+	+	7	36
+	+	7	49
+	+	7	32
+	+	7	45
+	+	7	32
+	+	7	45
+	+	7	39
+	+	7	52
+	+	7	40
+	+	21	30
+	+	25	31
+	+	21	30
+	+	12	4
+	+	21	30
+	+	25	31
+	+	7	35
+	+	7	46
+	+	7	33
+	+	19	33
+	+	12	0
+	+	21	37
+	+	6	0
+	+	6	15
+	+	6	5
+	+	7	22
+	+	12	0
+	+	6	0
+	+	11	0
+	+	21	30
+	+	25	31
+	+	19	20
+	+	21	40
+	+	19	33
+	+	26	32
+	+	7	22
+	+	7	22
+	+	8	19
+	+	10	40
+	+	19	33
+	+	26	32
+	+	21	0
+
+> ~/pipe_prac
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/Last_Exam_data/server.c
+	"	1	0
+
+> ~/Last_Exam_data/socket/client.h
+	"	2	0
+	^	2	0
+	.	60	0
+	+	62	0
+	+	9	15
+	+	61	0
+	+	39	29
+	+	46	24
+	+	60	0
+
+> ~/Final_exam_Prac/client.h
+	"	1	0
+
+> ~/Final_exam_Prac/header.h
+	"	1	0
+
+> ~/Last_Exam_data/message/msg-sender.h
+	"	26	2
+	^	1	5
+	.	1	5
+	+	15	32
+	+	15	57
+	+	26	22
+	+	10	14
+	+	12	0
+	+	23	0
+	+	15	18
+	+	19	60
+	+	22	0
+	+	1	5
+
+> ~/Last_Exam_data/pthread/pthread1.c
+	"	3	0
+	^	39	1
+	.	39	0
+	+	29	69
+	+	41	0
+	+	27	0
+	+	30	0
+	+	36	25
+	+	35	15
+	+	39	0
+
+> ~/Last_Exam_data/pthread/thread_prac/head.h
+	"	14	0
+	.	15	0
+	+	13	20
+	+	15	72
+	+	15	28
+	+	15	23
+	+	15	0
+
+> ~/Last_Exam_data/pthread/pthread_detach.c
+	"	29	0
+	^	29	1
+	.	29	0
+	+	29	0
+
+> ~/Last_Exam_data/pthread/pthrad1.c
+	"	1	0
+
+> ~/Last_Exam_data/pthread/pthread_head.h
+	"	6	0
+	^	6	0
+	.	5	0
+	+	5	0
+
+> ~/Last_Exam_data/pthread1.c
+	"	1	0
+
+> ~/30-05-2019/pthread1.c
+	"	34	6
+	^	24	0
+	.	24	0
+	+	1	19
+	+	34	45
+	+	38	0
+	+	3	12
+	+	26	0
+	+	24	0
 
 > ~/13_06_2019/shared-mm/shm-ctl.c
 	"	27	0
@@ -404,78 +1062,6 @@ $
 	.	7	20
 	+	7	13
 	+	7	20
-
-> ~/Final_exam_Prac/server.c
-	"	111	0
-	^	82	4
-	.	82	4
-	+	82	5
-	+	82	4
-	+	79	11
-	+	25	10
-	+	79	27
-	+	79	0
-	+	79	0
-	+	73	4
-	+	79	11
-	+	79	0
-	+	79	54
-	+	79	34
-	+	79	47
-	+	79	54
-	+	79	61
-	+	79	113
-	+	79	4
-	+	79	53
-	+	79	35
-	+	79	0
-	+	79	59
-	+	79	54
-	+	79	0
-	+	79	5
-	+	79	5
-	+	79	9
-	+	70	11
-	+	86	12
-	+	86	11
-	+	70	10
-	+	70	0
-	+	79	21
-	+	79	20
-	+	79	4
-	+	79	4
-	+	69	0
-	+	61	11
-	+	68	0
-	+	67	11
-	+	62	32
-	+	69	0
-	+	69	0
-	+	65	67
-	+	79	0
-	+	79	0
-	+	79	0
-	+	78	0
-	+	66	0
-	+	65	60
-	+	65	60
-	+	65	60
-	+	66	0
-	+	66	0
-	+	73	4
-	+	83	0
-	+	66	29
-	+	79	4
-	+	82	5
-	+	1	2
-	+	3	4
-	+	2	31
-	+	66	0
-	+	79	3
-	+	82	4
-
-> ~/Final_exam_Prac/client.c
-	"	37	9
 
 > ~/Final_exam_Prac/server.ccd
 	"	1	0
@@ -692,17 +1278,6 @@ $
 
 > ~/30-05-2019/pthr_detach.c
 	"	1	0
-
-> ~/30-05-2019/pthread1.c
-	"	24	0
-	^	24	0
-	.	24	0
-	+	1	19
-	+	34	45
-	+	38	0
-	+	3	12
-	+	26	0
-	+	24	0
 
 > ~/30-05-2019/header.h
 	"	5	0
@@ -1222,30 +1797,6 @@ $
 	+	10	1
 	+	10	0
 
-> ~/LastChallenge/mid-term/201720963-sender.c
-	"	21	1
-	.	28	0
-	+	22	21
-	+	35	2
-	+	5	0
-	+	22	21
-	+	34	0
-	+	22	8
-	+	33	0
-	+	10	14
-	+	28	0
-	+	22	18
-	+	31	2
-	+	32	0
-	+	29	14
-	+	30	31
-	+	30	46
-	+	27	0
-	+	23	14
-	+	28	0
-	+	26	29
-	+	28	0
-
 > ~/LastChallenge/mid-term/201720963-receiver.c
 	"	13	6
 	^	13	7
@@ -1299,271 +1850,3 @@ $
 	^	1	10
 	.	1	9
 	+	1	9
-
-> ~/work/2019_0404/first_class/fork_example.c
-	"	1	0
-
-> ~/work/2017_0418/Pipes.c
-	"	18	1
-	^	24	21
-	.	24	20
-	+	20	25
-	+	17	10
-	+	21	2
-	+	30	0
-	+	13	1
-	+	13	0
-	+	21	33
-	+	24	20
-
-> ~/work/2017_0418/Double_fork.c
-	"	13	2
-	.	13	0
-	+	28	0
-	+	22	3
-	+	27	15
-	+	18	3
-	+	15	5
-	+	9	16
-	+	18	3
-	+	22	3
-	+	25	9
-	+	27	15
-	+	28	2
-	+	30	0
-	+	6	11
-	+	8	3
-	+	8	3
-	+	26	43
-	+	27	2
-	+	8	39
-	+	19	22
-	+	27	6
-	+	27	10
-	+	28	2
-	+	29	9
-	+	27	0
-	+	13	41
-	+	8	0
-	+	25	19
-	+	16	12
-	+	18	20
-	+	25	10
-	+	13	41
-	+	14	0
-	+	14	3
-	+	25	9
-	+	25	0
-	+	24	2
-	+	19	42
-	+	20	32
-	+	27	0
-	+	26	37
-	+	14	0
-	+	14	9
-	+	24	0
-	+	14	0
-	+	23	7
-	+	13	0
-
-> ~/prac/double_fork.c
-	"	20	0
-	^	25	1
-	.	25	0
-	+	9	25
-	+	26	0
-	+	25	0
-
-> ~/work/2017_0418/vfork.c
-	"	19	10
-	^	24	0
-	.	22	20
-	+	25	0
-	+	8	31
-	+	23	1
-	+	25	0
-	+	19	2
-	+	22	20
-
-> ~/work/2017_0418/race_con2.c
-	"	2	19
-	^	2	20
-	.	2	19
-	+	2	19
-
-> ~/work/2017_0418/Race_con.c
-	"	8	20
-	^	7	7
-	.	7	6
-	+	16	11
-	+	27	0
-	+	20	22
-	+	26	0
-	+	25	19
-	+	23	0
-	+	3	18
-	+	6	9
-	+	21	4
-	+	23	4
-	+	7	6
-
-> ~/work/2017_0418/Shelling_out.c
-	"	13	0
-	^	13	1
-	.	13	0
-	+	1	65
-	+	1	18
-	+	1	30
-	+	1	37
-	+	1	65
-	+	1	0
-	+	1	9
-	+	1	0
-	+	1	9
-	+	1	19
-	+	1	20
-	+	1	26
-	+	1	26
-	+	1	20
-	+	1	9
-	+	1	27
-	+	1	0
-	+	1	20
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	0
-	+	1	9
-	+	1	0
-	+	1	0
-	+	1	9
-	+	1	0
-	+	1	2
-	+	1	12
-	+	1	12
-	+	1	37
-	+	1	9
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	19
-	+	1	30
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	0
-	+	1	25
-	+	1	20
-	+	1	3
-	+	1	19
-	+	1	18
-	+	1	0
-	+	1	14
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	18
-	+	13	0
-
-> ~/work/2019_0404/second_class/wait_exam.c
-	"	35	0
-
-> ~/work/2019_0404/second_class/flushing.c
-	"	12	46
-	^	16	37
-	.	16	36
-	+	27	0
-	+	24	0
-	+	11	41
-	+	16	36
-
-> ~/work/2019_0404/second_class/zombi_exam.c
-	"	1	0
-
-> ~/work/2019_0404/second_class/zombie_exam.c
-	"	13	13
-
-> ~/work/2019_0404/first_class/fork2_exam.c
-	"	15	5
-
-> ~/work/2019_0404/first_class/fork_examplc.
-	"	1	0
-
-> ~/prac/str.c
-	"	1	21
-	^	1	22
-	.	1	21
-	+	13	0
-	+	10	8
-	+	1	21
-
-> ~/prac/test.c
-	"	2	0
-	^	2	0
-	.	1	17
-	+	11	36
-	+	17	1
-	+	17	0
-	+	17	1
-	+	17	1
-	+	17	0
-	+	1	15
-	+	3	0
-	+	1	36
-	+	1	0
-	+	1	0
-	+	1	17
-	+	1	17
-
-> ~/prac/head.h
-	"	4	0
-	^	4	0
-	.	3	37
-	+	3	37
-
-> ~/work/2019_0404/first_class/argv_example2.c
-	"	9	1
-
-> ~/work/2019_0404/first_class/argv_example.c
-	"	5	6
-
-> ~/work/2019_0404/second_class/log
-	"	1	0
-
-> ~/work/2019_0404/first_class/segment_example.c
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/mid_git_repo/midTest/2019_0404/segment_exmaple.c
-	"	4	7
-	^	4	8
-	.	4	8
-	+	5	0
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	18
-	+	4	8
-
-> ~/work/2019_0404/first_class/enviro_example.c
-	"	1	0
-
-> ~/work/2019_0404/first_class/getpid_demo.c
-	"	7	19
-
-> ~/work/2019_0404/first_class/getpid_demo
-	"	1	0
-
-> ~/work/2017_0418/Race_con.cvi
-	"	1	0
-
-> ~/tmp/hello_world.c
-	"	1	0
-
-> ~/examples.desktop
-	"	1	0
-	^	62	15
-
-> ~/example.desktop
-	"	1	0

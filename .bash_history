@@ -1,598 +1,3 @@
-ls
-git checkout master
-ls
-cat branch_test.c
-git branch
-git branch 
-vi branch_test.c
-git add branch_test.c
-git commit -m "master branch"
-git checkout second
-git branch
-vi branch_test.c
-ls
-git branch
-git add branch_test.c
-git commit -m "edit branch"
-git checkout master
-git branch
-git merge second
-git status
-vi branch_test.c
-ls
-git add branch_test.c
-git commit -m "conflict merge"
-ls
-git push
-ls
-cd ..
-ls
-cd branch
-git commit
-git status
-cd ..
-ls
-cd..
-cd ..\
-cd ..
-ls
-s1720963
-cd s1720963
-ls
-git add *
-git init
-git add *
-git commit -m "backup"
-git push
-git push https://github.com/LastChallenge/Linux_System_programming
-git status
-git commit -m "backup"
-git push -a https://github.com/LastChallenge/Linux_System_programming
-git push -u https://github.com/LastChallenge/Linux_System_programming
-git push -u
-git add *
-git status
-git commit -m "backup"
-ls
-git init
-git add -all
-git add --all
-git commit -m "all"
-git push
-git remote add https://github.com/LastChallenge/Linux_System_programming
-git remote add https://github.com/LastChallenge/Linux_System_programming.git
-git remote add origin https://github.com/LastChallenge/Linux_System_programming
-git push -u origin master
-git remote add https://github.com/LastChallenge/Linux_System_programming.git
-git remote add origin https://github.com/LastChallenge/Linux_System_programming
-git push -u origin master
-git remote add origin https://github.com/LastChallenge/Linux_System_programming.git
-git push -u origin master
-git add --all
-git commit -m "all"
-ls
-cd work
-ls
-git add --all
-git commit -m "all"
-git commit -m "aaa"
-rmdir LSP_GIT
-ls
-rm branch/ -rf
-rm LSP_GIT/ -rf
-rm test/ -rf
-git init
-ls
-git add --all
-git commit -m "all"
-git remote add origin "all"
-git push
-git remote add origin https://github.com/LastChallenge/Linux_System_programming.git
-git remote add origin https://github.com/LastChallenge/all.git
-git remote add yeonjoo https://github.com/LastChallenge/Linux_System_programming.git
-git push -u yeonjoo master
-git remote add yeonjoo https://github.com/LastChallenge/all.git
-git remote add changjun https://github.com/LastChallenge/all.git
-git push -u changjun master 
-ls
-git branch
-exit
-ls
-cd work
-ls
-w
-who
-who -a
-clear
-w
-w -lf
-w -s
-git config --global --list
-git config --list
-git branch
-git remote
-git status
-git remote
-git remote -v
-git
-ls
-cd 2019_0411
-ls
-cd ..
-cd
-ls
-cd work
-ls
-cd ..
-ls
-cd..
-cd ..
-ls
-cd pel
-ls
-cd ..
-cd hurryon
-ls
-cd work
-ls
-cd 0321
-ls
-cd ..
-cls
-ls
-cd ..
-ls
-cd pel
-ls
-cd ..
-ls
-cd s1720963
-ls
-cd prac
-ls
-cd ..
-rm prac
-rmdir prac
-ls
-cd example.desktop
-vi example.desktop
-ls
-vi example.desktop
-vi examples.desktop
-rm example.desktop
-ls
-ce tmp
-ls
-cd tmp
-ls
-cd ..
-ls
-cd work
-ls
-git remote show origin
-git remote
-git remote show changjun
-git remote show origin
-cd
-ls
-clear
-git status
-ls
-cd work
-ls
-git remote
-git branch
-cd
-ls
-cd tmp
-git init
-cd ..
-ls
-cd tmp
-git init
-git remote add -f origin https://github.com/LastChallenge/all
-ls
-git remote
-git pull --all
-ls
-git pull origin master
-ls
-cd 2019_0321
-ls
-cd ..
-cd
-ls
-rm tmo
-rm tmp
-cd tmp
-ls
-git remote
-git remote -v
-history
-git remote add -f origin 
-git remote add -f origin https://github.com/LastChallenge/Linux_System_programming
-git remote add -f LastChallenge https://github.com/LastChallenge/Linux_System_programming 
-git retmore
-git retmote
-git remote
-git remote -v
-ls
-git pull master LastChallenge
-history
-git pull LastChallnege master
-git init
-ls
-git remote
-git pull LastChallenge master
-ls
-vi hello_world.c
-cd ..
-ls
-cd work
-ls
-cd 2019_0411
-ls
-cd ..
-ls
-history
-git branch
-git remote 
-ls
-cd work
-git remote
-ls
-cd
-ls
-cd tmp
-ls
-cd ..
-git remote
-ls
-cd tmp
-git remote
-git remote rename LastChallenge
-git -help remote
-git remote rm LastChallenge
-ls
-git remote
-git remote add TestRemote https://github.com/LastChallenge/Linux_System_programming.git
-git add --all
-git commit
-git status
-ls
-git remote
-git add --all
-git status
-git commit -m "TestCommit"
-git add --all
-git commit -m "Test"
-clear
-ls
-git remote
-git branch
-git init
-git add --all
-git commit -m "TestCommit"
-git remote
-git remote -v
-git remote rm TestRemote
-git remote
-git remote add TestRemote https://github.com/LastChallenge/Linux_System_programming
-ls
-git remote -v
-git add -all
-git add --all
-git commit -m "TestCommit"
-git config --list
-ls
-git init
-ls
-cd
-ks
-ls
-cd tmp
-ls
-git status
-git init
-git status
-ls
-cd 
-git test
-ls
-cd tmp
-git remote -v
-git init
-clear
-git remote
-git rm remote TestRemote
-git remote rm TestRemote
-ls
-git remote
-git remote add TestRemote https://github.com/LastChallenge/Linux_System_programming.git
-git remote
-git status
-git add --all
-git status
-git init
-git remote -b
-git remote -v
-git remote rm origin
-git add --all
-git status
-git remote
-git init
-ls
-cd..
-cd ..
-ls
-cd work
-ls
-git remote -v
-cd ..
-cd tmp
-git remote rm TestRemote
-cd ..
-exit
-vs
-
-ls
-vi vfork.c
-exit
-ls
-eixt
-exit
-vi vfork.c
-exit
-eixt
-exit
-vi vfork.c
-exit
-LS
-ls
-cd work
-ls
-mkdir 2017_0418
-cd 2017_0418
-clear
-ls
-vi Shelling_out.c
-ls
-vi Shelling_out.c
-ls
-vi Race_con.c
-gcc -o Race_con Race_con.c
-vi Race_con.c\
-gcc -o Race_con Race_con.c
-./Race_con
-vi Race_con.c\
-
-
-ls
-
-
-vi Race_con.c
-vi vfork.c
-
-./vfork
-ls
-rm vfrok
-gcc -o vfork vfork.c
-./vfork
-tmux
-gcc -o vfork vfork.c
-./vfork
-vi vfork.c
-tmux
-ls
-vi Double_fork.c
-gcc -o Double_fork Double_fork.c
-vi Double_fork.c
-vi Double_fork.c\
-gcc -o Double_fork Double_fork.c
-./Double_fork
-vi Double_fork.c\
-vi Double_fork.c
-gcc -o Double_fork Double_fork.c
-./Double_fork
-vi Double_fork.c
-vi Double_fork.c\
-gcc -o Double_fork Double_fork.c
-./Double_fork
-vi Double_fork.c
-gcc -o Double_fork Double_fork.c
-vi Double_fork.c
-gcc -o Double_fork Double_fork.c
-./Double_fork
-vi Double_fork.c
-gcc -o Double_fork Double_fork.c
-./Double_fork
-vi Double_fork.c
-./Double_fork
-gcc -o Double_fork Double_fork.c
-./Double_fork
-vi Double_fork.c
-./Double_fork
-vi Double_fork.c
-
-./Double_fork
-vi Double_fork.c
-gcc -o Double_fork Double_fork.c
-./Double_fork
-vi Double_fork.c
-ls
-vi Pipes.c
-gcc -o Pipe Pipes.c
-./Pipe
-vi Pipes.c
-ps | less
-ls
-mkdir mid_git_repo
-ls
-cd mid_git_repo
-cd
-cd mid_git_repo
-ls
-clear
-git init midTest
-ls
-git commit
-ls
-git config
-git origin master
-git branch
-git remote
-git config user.email
-git config user.name
-git --version
-git config --list
-git remote
-git rm origin
-git remote rm origin
-git remote
-clear
-ls
-w
-ls
-cd midTest
-tmux
-cd 
-cd work
-ls
-cd ..
-ls
-cd mid_git_repo/midTest
-ls
-cd 2019_0321/
-ls
-cd ..
-cd 
-ls
-cd work
-ls
-cd ..
-cd mid_git_repo
-cd midTest/
-ls
-cd ..
-ls
-cd mid_git_repo/
-ls
-git statusz
-git status
-ls
-git init
-git status
-git config user.email
-git remote
-ls
-git add midTest
-git commit -m "midTestCommit"
-git commit -m https://github.com/LastChallenge/Mid_Test_repo.git
-git remote
-git remote add origin https://github.com/LastChallenge/Mid_Test_repo.git
-git status
-ls
-git add midTest
-git commit -m "midTestCommit"
-git add midTest
-git status
-git push origin master
-ls
-git config --list
-ls
-cd ..
-ls
-mkdir testRepo
-cd testRepo/
-pull origin master
-git pull origin master
-git remote
-git clone https://github.com/LastChallenge/Mid_Test_repo
-git remote
-ls
-cd Mid_Test_repo/
-ls
-cd midT
-cd midTest/
-ls
-cd 2017_0418/
-ls
-cd
-git remote
-exit
-exit
-ls
-cd 2019_0404/second_class
-ls
-cd ..
-cd first_class
-ls
-cat enviro_example.c
-cat segment_example.c
-clear
-ls
-cat argv_example.c
-cat argv_example2.c
-clear
-ls
-cd ..
-ls
-cd 2019_0411
-ls
-cd ..
-exit
-cp -r /work/2019_0321 .
-cp -r /work/2019_0321 /mid_git_repo/midTest
-cp -r work/2019_0321 .
-cp -r ./work/2019_0321
-cp -r /work/2019_0321 .
-cd 
-cp -r ./work/2019_0321 ./mid_git_repo/midTest
-;s
-cp -r ./work/2019_0404 ./mid_git_repo/midTest
-cp -r ./work/2019_0411 ./mid_git_repo/midTest
-cp -r ./work/2017_0418 ./mid_git_repo/midTest
-ls
-cd work
-git config user.email
-ls
-cd 2019_0404
-ls
-cd second_class
-ls
-vi log
-cat exec_exam.c
-./exec
-clear
-ls
-cat wait_exam.c
-vi wait_exam.c
-ls
-exit
-cd ./wokr/2019_0411
-cd /wokr/2019_0411
-cd wokr/2019_0411
-cd 
-cd wokr/2019_0411
-cd work/2019_0411
-ls
-cd ..
-cd 
-cd
-cd ..
-ls
-cat s1421243
-cd s1421243
-ls
-cd work
-ls
-cd 0321
-ls
-cd ..
-ls
-cd ..
-ls
-s 1521195
 cd s1521195
 ls
 cd work
@@ -1997,4 +1402,599 @@ cd lExamPrac/
 ls
 cd ..
 ls
+exit
+ls
+git
+git status
+git add --all
+gut status
+git status
+gut push lExamPrac master
+git push lExamPrac master
+git status
+git remote
+git remote remove lExamPrac
+git remote -v
+git remote add lExamPrac https://github.com/LastChallenge/Last_Exam_prac
+git remote
+git status
+git add --all
+git commit -m "shm-prac"
+git push lExamPrac master
+exit
+ls
+cd 02_05_2019/3
+cd 02_05_2019/
+ls
+cd ..
+cd Final_exam_Prac/
+;s
+ls
+vi server.c
+cd ..
+cd 16_05_2019/
+ls
+cd calc2
+ls
+tmux
+ls
+vi pthrad1.c
+vi pthread1.c
+cd ..
+ls
+cd message/
+ls
+;s
+ls
+cd ..
+cd pthread/
+ls
+cd thread_prac/
+ls
+cd..
+cd ..
+cd message/
+ls
+vi msg-sender.c 
+./msg-send
+exot
+exit
+ls
+mkdir thread_prac
+cd thread_prac/
+ls
+cd ..
+ls
+vi pthread_detach.c
+ls
+gcc -o pthread_detach pthread_detach.c -lpthread
+./pthread_detach 
+ls
+cd thread_prac/
+vi head.h
+cd ..
+ls
+cd ..
+ls
+cd pthread/thread_prac/
+ls
+vi head.h 
+cd ..
+ls
+mkdir message
+cd message/
+ipcs
+ls
+vi msg-head.h
+vi msg-sender.h
+ls
+rm -rf msg-head.h
+ls
+vi msg-head.h
+ls
+vi msg-sender.c
+;s
+ls
+vi msg-receiver.c
+ls
+gcc -o msg-send msg-sender.c 
+gcc -o msg-recv msg-receiver.c 
+./msg-recv 
+ipcs
+exit
+cd ..
+cd message/
+ls
+./msg-recv
+exit
+cd ..
+cd message/
+./msg-recv
+exit
+ls
+cd ..
+cd message/
+ls
+vi msg-sender.c
+ipcs
+ipcs msg 3276805
+ipcs msg remove 3276805
+ipcsremove 3276805
+ipcs remove 3276805
+msg remove 3276805
+history
+ipcrm msg 3276805
+ipcs
+ls
+ipcrm msg 491528
+ipcs
+ls
+cat msg-sender.c 
+ls
+vi msg-receiver.c 
+vi msg-receiver2.c 
+vi msg-receiver.c 
+vi msg-receiver2.c 
+vi msg-receiver.c 
+ls
+gcc -o msg-recv msg-receiver.c
+gcc -o msg-send msg-sender.c 
+gcc -o msg-recv2 msg-receiver2.c
+vi msg-receiver2.c 
+gcc -o msg-recv2 msg-receiver2.c
+ls
+./msg-send 
+ipcs
+ipcrm msg 3309573, 3342342
+ipcrm msg 3309573
+
+ipcs
+ls
+./msg-send 
+ipcs
+gcc -o msg-send msg-sender.c 
+./msg-send 
+ipcs
+vi msg-receiver2.c 
+vi msg-sender.c 
+gcc -o msg-send msg-sender.c 
+./msg-send 
+exit
+cd ..
+cd message/
+./msg-recv2
+ls
+vi msg-receiver2.c
+vi msg-sender.c
+vi msg-receiver2.c
+vi msg-sender.c
+gcc -o msg-send msg-sender.c 
+
+gcc -o msg-send msg-sender.c 
+./msg-recv2
+vi msg-sender.c
+./msg-recv2
+vi msg-sender.c
+./msg-send 
+exit
+cd ..
+cd message/
+./msg-recv2
+ipcs
+ipcrm msg 3375109
+ipcs
+ipcrm msg 3407878
+ipcs
+exit
+ls
+git remote -v
+ls
+git remote
+git remote -v
+git remote remove 09_05_2019
+git remote -v
+git remote remove prev
+ls
+mkdir Last_Exam_data
+cd Last_Exam_data/
+ls
+git remote add https://github.com/LastChallenge/Last_Exam_data.git
+git remote
+git remote -v
+git remote add Last_Exam_data https://github.com/LastChallenge/Last_Exam_data.git
+git remote -v
+git remote remove origin
+git remote -v
+ls
+git clone https://github.com/LastChallenge/Last_Exam_prac 13_06_2019
+ls
+git clone https://github.com/LastChallenge/Last_Exam_prac Final_exam_Prac
+ls
+las
+ls
+cd ..
+ls
+cd Last_Exam_data/
+ls
+vi pthread1.c
+ls
+git clone https://github.com/LastChallenge/Last_Exam_prac 30-05-2019
+ls
+cd 30-05-2019/
+ls
+cd ,,
+cd ..
+cd 13_06_2019/
+ls
+cd ..
+rmdir -rf Last_Exam_data
+rmdir -f Last_Exam_data
+rmdir --rf Last_Exam_data
+rmdir -f Last_Exam_data
+rmdir -r Last_Exam_data
+rm -rf Last_Exam_data
+ls
+git remote
+mkdir Last_Exam_data
+cd Last_Exam_data/
+ls
+git clone https://github.com/LastChallenge/Last_Exam_prac/tree/master/13_06_2019 13_06_2019
+ls
+git clone https://github.com/LastChallenge/Last_Exam_prac/tree/master/13_06_2019.git 13_06_2019
+git clone https://github.com/LastChallenge/Last_Exam_prac/tree/master/13_06_2019 13-06-2019
+ls
+mkdir 13-06-2019
+cd 13
+cd 13-06-2019/
+git init
+git clone https://github.com/LastChallenge/Last_Exam_prac/tree/master/13_06_2019
+git remote
+cd ..
+git remote
+ls
+git checkout
+ls
+git remote
+ls
+rm -rf 13-06-2019/
+ls
+mkdir pthread
+cd pthread/
+vi pthread1.c
+ls
+vi pthread_head.h
+vi pthread1.c
+gcc -o pthread1 pthread1.c -pthread
+./pthread1
+vi pthread1.c
+tmux
+ls
+cd ..
+ls
+cd ..
+ls
+cd Last_Exam_data/
+ls
+git remote
+git remote -v
+ls
+git init
+git commit -m "message, pthread"
+git add --all
+git push Last_Exam_data master
+ls
+git add --all
+git -m commit "message, pthread"
+git commit -m "message, pthread"
+git push Last_Exam_data master
+git remote
+ls
+git remote
+git remote add Last_Exam_data https://github.com/LastChallenge/Last_Exam_data.git
+git push Last_Exam_data master
+ls
+cd ..
+ls
+cd Final_exam_Prac/
+./client 
+exit
+mkdir socket
+cd socket/
+ls
+vi header.h
+ls
+vi client.h
+vi client.c
+ls
+cp client.h client.c
+ls
+rm client.h
+ls
+vi client.c 
+vi server.c
+ls
+gcc -o server server.c
+vi server.c
+gcc -o server server.c
+gcc -o client client.c
+vi server.c
+ls
+vi header.h
+gcc -o client client.c
+vi header.h
+gcc -o client client.c
+ls
+./server 
+ls
+vi server.c
+.
+exit
+cd ..
+ls
+cd Final_exam_Prac/
+ls
+vi header.h 
+vi client.h
+vi client.c
+./server 
+ls
+vi client.c
+vi server.c
+vi client.c
+vi server.c
+man pipe
+vi server.c
+cd ..
+cd Last
+cd Last_Exam_data/
+vi server.c
+ls
+cd socket/
+ls
+vi client.c 
+vi server.c
+vi client.c 
+vi header.h 
+./client 
+cd ..
+ls
+cd ..
+ls
+vi pipe_prac
+;s
+ls
+rmdir pipe_prac
+rm pipe_prac
+vi pipe.c
+gcc -o pipe pipe.c
+./pipe
+vi pipe.c
+ls
+rm pipe
+vi pipe.c 
+l;s
+ls
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+./pipe 
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+./pipe 
+wq
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+ls
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+vi pipe.c 
+gcc -o pipe pipe.c
+./pi
+vi pipe.c 
+gcc -o pipe pipe.c 
+./pipe 
+vi pipe.c 
+exit
+cd Last_Exam_data/
+tmux
+exit
+ls
+cd Last_Exam_data/
+ls
+cd socket/
+./client 
+vi client.c
+gcc -o client client.c
+vi client.c
+gcc -o client client.c
+vi client.c
+gcc -o client client.c
+./client 
+vi client.c
+gcc -o client client.c
+vi client.c
+man read
+gcc -o client client.c
+./client 
+vi client.c
+gcc -o client client.c
+./client 
+3+3
+vi client.c
+gcc -o client client.c
+./client 
+ls
+cd ..
+ls
+cd Final_exam_Prac/
+ls
+vi server.c
+gcc -o client client.c
+./server 
+gcc -o server server.c
+./server 
+cd ..
+cd Last_Exam_data/
+ls
+cd socket/
+ls
+./client 
+exit
+cd Final_exam_Prac/
+ls
+./client 
+vi client.c
+vi server.c
+exit
+ipcs
+eixt
+exit
+ipcs
+ls
+cd Last_Exam_data/message/
+./msg-recv
+exit
+cd Last_Exam_data/message/
+./msg-recv2
+exit
+ls
+tmux
+ls
+mkdir test
+git remote
+cd test/
+git remote
+ls
+ckeart
+clear
+git remote
+git clone https://github.com/LastChallenge/Last_Exam_data
+ls
+cd Last_Exam_data/
+ls
+cd ..
+cd ...
+cd ..
+ls
+git clone https://github.com/LastChallenge/Last_Exam_data
+ls
+exit
+cd ..
+ls
+cd Last_Exam_data/
+ls
+cd message/
+ls
+vi msg-sendder.c
+ls
+vi msg-sender.c
+vi msg-head.h 
+vi msg-sender.c
+ls
+vi msg-sender.c
+cd ..
+ls
+cd ..
+ls
+cd Last_Exam_data/
+ls
+cd message/
+ls
+vi msg-sender.c
+vi msg-receiver.c
+vi msg-receiver2.c
+vi msg-head.h 
+cd ..
+cd socket/
+ls
+vi header.h
+vi server.c
+vi client.c
+vi server.c
+vi client.c
+exit
+ls
+mkdir message
+ls
+cd message/
+ls
+vi 201720963-sender.c
+ls
+vi 201720963-receiver1.c
+vi 201720963-receiver2.
+vi 201720963-sender.c
+vi 201720963-header.c
+vi 201720963-sender.c
+cd ..
+ls
+cd message/
+ls
+vi 201720963-sender.c 
+cd ..
+ls
+cp Last_Exam_data/message/msg-sender.c LastChallenge/mid-term/message/201720963-sender.c
+cp LastChallenge/mid-test/message/201720963-sender.c Last_Exam_data/message/msg-sender.c
+vi 201720963-sender.c 
+ls
+rm 201720963-sender.c 
+cd message/
+ls
+vi 201720963-sender.c 
+ls
+vi 201720963-receiver1.c
+vi 201720963-receiver2.c
+ls
+gcc -o 201720963-sender 201720963-sender.c 
+vi 201720963-sender.c 
+ls
+clear
+ls
+vi 201720963-sender.c
+gcc -o 201720963-sender 201720963-sender.c 
+vi 201720963-sender.c
+gcc -o 201720963-sender 201720963-sender.c 
+g
+gcc -o 201720963-sender 201720963-sender.c 
+gcc -o 201720963-receiver1 201720963-receiver1.c 
+vi 201720963-sender.c
+vi 201720963-receiver1.c
+gcc -o 201720963-receiver1 201720963-receiver1.c 
+vi 201720963-receiver2.c
+gcc -o 201720963-receiver2 201720963-receiver2.c 
+ls
+cd ..
+ls
+mkdir socket
+cd socket/
+vi 201720963-server.c
+vi 201720963-client.c
+vi 201720963-head.c
+rm 201720963-head.c
+vi 201720963-head.h
+ls
+vi 201720963-head.h 
+
+cp Last_Exam_data/socket cp LastChallenge/mid-term/socket
+cp Last_Exam_data/socket LastChallenge/mid-term/socket
+vi 201720963-server.c 
+vi 201720963-client.c 
+vi 201720963-server.c 
+vi 201720963-client.c 
 exit
